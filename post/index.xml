@@ -6,8 +6,35 @@
     <description>Recent content in Posts on TOP blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 09 Sep 2016 11:23:32 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 09 Sep 2016 17:39:33 +0800</lastBuildDate>
     <atom:link href="https://top.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CentOS直接用yum升级gcc</title>
+      <link>https://top.github.io/post/upgrade-gcc-with-yum-on-centos/</link>
+      <pubDate>Fri, 09 Sep 2016 17:39:33 +0800</pubDate>
+      
+      <guid>https://top.github.io/post/upgrade-gcc-with-yum-on-centos/</guid>
+      <description>
+
+&lt;h1 id=&#34;1-下载新的源&#34;&gt;1. 下载新的源&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;wget http://people.centos.org/tru/devtools-2/devtools-2.repo -O /etc/yum.repos.d/devtools-2.repo
+# 可能需要更新一下repo源: yum makecache
+yum install devtoolset-2-gcc devtoolset-2-gcc-c++ devtoolset-2-binutils
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;2-更新终端环境&#34;&gt;2. 更新终端环境&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;source /opt/rh/devtoolset-2/enable
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;3-完成-看一下自己gcc版本&#34;&gt;3. 完成，看一下自己gcc版本&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;gcc -v
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>hello world</title>
