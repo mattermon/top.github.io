@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://top.github.io/</loc>
-    <lastmod>2016-09-12T14:18:33+08:00</lastmod>
+    <loc>http://ie9.org/post/hello-world/</loc>
+    <lastmod>2017-06-22T15:07:50+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://top.github.io/post/read-csv-with-shell/</loc>
-    <lastmod>2016-09-12T14:18:33+08:00</lastmod>
+    <loc>http://ie9.org/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://top.github.io/post/upgrade-gcc-with-yum-on-centos/</loc>
-    <lastmod>2016-09-09T17:39:33+08:00</lastmod>
+    <loc>http://ie9.org/post/</loc>
+    <lastmod>2017-06-22T15:07:50+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://top.github.io/post/hello-world/</loc>
-    <lastmod>2016-09-09T11:23:32+08:00</lastmod>
+    <loc>http://ie9.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ie9.org/</loc>
+    <lastmod>2017-06-22T15:07:50+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
