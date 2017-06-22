@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tom</title>
-    <link>http://ie9.org/</link>
+    <link>https://top.github.io/</link>
     <description>Recent content on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh-cn</language>
     <lastBuildDate>Thu, 22 Jun 2017 15:07:50 +0000</lastBuildDate>
     
-	<atom:link href="http://ie9.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://top.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello world</title>
-      <link>http://ie9.org/post/hello-world/</link>
+      <link>https://top.github.io/post/hello-world/</link>
       <pubDate>Thu, 22 Jun 2017 15:07:50 +0000</pubDate>
       
-      <guid>http://ie9.org/post/hello-world/</guid>
+      <guid>https://top.github.io/post/hello-world/</guid>
       <description>&lt;p&gt;以下是正文内容，使用&lt;code&gt;Markdown&lt;/code&gt;书写。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
