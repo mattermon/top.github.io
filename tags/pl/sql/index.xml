@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pl/Sql on Tom</title>
-    <link>http://ie9.org/tags/pl/sql/</link>
+    <link>https://top.github.io/tags/pl/sql/</link>
     <description>Recent content in Pl/Sql on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-zh</language>
     <lastBuildDate>Thu, 04 Jun 2015 15:39:29 +0800</lastBuildDate>
     
-	<atom:link href="http://ie9.org/tags/pl/sql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://top.github.io/tags/pl/sql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>通过PL/SQL创建Oracle新用户</title>
-      <link>http://ie9.org/post/create-user-with-plsql-for-oracle/</link>
+      <link>https://top.github.io/post/create-user-with-plsql-for-oracle/</link>
       <pubDate>Thu, 04 Jun 2015 15:39:29 +0800</pubDate>
       
-      <guid>http://ie9.org/post/create-user-with-plsql-for-oracle/</guid>
+      <guid>https://top.github.io/post/create-user-with-plsql-for-oracle/</guid>
       <description>&lt;p&gt;这段时间维护Oracle太频繁，像这样常用的命令真应该保存一下，每次只用复制就好：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Tom</title>
-    <link>http://ie9.org/categories/linux/</link>
+    <link>https://top.github.io/categories/linux/</link>
     <description>Recent content in Linux on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-zh</language>
     <lastBuildDate>Mon, 26 Sep 2016 07:02:30 +0800</lastBuildDate>
     
-	<atom:link href="http://ie9.org/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://top.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CentOS 6.5上安装配置Hadoop</title>
-      <link>http://ie9.org/post/install-config-hadoop-on-centos6.5/</link>
+      <link>https://top.github.io/post/install-config-hadoop-on-centos6.5/</link>
       <pubDate>Mon, 26 Sep 2016 07:02:30 +0800</pubDate>
       
-      <guid>http://ie9.org/post/install-config-hadoop-on-centos6.5/</guid>
+      <guid>https://top.github.io/post/install-config-hadoop-on-centos6.5/</guid>
       <description>&lt;p&gt;一般地，学习资源通常会使用老旧的版本，一方面，老旧版本比较稳定，另一方面，老旧版本功能略少，结构清晰，便于理解。但以下教程是根据回忆默写出来的，不保证正确性，只为装装逼玩玩而已，要求不要太高了。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Sphinx 配置文件详解</title>
-      <link>http://ie9.org/post/sphinx-config-file-details/</link>
+      <link>https://top.github.io/post/sphinx-config-file-details/</link>
       <pubDate>Fri, 11 Mar 2016 23:45:09 +0800</pubDate>
       
-      <guid>http://ie9.org/post/sphinx-config-file-details/</guid>
+      <guid>https://top.github.io/post/sphinx-config-file-details/</guid>
       <description>&lt;p&gt;本来准备修改sphinx以支持JSON格式的数据自动解析和查询，但时间有限，只总结了以下内容：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -35,10 +35,10 @@
     
     <item>
       <title>Fedora下使用axel加速yum</title>
-      <link>http://ie9.org/post/boost-yum-on-fedora/</link>
+      <link>https://top.github.io/post/boost-yum-on-fedora/</link>
       <pubDate>Sun, 07 Dec 2014 09:43:42 +0800</pubDate>
       
-      <guid>http://ie9.org/post/boost-yum-on-fedora/</guid>
+      <guid>https://top.github.io/post/boost-yum-on-fedora/</guid>
       <description>&lt;p&gt;如果网络比较慢，通过yum更新的时候通常要花费更久的时间，一般会选择更换到国内的源解决，但有时即便如此也没有更快，这时我们可以从工具本身入手————更换一款更快的下载工具来缩短等待时间。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -46,10 +46,10 @@
     
     <item>
       <title>Remove DB2 on Linux</title>
-      <link>http://ie9.org/post/remove-db2-on-linux/</link>
+      <link>https://top.github.io/post/remove-db2-on-linux/</link>
       <pubDate>Tue, 02 Dec 2014 23:12:21 +0800</pubDate>
       
-      <guid>http://ie9.org/post/remove-db2-on-linux/</guid>
+      <guid>https://top.github.io/post/remove-db2-on-linux/</guid>
       <description>&lt;p&gt;在给客户部署程序时遇到了这个问题，为了测试专门在本机的虚拟机上安装并移除之，过程是这样的：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -57,10 +57,10 @@
     
     <item>
       <title>Linux下zlib压缩文件类</title>
-      <link>http://ie9.org/post/zlib-wrapper-for-linux/</link>
+      <link>https://top.github.io/post/zlib-wrapper-for-linux/</link>
       <pubDate>Fri, 07 Mar 2014 19:38:01 +0800</pubDate>
       
-      <guid>http://ie9.org/post/zlib-wrapper-for-linux/</guid>
+      <guid>https://top.github.io/post/zlib-wrapper-for-linux/</guid>
       <description>&lt;p&gt;更新和下载需要用的：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -68,10 +68,10 @@
     
     <item>
       <title>Linux Terminal Resolution Vga Value</title>
-      <link>http://ie9.org/post/linux-terminal-resolution-vga-value/</link>
+      <link>https://top.github.io/post/linux-terminal-resolution-vga-value/</link>
       <pubDate>Mon, 02 Aug 2010 03:41:33 +0800</pubDate>
       
-      <guid>http://ie9.org/post/linux-terminal-resolution-vga-value/</guid>
+      <guid>https://top.github.io/post/linux-terminal-resolution-vga-value/</guid>
       <description>&lt;p&gt;虚拟机会按默认的分辨率启动，有时窗口过大或者过小都会影响使用，特别在没有安装GUI桌面的情况下。所以为了解决这个问题，请自动对号入座选择一个十六进制的代码加入到启动文件中，以后系统都将以指定的分辨率启动。同时，此方案同样适用于非虚拟机。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

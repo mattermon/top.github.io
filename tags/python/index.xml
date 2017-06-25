@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Tom</title>
-    <link>http://ie9.org/tags/python/</link>
+    <link>https://top.github.io/tags/python/</link>
     <description>Recent content in Python on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-zh</language>
     <lastBuildDate>Fri, 02 Jan 2015 22:58:54 +0800</lastBuildDate>
     
-	<atom:link href="http://ie9.org/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://top.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python获取当前运行的类名和函数名</title>
-      <link>http://ie9.org/post/get-current-class-and-function-name-with-python/</link>
+      <link>https://top.github.io/post/get-current-class-and-function-name-with-python/</link>
       <pubDate>Fri, 02 Jan 2015 22:58:54 +0800</pubDate>
       
-      <guid>http://ie9.org/post/get-current-class-and-function-name-with-python/</guid>
+      <guid>https://top.github.io/post/get-current-class-and-function-name-with-python/</guid>
       <description>&lt;p&gt;为了写个比较好用的日志类，需要这些详细信息，所以查到以下方法，不过最终没用起来，总觉得不够优雅。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Python安装cx_Oracle支持</title>
-      <link>http://ie9.org/post/install-cx_oracle-support-for-python/</link>
+      <link>https://top.github.io/post/install-cx_oracle-support-for-python/</link>
       <pubDate>Mon, 01 Dec 2014 09:33:49 +0800</pubDate>
       
-      <guid>http://ie9.org/post/install-cx_oracle-support-for-python/</guid>
+      <guid>https://top.github.io/post/install-cx_oracle-support-for-python/</guid>
       <description>&lt;p&gt;Oracle目前对Python支持得并不非常完美，配置过程略复杂。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -35,10 +35,10 @@
     
     <item>
       <title>Cygwin下Python安装MySQL支持</title>
-      <link>http://ie9.org/post/install-mysql-support-under-cygwin/</link>
+      <link>https://top.github.io/post/install-mysql-support-under-cygwin/</link>
       <pubDate>Sun, 04 Aug 2013 11:28:42 +0800</pubDate>
       
-      <guid>http://ie9.org/post/install-mysql-support-under-cygwin/</guid>
+      <guid>https://top.github.io/post/install-mysql-support-under-cygwin/</guid>
       <description>&lt;p&gt;Windows下安装配置环境总是无比蛋疼，还好，有人也遇到了这样的问题，并成功解决了：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

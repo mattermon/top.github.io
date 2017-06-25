@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Latex on Tom</title>
-    <link>http://ie9.org/tags/latex/</link>
+    <link>https://top.github.io/tags/latex/</link>
     <description>Recent content in Latex on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-zh</language>
     <lastBuildDate>Sun, 26 Jun 2016 00:00:13 +0800</lastBuildDate>
     
-	<atom:link href="http://ie9.org/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://top.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MacOS下安装Sublime Text的LaTex中文支持</title>
-      <link>http://ie9.org/post/install-sublime-text-latex-on-macos/</link>
+      <link>https://top.github.io/post/install-sublime-text-latex-on-macos/</link>
       <pubDate>Sun, 26 Jun 2016 00:00:13 +0800</pubDate>
       
-      <guid>http://ie9.org/post/install-sublime-text-latex-on-macos/</guid>
+      <guid>https://top.github.io/post/install-sublime-text-latex-on-macos/</guid>
       <description>&lt;p&gt;转载的，但时间长了不记得出自哪里，同时也有针对自己实际操作有修改的地方。这个玩法不太常见，通常都有专业的工具去解决。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

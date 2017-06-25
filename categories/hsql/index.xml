@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hsql on Tom</title>
-    <link>http://ie9.org/categories/hsql/</link>
+    <link>https://top.github.io/categories/hsql/</link>
     <description>Recent content in Hsql on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-zh</language>
     <lastBuildDate>Tue, 24 Mar 2015 23:18:00 +0800</lastBuildDate>
     
-	<atom:link href="http://ie9.org/categories/hsql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://top.github.io/categories/hsql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>将HSQL导入MySQL中</title>
-      <link>http://ie9.org/post/import-hsql-to-mysql/</link>
+      <link>https://top.github.io/post/import-hsql-to-mysql/</link>
       <pubDate>Tue, 24 Mar 2015 23:18:00 +0800</pubDate>
       
-      <guid>http://ie9.org/post/import-hsql-to-mysql/</guid>
+      <guid>https://top.github.io/post/import-hsql-to-mysql/</guid>
       <description>&lt;p&gt;小项目，采用了比较小型的HSQL数据库，但在迁移时遇到不少问题，看来为了省事还是用常用的技术比较靠谱。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

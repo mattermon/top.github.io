@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Db2 on Tom</title>
-    <link>http://ie9.org/categories/db2/</link>
+    <link>https://top.github.io/categories/db2/</link>
     <description>Recent content in Db2 on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-zh</language>
     <lastBuildDate>Tue, 02 Dec 2014 23:12:21 +0800</lastBuildDate>
     
-	<atom:link href="http://ie9.org/categories/db2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://top.github.io/categories/db2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Remove DB2 on Linux</title>
-      <link>http://ie9.org/post/remove-db2-on-linux/</link>
+      <link>https://top.github.io/post/remove-db2-on-linux/</link>
       <pubDate>Tue, 02 Dec 2014 23:12:21 +0800</pubDate>
       
-      <guid>http://ie9.org/post/remove-db2-on-linux/</guid>
+      <guid>https://top.github.io/post/remove-db2-on-linux/</guid>
       <description>&lt;p&gt;在给客户部署程序时遇到了这个问题，为了测试专门在本机的虚拟机上安装并移除之，过程是这样的：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
