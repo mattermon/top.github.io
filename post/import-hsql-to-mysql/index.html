@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>将HSQL导入MySQL中 // Tom</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="将HSQL导入MySQL中" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="http://ie9.org/post/import-hsql-to-mysql/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Tom" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="http://ie9.org/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="http://ie9.org/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="http://ie9.org/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.24" />
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="http://ie9.org/">Tom</a>
+            <nav id="main-nav">
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">将HSQL导入MySQL中</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/post/import-hsql-to-mysql/" class="article-date">
+                <time datetime='2015-03-24T23:18:00.000&#43;08:00' itemprop="datePublished">2015-03-24</time>
+            </a>
+            
+            
+            <div class="post-categories">
+                <div class="article-category">
+                    
+                    
+                    <a class="article-category-link" href="http://ie9.org//categories/database">Database</a>
+                    
+                    
+                    <span>&gt;</span>
+                    
+                    <a class="article-category-link" href="http://ie9.org//categories/hsql">HSQL</a>
+                    
+                    
+                    <span>&gt;</span>
+                    
+                    <a class="article-category-link" href="http://ie9.org//categories/mysql">MySQL</a>
+                    
+                </div>
+            </div>
+            
+
+            
+            <div class="article-comment-link-wrap">
+                <a class="cloud-tie-join-count" href="javascript:void(0);">
+                    <span class="icon-comment"></span>
+                    <span class="join-count">0</span> Comments
+                </a>
+            </div>
+            
+
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            <p>小项目，采用了比较小型的HSQL数据库，但在迁移时遇到不少问题，看来为了省事还是用常用的技术比较靠谱。</p>
+
+<p></p>
+
+<p>下载<code>hsqldb.jar</code>、<code>mysql-connector-java-5.1.16-bin.jar</code></p>
+
+<p>第1步：windows命令行:</p>
+
+<pre><code>java -classpath D:\tmp\hsqldb.jar;D:\tmp\mysql-connector-java-5.1.16-bin.jar org.hsqldb.util.DatabaseManagerSwing 
+</code></pre>
+
+<p>第2步：出现Connect设计界面</p>
+
+<p>第3步：在HSQL Database Manager界面，点击菜单&rdquo;Tools&rdquo;&ndash;&gt;&ldquo;Transfer&rdquo;菜单，出现Source Database设置信息：</p>
+
+<pre><code>Type：HSQL Database Engine Standalone
+Driver: org.hsqldb.jdbcDriver
+URL:jdbc.hsqldb:file:D:\tmp\db\SynchDb3p7
+User: SA
+Password: 
+</code></pre>
+
+<p>第4步：点“ok”后，出现Target Database设置：</p>
+
+<pre><code>Type：Mysql connector/J
+Driver: com.mysql.jdbc.Driver
+URL:jdbc:mysql://127.0.0.1:3306/public
+User: root
+Password: 
+</code></pre>
+
+<p>第5步：点“ok”后，出现“HSQL Transfer Tool”转换设置，选public，点&rdquo;select schema:source&rdquo; ，然后再点“Start Transfer”进行转换。</p>
+
+<blockquote>
+<p>注意：在转换前保证mysql服务器已经启动了，并且已经有&rdquo;public&rdquo;库。</p>
+</blockquote>
+
+<p>在HSQL Database Manager界面，点击菜单&rdquo;Tools&rdquo;菜单灰色，是因为没有org\hsqldb\util\Transfer.class，可通过重新编译hsql源代码重新生成hsqldb.jar</p>
+        </div>
+
+        
+        
+        
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        <script>
+            (function() {
+                var $toc = $('#TableOfContents');
+                if ($toc.length > 0) {
+                    var $window = $(window);
+
+                    function onScroll(){
+                        var currentScroll = $window.scrollTop();
+                        var h = $('.article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6');
+                        var id = "";
+                        h.each(function (i, e) {
+                            e = $(e);
+                            if (e.offset().top - 10 <= currentScroll) {
+                                id = e.attr('id');
+                            }
+                        });
+                        var active = $toc.find('a.active');
+                        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+                        active.each(function (i, e) {
+                            $(e).removeClass('active').siblings('ul').hide();
+                        });
+                        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+                            $(e).children('a').addClass('active').siblings('ul').show();
+                        });
+                    }
+
+                    $window.on('scroll', onScroll);
+                    $(document).ready(function() {
+                        $toc.find('a').parent('li').find('ul').hide();
+                        onScroll();
+                        document.getElementsByClassName('article-toc')[0].style.display = '';
+                    });
+                }
+            })();
+        </script>
+        
+
+
+        
+        <footer class="article-footer">
+            <ul class="article-tag-list">
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="http://ie9.org//tags/transfer">Transfer
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="http://ie9.org//tags/hsql">HSQL
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="http://ie9.org//tags/mysql">MySQL
+                    </a>
+                </li>
+                
+            </ul>
+        </footer>
+        
+    </div>
+    <nav id="article-nav">
+    
+    <a href="/post/import-export-mysql/" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            MySQL 数据库导入导出sql文件
+        </div>
+    </a>
+    
+    
+    <a href="/post/symbols/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">特殊符号&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+
+        
+        <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2017 Tom&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-64222683-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+    
+    <script>
+    var cloudTieConfig = {
+        url: document.location.href, 
+        sourceId: "",
+        productKey: "ff51d2773cab4cf6a290d3eceff70bdd",
+        target: "cloud-tie-wrapper"
+    };
+    </script>
+    <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js" async></script>
+    
+
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>

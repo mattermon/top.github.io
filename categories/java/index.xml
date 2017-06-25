@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Tom</title>
+    <link>http://ie9.org/categories/java/</link>
+    <description>Recent content in Java on Tom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Tue, 28 Apr 2015 15:04:39 +0800</lastBuildDate>
+    
+	<atom:link href="http://ie9.org/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Maven创建Webapp</title>
+      <link>http://ie9.org/post/create-webapp-with-maven/</link>
+      <pubDate>Tue, 28 Apr 2015 15:04:39 +0800</pubDate>
+      
+      <guid>http://ie9.org/post/create-webapp-with-maven/</guid>
+      <description>&lt;p&gt;绝大多数情况下，像这样的过程都由IDE代替了，其实它不过执行了这样的命令：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mac下安装运行PHP内置服务器 // Tom</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Mac下安装运行PHP内置服务器" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="http://ie9.org/post/install-launch-php-internal-server-on-macos/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Tom" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="http://ie9.org/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="http://ie9.org/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="http://ie9.org/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.24" />
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="http://ie9.org/">Tom</a>
+            <nav id="main-nav">
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Mac下安装运行PHP内置服务器</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/post/install-launch-php-internal-server-on-macos/" class="article-date">
+                <time datetime='2016-11-05T01:47:55.000&#43;08:00' itemprop="datePublished">2016-11-05</time>
+            </a>
+            
+            
+            <div class="post-categories">
+                <div class="article-category">
+                    
+                    
+                    <a class="article-category-link" href="http://ie9.org//categories/php">PHP</a>
+                    
+                </div>
+            </div>
+            
+
+            
+            <div class="article-comment-link-wrap">
+                <a class="cloud-tie-join-count" href="javascript:void(0);">
+                    <span class="icon-comment"></span>
+                    <span class="join-count">0</span> Comments
+                </a>
+            </div>
+            
+
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            <p>一般来说，最新版本的Mac OS X已经内置了5.4版本的PHP，所以以下教程假设用户已经安装好了PHP。</p>
+
+<p></p>
+
+<h1 id="安装环境">安装环境</h1>
+
+<h2 id="php">PHP</h2>
+
+<p>已内置</p>
+
+<h2 id="mysql">MySQL</h2>
+
+<pre><code>brew install mysql
+</code></pre>
+
+<h2 id="memcached">Memcached</h2>
+
+<pre><code>brew install memcached
+</code></pre>
+
+<p>或</p>
+
+<pre><code># 请安装与PHP版本一致的Memcached，如php=5.5，就安装php55-memcached
+brew install homebrew/php/php55-memcached
+</code></pre>
+
+<p>安装完成之后，可以在找到<code>/usr/local/bin/memcached</code>，然后在终端执行：</p>
+
+<pre><code>telnet 127.0.0.1 11211
+stats
+#此处将显示memcached的各种状态信息
+quit
+</code></pre>
+
+<p>如一切正常，开始安装Memcached的PHP扩展，从这里下载<code>http://pecl.php.net/package/memcache</code> Memcache的源码包，解压出来执行命令：</p>
+
+<pre><code>phpize
+./configure
+make
+sudo make install
+</code></pre>
+
+<p>安装完成之后会提示以下信息</p>
+
+<blockquote>
+<p>Installing shared extensions: /usr/lib/php/extensions/no-debug-non-zts-20121212/</p>
+</blockquote>
+
+<p>最后在<code>php.ini</code>文件中添加memcache扩展：</p>
+
+<pre><code>vim /etc/php.ini
+</code></pre>
+
+<p>在<code>Dynamic Extensions</code>这一节后面增加一行（路径以你本机实际路径这准）：</p>
+
+<pre><code>extension=/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so
+</code></pre>
+
+<blockquote>
+<p>注：
+如果提示没有<code>brew</code>命令，可通过以下命令安装</p>
+</blockquote>
+
+<pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre>
+
+<h1 id="启动服务器">启动服务器</h1>
+
+<h2 id="web服务器">Web服务器</h2>
+
+<p>直接启动PHP(&gt;=5.4)内置的服务器，无需Nginx/Apache等环境</p>
+
+<pre><code>sudo php -S 0.0.0.0:80 -t /path/to/webroot
+</code></pre>
+
+<blockquote>
+<p>注：
+sudo 以管理员权限运行命令
+-S <code>大写的S</code>指定服务器网络地址和端口
+-t 指定serve的项目根目录</p>
+</blockquote>
+
+<h2 id="mysql服务器">MySQL服务器</h2>
+
+<pre><code>mysql.server restart
+</code></pre>
+
+<blockquote>
+<p>注：
+如果MySQL已经安装且配置完善，可通过命令直接启动服务。</p>
+</blockquote>
+
+<h2 id="memcached-1">Memcached</h2>
+
+<pre><code>memcached -p 11211 -d
+</code></pre>
+
+<blockquote>
+<p>注：
+-p 指定端口，默认11211
+-d 作为守护进程在后台运行，启动之后当前终端可关闭</p>
+</blockquote>
+        </div>
+
+        
+        
+        <div class="article-toc" style="display:none;">
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#安装环境">安装环境</a>
+<ul>
+<li><a href="#php">PHP</a></li>
+<li><a href="#mysql">MySQL</a></li>
+<li><a href="#memcached">Memcached</a></li>
+</ul></li>
+<li><a href="#启动服务器">启动服务器</a>
+<ul>
+<li><a href="#web服务器">Web服务器</a></li>
+<li><a href="#mysql服务器">MySQL服务器</a></li>
+<li><a href="#memcached-1">Memcached</a></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        <script>
+            (function() {
+                var $toc = $('#TableOfContents');
+                if ($toc.length > 0) {
+                    var $window = $(window);
+
+                    function onScroll(){
+                        var currentScroll = $window.scrollTop();
+                        var h = $('.article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6');
+                        var id = "";
+                        h.each(function (i, e) {
+                            e = $(e);
+                            if (e.offset().top - 10 <= currentScroll) {
+                                id = e.attr('id');
+                            }
+                        });
+                        var active = $toc.find('a.active');
+                        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+                        active.each(function (i, e) {
+                            $(e).removeClass('active').siblings('ul').hide();
+                        });
+                        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+                            $(e).children('a').addClass('active').siblings('ul').show();
+                        });
+                    }
+
+                    $window.on('scroll', onScroll);
+                    $(document).ready(function() {
+                        $toc.find('a').parent('li').find('ul').hide();
+                        onScroll();
+                        document.getElementsByClassName('article-toc')[0].style.display = '';
+                    });
+                }
+            })();
+        </script>
+        
+
+
+        
+        <footer class="article-footer">
+            <ul class="article-tag-list">
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="http://ie9.org//tags/macos">MacOS
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="http://ie9.org//tags/php">PHP
+                    </a>
+                </li>
+                
+            </ul>
+        </footer>
+        
+    </div>
+    <nav id="article-nav">
+    
+    <a href="/post/gem-repository-modification/" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            Gem源修改
+        </div>
+    </a>
+    
+    
+    <a href="/post/install-config-hadoop-on-centos6.5/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">CentOS 6.5上安装配置Hadoop&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+
+        
+        <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2017 Tom&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-64222683-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+    
+    <script>
+    var cloudTieConfig = {
+        url: document.location.href, 
+        sourceId: "",
+        productKey: "ff51d2773cab4cf6a290d3eceff70bdd",
+        target: "cloud-tie-wrapper"
+    };
+    </script>
+    <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js" async></script>
+    
+
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>
