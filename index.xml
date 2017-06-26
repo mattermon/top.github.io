@@ -6,10 +6,21 @@
     <description>Recent content on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-zh</language>
-    <lastBuildDate>Wed, 09 Nov 2016 20:57:22 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 Jun 2017 18:04:15 +0800</lastBuildDate>
     
 	<atom:link href="https://top.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>通过bash获取指定时间的unix格式</title>
+      <link>https://top.github.io/post/get-unixtime-from-bash/</link>
+      <pubDate>Mon, 26 Jun 2017 18:04:15 +0800</pubDate>
+      
+      <guid>https://top.github.io/post/get-unixtime-from-bash/</guid>
+      <description>&lt;p&gt;&lt;code&gt;bash&lt;/code&gt;远比我们想像得强大，但正因为如此，我们并不必要掌握它的所有用法——记在这里就行了。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>MacOS下使用Brew安装mpv</title>
