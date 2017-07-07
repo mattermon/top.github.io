@@ -2,480 +2,480 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Tom</title>
-    <link>https://top.github.io/tags/</link>
+    <link>//top.github.io/tags/</link>
     <description>Recent content in Tags on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh-cn</language>
     <lastBuildDate>Sun, 07 Dec 2014 09:43:42 +0800</lastBuildDate>
     
-	<atom:link href="https://top.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//top.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Axel</title>
-      <link>https://top.github.io/tags/axel/</link>
+      <link>//top.github.io/tags/axel/</link>
       <pubDate>Sun, 07 Dec 2014 09:43:42 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/axel/</guid>
+      <guid>//top.github.io/tags/axel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C&#43;&#43;</title>
-      <link>https://top.github.io/tags/c&#43;&#43;/</link>
+      <link>//top.github.io/tags/c&#43;&#43;/</link>
       <pubDate>Wed, 25 Feb 2015 09:33:47 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/c&#43;&#43;/</guid>
+      <guid>//top.github.io/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Centos 6.5</title>
-      <link>https://top.github.io/tags/centos-6.5/</link>
+      <link>//top.github.io/tags/centos-6.5/</link>
       <pubDate>Mon, 26 Sep 2016 07:02:30 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/centos-6.5/</guid>
+      <guid>//top.github.io/tags/centos-6.5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chrome</title>
-      <link>https://top.github.io/tags/chrome/</link>
+      <link>//top.github.io/tags/chrome/</link>
       <pubDate>Sun, 04 Apr 2010 11:03:57 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/chrome/</guid>
+      <guid>//top.github.io/tags/chrome/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Configuration</title>
-      <link>https://top.github.io/tags/configuration/</link>
+      <link>//top.github.io/tags/configuration/</link>
       <pubDate>Fri, 11 Mar 2016 23:45:09 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/configuration/</guid>
+      <guid>//top.github.io/tags/configuration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cygwin</title>
-      <link>https://top.github.io/tags/cygwin/</link>
+      <link>//top.github.io/tags/cygwin/</link>
       <pubDate>Sun, 04 Aug 2013 11:28:42 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/cygwin/</guid>
+      <guid>//top.github.io/tags/cygwin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Date Time</title>
-      <link>https://top.github.io/tags/date-time/</link>
+      <link>//top.github.io/tags/date-time/</link>
       <pubDate>Mon, 26 Jun 2017 18:04:15 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/date-time/</guid>
+      <guid>//top.github.io/tags/date-time/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Db2</title>
-      <link>https://top.github.io/tags/db2/</link>
+      <link>//top.github.io/tags/db2/</link>
       <pubDate>Tue, 02 Dec 2014 23:12:21 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/db2/</guid>
+      <guid>//top.github.io/tags/db2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Export</title>
-      <link>https://top.github.io/tags/export/</link>
+      <link>//top.github.io/tags/export/</link>
       <pubDate>Tue, 31 Mar 2015 14:20:22 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/export/</guid>
+      <guid>//top.github.io/tags/export/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fedora</title>
-      <link>https://top.github.io/tags/fedora/</link>
+      <link>//top.github.io/tags/fedora/</link>
       <pubDate>Sun, 07 Dec 2014 09:43:42 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/fedora/</guid>
+      <guid>//top.github.io/tags/fedora/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gem</title>
-      <link>https://top.github.io/tags/gem/</link>
+      <link>//top.github.io/tags/gem/</link>
       <pubDate>Mon, 07 Nov 2016 22:51:02 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/gem/</guid>
+      <guid>//top.github.io/tags/gem/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gem_home</title>
-      <link>https://top.github.io/tags/gem_home/</link>
+      <link>//top.github.io/tags/gem_home/</link>
       <pubDate>Sun, 19 Jun 2016 11:52:03 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/gem_home/</guid>
+      <guid>//top.github.io/tags/gem_home/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gem_path</title>
-      <link>https://top.github.io/tags/gem_path/</link>
+      <link>//top.github.io/tags/gem_path/</link>
       <pubDate>Sun, 19 Jun 2016 11:52:03 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/gem_path/</guid>
+      <guid>//top.github.io/tags/gem_path/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gestures</title>
-      <link>https://top.github.io/tags/gestures/</link>
+      <link>//top.github.io/tags/gestures/</link>
       <pubDate>Sun, 04 Apr 2010 11:03:57 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/gestures/</guid>
+      <guid>//top.github.io/tags/gestures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hadoop</title>
-      <link>https://top.github.io/tags/hadoop/</link>
+      <link>//top.github.io/tags/hadoop/</link>
       <pubDate>Mon, 26 Sep 2016 07:02:30 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/hadoop/</guid>
+      <guid>//top.github.io/tags/hadoop/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hsql</title>
-      <link>https://top.github.io/tags/hsql/</link>
+      <link>//top.github.io/tags/hsql/</link>
       <pubDate>Tue, 24 Mar 2015 23:18:00 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/hsql/</guid>
+      <guid>//top.github.io/tags/hsql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Import</title>
-      <link>https://top.github.io/tags/import/</link>
+      <link>//top.github.io/tags/import/</link>
       <pubDate>Tue, 31 Mar 2015 14:20:22 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/import/</guid>
+      <guid>//top.github.io/tags/import/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>https://top.github.io/tags/javascript/</link>
+      <link>//top.github.io/tags/javascript/</link>
       <pubDate>Wed, 15 Apr 2015 13:03:57 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/javascript/</guid>
+      <guid>//top.github.io/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Latex</title>
-      <link>https://top.github.io/tags/latex/</link>
+      <link>//top.github.io/tags/latex/</link>
       <pubDate>Sun, 26 Jun 2016 00:00:13 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/latex/</guid>
+      <guid>//top.github.io/tags/latex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lets Encrypt</title>
-      <link>https://top.github.io/tags/lets-encrypt/</link>
+      <link>//top.github.io/tags/lets-encrypt/</link>
       <pubDate>Sat, 25 Jun 2016 11:51:00 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/lets-encrypt/</guid>
+      <guid>//top.github.io/tags/lets-encrypt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https://top.github.io/tags/linux/</link>
+      <link>//top.github.io/tags/linux/</link>
       <pubDate>Fri, 11 Mar 2016 23:45:09 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/linux/</guid>
+      <guid>//top.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Log</title>
-      <link>https://top.github.io/tags/log/</link>
+      <link>//top.github.io/tags/log/</link>
       <pubDate>Wed, 08 May 2013 23:35:32 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/log/</guid>
+      <guid>//top.github.io/tags/log/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Macos</title>
-      <link>https://top.github.io/tags/macos/</link>
+      <link>//top.github.io/tags/macos/</link>
       <pubDate>Wed, 09 Nov 2016 20:57:22 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/macos/</guid>
+      <guid>//top.github.io/tags/macos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Maven</title>
-      <link>https://top.github.io/tags/maven/</link>
+      <link>//top.github.io/tags/maven/</link>
       <pubDate>Tue, 28 Apr 2015 15:04:39 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/maven/</guid>
+      <guid>//top.github.io/tags/maven/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mpv</title>
-      <link>https://top.github.io/tags/mpv/</link>
+      <link>//top.github.io/tags/mpv/</link>
       <pubDate>Wed, 09 Nov 2016 20:57:22 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/mpv/</guid>
+      <guid>//top.github.io/tags/mpv/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mutex</title>
-      <link>https://top.github.io/tags/mutex/</link>
+      <link>//top.github.io/tags/mutex/</link>
       <pubDate>Tue, 25 Jun 2013 11:31:20 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/mutex/</guid>
+      <guid>//top.github.io/tags/mutex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mysql</title>
-      <link>https://top.github.io/tags/mysql/</link>
+      <link>//top.github.io/tags/mysql/</link>
       <pubDate>Tue, 31 Mar 2015 14:20:22 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/mysql/</guid>
+      <guid>//top.github.io/tags/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nginx</title>
-      <link>https://top.github.io/tags/nginx/</link>
+      <link>//top.github.io/tags/nginx/</link>
       <pubDate>Sat, 25 Jun 2016 11:51:00 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/nginx/</guid>
+      <guid>//top.github.io/tags/nginx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Oracle</title>
-      <link>https://top.github.io/tags/oracle/</link>
+      <link>//top.github.io/tags/oracle/</link>
       <pubDate>Thu, 04 Jun 2015 15:39:29 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/oracle/</guid>
+      <guid>//top.github.io/tags/oracle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Password</title>
-      <link>https://top.github.io/tags/password/</link>
+      <link>//top.github.io/tags/password/</link>
       <pubDate>Fri, 25 Jul 2014 10:22:15 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/password/</guid>
+      <guid>//top.github.io/tags/password/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Php</title>
-      <link>https://top.github.io/tags/php/</link>
+      <link>//top.github.io/tags/php/</link>
       <pubDate>Sat, 05 Nov 2016 01:47:55 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/php/</guid>
+      <guid>//top.github.io/tags/php/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pl/Sql</title>
-      <link>https://top.github.io/tags/pl/sql/</link>
+      <link>//top.github.io/tags/pl/sql/</link>
       <pubDate>Thu, 04 Jun 2015 15:39:29 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/pl/sql/</guid>
+      <guid>//top.github.io/tags/pl/sql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posix</title>
-      <link>https://top.github.io/tags/posix/</link>
+      <link>//top.github.io/tags/posix/</link>
       <pubDate>Tue, 25 Jun 2013 11:31:20 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/posix/</guid>
+      <guid>//top.github.io/tags/posix/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://top.github.io/tags/python/</link>
+      <link>//top.github.io/tags/python/</link>
       <pubDate>Fri, 02 Jan 2015 22:58:54 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/python/</guid>
+      <guid>//top.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>React</title>
-      <link>https://top.github.io/tags/react/</link>
+      <link>//top.github.io/tags/react/</link>
       <pubDate>Wed, 15 Apr 2015 13:03:57 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/react/</guid>
+      <guid>//top.github.io/tags/react/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Remove</title>
-      <link>https://top.github.io/tags/remove/</link>
+      <link>//top.github.io/tags/remove/</link>
       <pubDate>Tue, 02 Dec 2014 23:12:21 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/remove/</guid>
+      <guid>//top.github.io/tags/remove/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Resolution</title>
-      <link>https://top.github.io/tags/resolution/</link>
+      <link>//top.github.io/tags/resolution/</link>
       <pubDate>Mon, 02 Aug 2010 03:41:33 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/resolution/</guid>
+      <guid>//top.github.io/tags/resolution/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ruby</title>
-      <link>https://top.github.io/tags/ruby/</link>
+      <link>//top.github.io/tags/ruby/</link>
       <pubDate>Mon, 07 Nov 2016 22:51:02 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/ruby/</guid>
+      <guid>//top.github.io/tags/ruby/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rvm</title>
-      <link>https://top.github.io/tags/rvm/</link>
+      <link>//top.github.io/tags/rvm/</link>
       <pubDate>Sun, 19 Jun 2016 11:52:03 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/rvm/</guid>
+      <guid>//top.github.io/tags/rvm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sphinx</title>
-      <link>https://top.github.io/tags/sphinx/</link>
+      <link>//top.github.io/tags/sphinx/</link>
       <pubDate>Fri, 11 Mar 2016 23:45:09 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/sphinx/</guid>
+      <guid>//top.github.io/tags/sphinx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sql Server</title>
-      <link>https://top.github.io/tags/sql-server/</link>
+      <link>//top.github.io/tags/sql-server/</link>
       <pubDate>Fri, 04 Oct 2013 23:15:32 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/sql-server/</guid>
+      <guid>//top.github.io/tags/sql-server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sublime Text</title>
-      <link>https://top.github.io/tags/sublime-text/</link>
+      <link>//top.github.io/tags/sublime-text/</link>
       <pubDate>Sun, 26 Jun 2016 00:00:13 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/sublime-text/</guid>
+      <guid>//top.github.io/tags/sublime-text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Symbols</title>
-      <link>https://top.github.io/tags/symbols/</link>
+      <link>//top.github.io/tags/symbols/</link>
       <pubDate>Mon, 09 Mar 2015 17:49:25 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/symbols/</guid>
+      <guid>//top.github.io/tags/symbols/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tomcat</title>
-      <link>https://top.github.io/tags/tomcat/</link>
+      <link>//top.github.io/tags/tomcat/</link>
       <pubDate>Sun, 20 Dec 2015 12:26:20 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/tomcat/</guid>
+      <guid>//top.github.io/tags/tomcat/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Transfer</title>
-      <link>https://top.github.io/tags/transfer/</link>
+      <link>//top.github.io/tags/transfer/</link>
       <pubDate>Tue, 24 Mar 2015 23:18:00 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/transfer/</guid>
+      <guid>//top.github.io/tags/transfer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Unix Time</title>
-      <link>https://top.github.io/tags/unix-time/</link>
+      <link>//top.github.io/tags/unix-time/</link>
       <pubDate>Mon, 26 Jun 2017 18:04:15 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/unix-time/</guid>
+      <guid>//top.github.io/tags/unix-time/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vga</title>
-      <link>https://top.github.io/tags/vga/</link>
+      <link>//top.github.io/tags/vga/</link>
       <pubDate>Mon, 02 Aug 2010 03:41:33 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/vga/</guid>
+      <guid>//top.github.io/tags/vga/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Webpack</title>
-      <link>https://top.github.io/tags/webpack/</link>
+      <link>//top.github.io/tags/webpack/</link>
       <pubDate>Wed, 15 Apr 2015 13:03:57 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/webpack/</guid>
+      <guid>//top.github.io/tags/webpack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Yum</title>
-      <link>https://top.github.io/tags/yum/</link>
+      <link>//top.github.io/tags/yum/</link>
       <pubDate>Sun, 07 Dec 2014 09:43:42 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/yum/</guid>
+      <guid>//top.github.io/tags/yum/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Zlib</title>
-      <link>https://top.github.io/tags/zlib/</link>
+      <link>//top.github.io/tags/zlib/</link>
       <pubDate>Fri, 07 Mar 2014 19:38:01 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/zlib/</guid>
+      <guid>//top.github.io/tags/zlib/</guid>
       <description></description>
     </item>
     
     <item>
       <title>串口</title>
-      <link>https://top.github.io/tags/%E4%B8%B2%E5%8F%A3/</link>
+      <link>//top.github.io/tags/%E4%B8%B2%E5%8F%A3/</link>
       <pubDate>Wed, 25 Feb 2015 09:33:47 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/%E4%B8%B2%E5%8F%A3/</guid>
+      <guid>//top.github.io/tags/%E4%B8%B2%E5%8F%A3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>乱码</title>
-      <link>https://top.github.io/tags/%E4%B9%B1%E7%A0%81/</link>
+      <link>//top.github.io/tags/%E4%B9%B1%E7%A0%81/</link>
       <pubDate>Sun, 20 Dec 2015 12:26:20 +0800</pubDate>
       
-      <guid>https://top.github.io/tags/%E4%B9%B1%E7%A0%81/</guid>
+      <guid>//top.github.io/tags/%E4%B9%B1%E7%A0%81/</guid>
       <description></description>
     </item>
     

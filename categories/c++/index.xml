@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C&#43;&#43; on Tom</title>
-    <link>https://top.github.io/categories/c&#43;&#43;/</link>
+    <link>//top.github.io/categories/c&#43;&#43;/</link>
     <description>Recent content in C&#43;&#43; on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh-cn</language>
     <lastBuildDate>Wed, 25 Feb 2015 09:33:47 +0800</lastBuildDate>
     
-	<atom:link href="https://top.github.io/categories/c++/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//top.github.io/categories/c++/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux下串口通信类</title>
-      <link>https://top.github.io/post/serial-class-code-linux/</link>
+      <link>//top.github.io/post/serial-class-code-linux/</link>
       <pubDate>Wed, 25 Feb 2015 09:33:47 +0800</pubDate>
       
-      <guid>https://top.github.io/post/serial-class-code-linux/</guid>
+      <guid>//top.github.io/post/serial-class-code-linux/</guid>
       <description>&lt;p&gt;最近操作工程设备比较多，通讯方式上通常采用串口或网络进行通讯。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Linux下zlib压缩文件类</title>
-      <link>https://top.github.io/post/zlib-wrapper-for-linux/</link>
+      <link>//top.github.io/post/zlib-wrapper-for-linux/</link>
       <pubDate>Fri, 07 Mar 2014 19:38:01 +0800</pubDate>
       
-      <guid>https://top.github.io/post/zlib-wrapper-for-linux/</guid>
+      <guid>//top.github.io/post/zlib-wrapper-for-linux/</guid>
       <description>&lt;p&gt;更新和下载需要用的：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -35,10 +35,10 @@
     
     <item>
       <title>POSIX标准的Mutex互斥类</title>
-      <link>https://top.github.io/post/mutex-class-code/</link>
+      <link>//top.github.io/post/mutex-class-code/</link>
       <pubDate>Tue, 25 Jun 2013 11:31:20 +0800</pubDate>
       
-      <guid>https://top.github.io/post/mutex-class-code/</guid>
+      <guid>//top.github.io/post/mutex-class-code/</guid>
       <description>&lt;p&gt;多个线程操作共享资源的时候总会存在冲突问题，唯一的解决办法就是引入互斥机制，好在Linux对此已提供了非常完美的支持。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -46,10 +46,10 @@
     
     <item>
       <title>单文件日志类</title>
-      <link>https://top.github.io/post/log-class-in-a-single-file/</link>
+      <link>//top.github.io/post/log-class-in-a-single-file/</link>
       <pubDate>Wed, 08 May 2013 23:35:32 +0800</pubDate>
       
-      <guid>https://top.github.io/post/log-class-in-a-single-file/</guid>
+      <guid>//top.github.io/post/log-class-in-a-single-file/</guid>
       <description>&lt;p&gt;懒人总有很多现成的代码，砖是不需要重复搬的：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

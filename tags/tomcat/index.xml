@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tomcat on Tom</title>
-    <link>https://top.github.io/tags/tomcat/</link>
+    <link>//top.github.io/tags/tomcat/</link>
     <description>Recent content in Tomcat on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh-cn</language>
     <lastBuildDate>Sun, 20 Dec 2015 12:26:20 +0800</lastBuildDate>
     
-	<atom:link href="https://top.github.io/tags/tomcat/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//top.github.io/tags/tomcat/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>解决Tomcat下URL包含中文时的乱码问题</title>
-      <link>https://top.github.io/post/chinese-characters-in-url-under-tomcat/</link>
+      <link>//top.github.io/post/chinese-characters-in-url-under-tomcat/</link>
       <pubDate>Sun, 20 Dec 2015 12:26:20 +0800</pubDate>
       
-      <guid>https://top.github.io/post/chinese-characters-in-url-under-tomcat/</guid>
+      <guid>//top.github.io/post/chinese-characters-in-url-under-tomcat/</guid>
       <description>&lt;p&gt;解决tomcat下的URL中文乱码问题的方法：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

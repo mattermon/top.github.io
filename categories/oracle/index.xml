@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oracle on Tom</title>
-    <link>https://top.github.io/categories/oracle/</link>
+    <link>//top.github.io/categories/oracle/</link>
     <description>Recent content in Oracle on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh-cn</language>
     <lastBuildDate>Thu, 04 Jun 2015 15:39:29 +0800</lastBuildDate>
     
-	<atom:link href="https://top.github.io/categories/oracle/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//top.github.io/categories/oracle/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>通过PL/SQL创建Oracle新用户</title>
-      <link>https://top.github.io/post/create-user-with-plsql-for-oracle/</link>
+      <link>//top.github.io/post/create-user-with-plsql-for-oracle/</link>
       <pubDate>Thu, 04 Jun 2015 15:39:29 +0800</pubDate>
       
-      <guid>https://top.github.io/post/create-user-with-plsql-for-oracle/</guid>
+      <guid>//top.github.io/post/create-user-with-plsql-for-oracle/</guid>
       <description>&lt;p&gt;这段时间维护Oracle太频繁，像这样常用的命令真应该保存一下，每次只用复制就好：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Python安装cx_Oracle支持</title>
-      <link>https://top.github.io/post/install-cx_oracle-support-for-python/</link>
+      <link>//top.github.io/post/install-cx_oracle-support-for-python/</link>
       <pubDate>Mon, 01 Dec 2014 09:33:49 +0800</pubDate>
       
-      <guid>https://top.github.io/post/install-cx_oracle-support-for-python/</guid>
+      <guid>//top.github.io/post/install-cx_oracle-support-for-python/</guid>
       <description>&lt;p&gt;Oracle目前对Python支持得并不非常完美，配置过程略复杂。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

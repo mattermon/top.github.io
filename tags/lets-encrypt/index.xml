@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lets Encrypt on Tom</title>
-    <link>https://top.github.io/tags/lets-encrypt/</link>
+    <link>//top.github.io/tags/lets-encrypt/</link>
     <description>Recent content in Lets Encrypt on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh-cn</language>
     <lastBuildDate>Sat, 25 Jun 2016 11:51:00 +0800</lastBuildDate>
     
-	<atom:link href="https://top.github.io/tags/lets-encrypt/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//top.github.io/tags/lets-encrypt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>在Nginx下配置免费的HTTPS证书Let&#39;s Encrypt</title>
-      <link>https://top.github.io/post/nginx-https-lets-encrypt/</link>
+      <link>//top.github.io/post/nginx-https-lets-encrypt/</link>
       <pubDate>Sat, 25 Jun 2016 11:51:00 +0800</pubDate>
       
-      <guid>https://top.github.io/post/nginx-https-lets-encrypt/</guid>
+      <guid>//top.github.io/post/nginx-https-lets-encrypt/</guid>
       <description>&lt;p&gt;搭建自己的网站的时候，当然希望采用HTTPS，不止是更安全。Let&amp;rsquo;s Encrypt还是免费的证书服务，极客专属。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

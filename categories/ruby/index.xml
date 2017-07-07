@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on Tom</title>
-    <link>https://top.github.io/categories/ruby/</link>
+    <link>//top.github.io/categories/ruby/</link>
     <description>Recent content in Ruby on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh-cn</language>
     <lastBuildDate>Mon, 07 Nov 2016 22:51:02 +0800</lastBuildDate>
     
-	<atom:link href="https://top.github.io/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//top.github.io/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gem源修改</title>
-      <link>https://top.github.io/post/gem-repository-modification/</link>
+      <link>//top.github.io/post/gem-repository-modification/</link>
       <pubDate>Mon, 07 Nov 2016 22:51:02 +0800</pubDate>
       
-      <guid>https://top.github.io/post/gem-repository-modification/</guid>
+      <guid>//top.github.io/post/gem-repository-modification/</guid>
       <description>&lt;p&gt;唉，ruby自带的源已被墙，程序员表示忍辱负重：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>RVM报错: Warning: PATH set to RVM ruby but GEM_HOME and/or GEM_PATH not set</title>
-      <link>https://top.github.io/post/rvm-zsh-errors/</link>
+      <link>//top.github.io/post/rvm-zsh-errors/</link>
       <pubDate>Sun, 19 Jun 2016 11:52:03 +0800</pubDate>
       
-      <guid>https://top.github.io/post/rvm-zsh-errors/</guid>
+      <guid>//top.github.io/post/rvm-zsh-errors/</guid>
       <description>&lt;p&gt;像这样的Warning虽然不影响正常使用，但见到了总不是太爽，一定要解决之。另外，感觉对Ruby不是太感冒。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

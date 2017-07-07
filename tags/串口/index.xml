@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>串口 on Tom</title>
-    <link>https://top.github.io/tags/%E4%B8%B2%E5%8F%A3/</link>
+    <link>//top.github.io/tags/%E4%B8%B2%E5%8F%A3/</link>
     <description>Recent content in 串口 on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh-cn</language>
     <lastBuildDate>Wed, 25 Feb 2015 09:33:47 +0800</lastBuildDate>
     
-	<atom:link href="https://top.github.io/tags/%E4%B8%B2%E5%8F%A3/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//top.github.io/tags/%E4%B8%B2%E5%8F%A3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux下串口通信类</title>
-      <link>https://top.github.io/post/serial-class-code-linux/</link>
+      <link>//top.github.io/post/serial-class-code-linux/</link>
       <pubDate>Wed, 25 Feb 2015 09:33:47 +0800</pubDate>
       
-      <guid>https://top.github.io/post/serial-class-code-linux/</guid>
+      <guid>//top.github.io/post/serial-class-code-linux/</guid>
       <description>&lt;p&gt;最近操作工程设备比较多，通讯方式上通常采用串口或网络进行通讯。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

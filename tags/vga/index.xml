@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vga on Tom</title>
-    <link>https://top.github.io/tags/vga/</link>
+    <link>//top.github.io/tags/vga/</link>
     <description>Recent content in Vga on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh-cn</language>
     <lastBuildDate>Mon, 02 Aug 2010 03:41:33 +0800</lastBuildDate>
     
-	<atom:link href="https://top.github.io/tags/vga/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//top.github.io/tags/vga/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux Terminal Resolution Vga Value</title>
-      <link>https://top.github.io/post/linux-terminal-resolution-vga-value/</link>
+      <link>//top.github.io/post/linux-terminal-resolution-vga-value/</link>
       <pubDate>Mon, 02 Aug 2010 03:41:33 +0800</pubDate>
       
-      <guid>https://top.github.io/post/linux-terminal-resolution-vga-value/</guid>
+      <guid>//top.github.io/post/linux-terminal-resolution-vga-value/</guid>
       <description>&lt;p&gt;虚拟机会按默认的分辨率启动，有时窗口过大或者过小都会影响使用，特别在没有安装GUI桌面的情况下。所以为了解决这个问题，请自动对号入座选择一个十六进制的代码加入到启动文件中，以后系统都将以指定的分辨率启动。同时，此方案同样适用于非虚拟机。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

@@ -2,246 +2,246 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Tom</title>
-    <link>https://top.github.io/categories/</link>
+    <link>//top.github.io/categories/</link>
     <description>Recent content in Categories on Tom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh-cn</language>
     <lastBuildDate>Wed, 25 Feb 2015 09:33:47 +0800</lastBuildDate>
     
-	<atom:link href="https://top.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//top.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>C&#43;&#43;</title>
-      <link>https://top.github.io/categories/c&#43;&#43;/</link>
+      <link>//top.github.io/categories/c&#43;&#43;/</link>
       <pubDate>Wed, 25 Feb 2015 09:33:47 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/c&#43;&#43;/</guid>
+      <guid>//top.github.io/categories/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Code</title>
-      <link>https://top.github.io/categories/code/</link>
+      <link>//top.github.io/categories/code/</link>
       <pubDate>Thu, 04 Jun 2015 15:39:29 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/code/</guid>
+      <guid>//top.github.io/categories/code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Database</title>
-      <link>https://top.github.io/categories/database/</link>
+      <link>//top.github.io/categories/database/</link>
       <pubDate>Thu, 04 Jun 2015 15:39:29 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/database/</guid>
+      <guid>//top.github.io/categories/database/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Db2</title>
-      <link>https://top.github.io/categories/db2/</link>
+      <link>//top.github.io/categories/db2/</link>
       <pubDate>Tue, 02 Dec 2014 23:12:21 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/db2/</guid>
+      <guid>//top.github.io/categories/db2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Genera</title>
-      <link>https://top.github.io/categories/genera/</link>
+      <link>//top.github.io/categories/genera/</link>
       <pubDate>Sun, 04 Apr 2010 11:03:57 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/genera/</guid>
+      <guid>//top.github.io/categories/genera/</guid>
       <description></description>
     </item>
     
     <item>
       <title>General</title>
-      <link>https://top.github.io/categories/general/</link>
+      <link>//top.github.io/categories/general/</link>
       <pubDate>Mon, 26 Jun 2017 18:04:15 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/general/</guid>
+      <guid>//top.github.io/categories/general/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hadoop</title>
-      <link>https://top.github.io/categories/hadoop/</link>
+      <link>//top.github.io/categories/hadoop/</link>
       <pubDate>Mon, 26 Sep 2016 07:02:30 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/hadoop/</guid>
+      <guid>//top.github.io/categories/hadoop/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hsql</title>
-      <link>https://top.github.io/categories/hsql/</link>
+      <link>//top.github.io/categories/hsql/</link>
       <pubDate>Tue, 24 Mar 2015 23:18:00 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/hsql/</guid>
+      <guid>//top.github.io/categories/hsql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Https</title>
-      <link>https://top.github.io/categories/https/</link>
+      <link>//top.github.io/categories/https/</link>
       <pubDate>Sat, 25 Jun 2016 11:51:00 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/https/</guid>
+      <guid>//top.github.io/categories/https/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>https://top.github.io/categories/java/</link>
+      <link>//top.github.io/categories/java/</link>
       <pubDate>Tue, 28 Apr 2015 15:04:39 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/java/</guid>
+      <guid>//top.github.io/categories/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>https://top.github.io/categories/javascript/</link>
+      <link>//top.github.io/categories/javascript/</link>
       <pubDate>Wed, 15 Apr 2015 13:03:57 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/javascript/</guid>
+      <guid>//top.github.io/categories/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Latex</title>
-      <link>https://top.github.io/categories/latex/</link>
+      <link>//top.github.io/categories/latex/</link>
       <pubDate>Sun, 26 Jun 2016 00:00:13 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/latex/</guid>
+      <guid>//top.github.io/categories/latex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https://top.github.io/categories/linux/</link>
+      <link>//top.github.io/categories/linux/</link>
       <pubDate>Mon, 26 Sep 2016 07:02:30 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/linux/</guid>
+      <guid>//top.github.io/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Macos</title>
-      <link>https://top.github.io/categories/macos/</link>
+      <link>//top.github.io/categories/macos/</link>
       <pubDate>Sun, 26 Jun 2016 00:00:13 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/macos/</guid>
+      <guid>//top.github.io/categories/macos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Maven</title>
-      <link>https://top.github.io/categories/maven/</link>
+      <link>//top.github.io/categories/maven/</link>
       <pubDate>Tue, 28 Apr 2015 15:04:39 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/maven/</guid>
+      <guid>//top.github.io/categories/maven/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mysql</title>
-      <link>https://top.github.io/categories/mysql/</link>
+      <link>//top.github.io/categories/mysql/</link>
       <pubDate>Tue, 31 Mar 2015 14:20:22 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/mysql/</guid>
+      <guid>//top.github.io/categories/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Oracle</title>
-      <link>https://top.github.io/categories/oracle/</link>
+      <link>//top.github.io/categories/oracle/</link>
       <pubDate>Thu, 04 Jun 2015 15:39:29 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/oracle/</guid>
+      <guid>//top.github.io/categories/oracle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Php</title>
-      <link>https://top.github.io/categories/php/</link>
+      <link>//top.github.io/categories/php/</link>
       <pubDate>Sat, 05 Nov 2016 01:47:55 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/php/</guid>
+      <guid>//top.github.io/categories/php/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://top.github.io/categories/python/</link>
+      <link>//top.github.io/categories/python/</link>
       <pubDate>Fri, 02 Jan 2015 22:58:54 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/python/</guid>
+      <guid>//top.github.io/categories/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>React</title>
-      <link>https://top.github.io/categories/react/</link>
+      <link>//top.github.io/categories/react/</link>
       <pubDate>Wed, 15 Apr 2015 13:03:57 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/react/</guid>
+      <guid>//top.github.io/categories/react/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ruby</title>
-      <link>https://top.github.io/categories/ruby/</link>
+      <link>//top.github.io/categories/ruby/</link>
       <pubDate>Mon, 07 Nov 2016 22:51:02 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/ruby/</guid>
+      <guid>//top.github.io/categories/ruby/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Server</title>
-      <link>https://top.github.io/categories/server/</link>
+      <link>//top.github.io/categories/server/</link>
       <pubDate>Sat, 25 Jun 2016 11:51:00 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/server/</guid>
+      <guid>//top.github.io/categories/server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sql Server</title>
-      <link>https://top.github.io/categories/sql-server/</link>
+      <link>//top.github.io/categories/sql-server/</link>
       <pubDate>Fri, 04 Oct 2013 23:15:32 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/sql-server/</guid>
+      <guid>//top.github.io/categories/sql-server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tomcat</title>
-      <link>https://top.github.io/categories/tomcat/</link>
+      <link>//top.github.io/categories/tomcat/</link>
       <pubDate>Sun, 20 Dec 2015 12:26:20 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/tomcat/</guid>
+      <guid>//top.github.io/categories/tomcat/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows</title>
-      <link>https://top.github.io/categories/windows/</link>
+      <link>//top.github.io/categories/windows/</link>
       <pubDate>Fri, 04 Oct 2013 23:15:32 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/windows/</guid>
+      <guid>//top.github.io/categories/windows/</guid>
       <description></description>
     </item>
     
     <item>
       <title>通信</title>
-      <link>https://top.github.io/categories/%E9%80%9A%E4%BF%A1/</link>
+      <link>//top.github.io/categories/%E9%80%9A%E4%BF%A1/</link>
       <pubDate>Wed, 25 Feb 2015 09:33:47 +0800</pubDate>
       
-      <guid>https://top.github.io/categories/%E9%80%9A%E4%BF%A1/</guid>
+      <guid>//top.github.io/categories/%E9%80%9A%E4%BF%A1/</guid>
       <description></description>
     </item>
     
