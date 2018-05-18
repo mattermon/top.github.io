@@ -84,11 +84,11 @@ apiVersion: v1
 kind: Pod
 </code></pre>
 
-<blockquote>
-<p><code>---</code> 相当于分隔符，当需要在一个文件中定义多个结构的时候使用；
-<code>apiVersion</code> 是配置文件的顶层节点，表示API的版本号，当前默认支持v1;
-<code>kind</code> 表示将要创建的资源类型，可选的值有：<code>pod</code>，<code>service</code>，<code>deployment</code>等等；</p>
-</blockquote>
+<ul>
+<li><code>---</code> 相当于分隔符，当需要在一个文件中定义多个结构的时候使用；</li>
+<li><code>apiVersion</code> 是配置文件的顶层节点，表示API的版本号，当前默认支持v1;</li>
+<li><code>kind</code> 表示将要创建的资源类型，可选的值有：<code>pod</code>，<code>service</code>，<code>deployment</code>等等；</li>
+</ul>
 
 <pre><code class="language-yaml">metadata:
   name: nginx
@@ -111,11 +111,11 @@ spec:
         - containerPort: 80
 </code></pre>
 
-<blockquote>
-<p><code>spec</code> 是配置文件的顶层节点，定义了包括container、storage、volume以及其他Kubernetes需要的参数；
-<code>containers</code> 其下包含了一系列容器的定义，相当于JSON的数组类型；
-<code>name</code>，<code>image</code>，<code>ports</code>，<code>containerPort</code> 基本上就一些基本定义了；</p>
-</blockquote>
+<ul>
+<li><code>spec</code> 是配置文件的顶层节点，定义了包括container、storage、volume以及其他Kubernetes需要的参数；</li>
+<li><code>containers</code> 其下包含了一系列容器的定义，相当于JSON的数组类型；</li>
+<li><code>name</code>，<code>image</code>，<code>ports</code>，<code>containerPort</code> 基本上就一些基本定义了；</li>
+</ul>
 
 <p>同时应该也发现一个规律：如果一个节点的子节点是数组类型，那么该节点的名称会是复数；同时，子节点如果是多个单词组成的，默认是驼峰语法，而值采用了中划线全小写的语法。</p>
 

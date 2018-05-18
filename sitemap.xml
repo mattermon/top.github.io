@@ -173,13 +173,13 @@
   </url>
   
   <url>
-    <loc>//ie9.org/categories/c&#43;&#43;/</loc>
+    <loc>//ie9.org/tags/c&#43;&#43;/</loc>
     <lastmod>2015-02-25T09:33:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ie9.org/tags/c&#43;&#43;/</loc>
+    <loc>//ie9.org/categories/c&#43;&#43;/</loc>
     <lastmod>2015-02-25T09:33:47+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -239,13 +239,13 @@
   </url>
   
   <url>
-    <loc>//ie9.org/categories/db2/</loc>
+    <loc>//ie9.org/tags/db2/</loc>
     <lastmod>2014-12-02T23:12:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ie9.org/tags/db2/</loc>
+    <loc>//ie9.org/categories/db2/</loc>
     <lastmod>2014-12-02T23:12:21+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -299,25 +299,25 @@
   </url>
   
   <url>
-    <loc>//ie9.org/categories/hadoop/</loc>
-    <lastmod>2016-09-26T07:02:30+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>//ie9.org/tags/hadoop/</loc>
     <lastmod>2016-09-26T07:02:30+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ie9.org/categories/hsql/</loc>
-    <lastmod>2015-03-24T23:18:00+08:00</lastmod>
+    <loc>//ie9.org/categories/hadoop/</loc>
+    <lastmod>2016-09-26T07:02:30+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>//ie9.org/tags/hsql/</loc>
+    <lastmod>2015-03-24T23:18:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ie9.org/categories/hsql/</loc>
     <lastmod>2015-03-24T23:18:00+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -341,13 +341,13 @@
   </url>
   
   <url>
-    <loc>//ie9.org/categories/javascript/</loc>
+    <loc>//ie9.org/tags/javascript/</loc>
     <lastmod>2015-04-15T13:03:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ie9.org/tags/javascript/</loc>
+    <loc>//ie9.org/categories/javascript/</loc>
     <lastmod>2015-04-15T13:03:57+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -365,13 +365,13 @@
   </url>
   
   <url>
-    <loc>//ie9.org/categories/latex/</loc>
+    <loc>//ie9.org/tags/latex/</loc>
     <lastmod>2016-06-26T00:00:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ie9.org/tags/latex/</loc>
+    <loc>//ie9.org/categories/latex/</loc>
     <lastmod>2016-06-26T00:00:13+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -383,13 +383,13 @@
   </url>
   
   <url>
-    <loc>//ie9.org/categories/linux/</loc>
+    <loc>//ie9.org/tags/linux/</loc>
     <lastmod>2017-06-17T18:32:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ie9.org/tags/linux/</loc>
+    <loc>//ie9.org/categories/linux/</loc>
     <lastmod>2017-06-17T18:32:49+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -401,25 +401,25 @@
   </url>
   
   <url>
-    <loc>//ie9.org/categories/macos/</loc>
-    <lastmod>2016-06-26T00:00:13+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>//ie9.org/tags/macos/</loc>
     <lastmod>2016-11-09T20:57:22+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ie9.org/categories/maven/</loc>
-    <lastmod>2015-04-28T15:04:39+08:00</lastmod>
+    <loc>//ie9.org/categories/macos/</loc>
+    <lastmod>2016-06-26T00:00:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>//ie9.org/tags/maven/</loc>
+    <lastmod>2015-04-28T15:04:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ie9.org/categories/maven/</loc>
     <lastmod>2015-04-28T15:04:39+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -437,13 +437,13 @@
   </url>
   
   <url>
-    <loc>//ie9.org/categories/mysql/</loc>
+    <loc>//ie9.org/tags/mysql/</loc>
     <lastmod>2015-03-31T14:20:22+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ie9.org/tags/mysql/</loc>
+    <loc>//ie9.org/categories/mysql/</loc>
     <lastmod>2015-03-31T14:20:22+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -455,13 +455,13 @@
   </url>
   
   <url>
-    <loc>//ie9.org/categories/oracle/</loc>
+    <loc>//ie9.org/tags/oracle/</loc>
     <lastmod>2015-06-04T15:39:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ie9.org/tags/oracle/</loc>
+    <loc>//ie9.org/categories/oracle/</loc>
     <lastmod>2015-06-04T15:39:29+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -473,13 +473,13 @@
   </url>
   
   <url>
-    <loc>//ie9.org/categories/php/</loc>
+    <loc>//ie9.org/tags/php/</loc>
     <lastmod>2016-11-05T01:47:55+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ie9.org/tags/php/</loc>
+    <loc>//ie9.org/categories/php/</loc>
     <lastmod>2016-11-05T01:47:55+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -503,25 +503,25 @@
   </url>
   
   <url>
-    <loc>//ie9.org/categories/python/</loc>
-    <lastmod>2015-01-02T22:58:54+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>//ie9.org/tags/python/</loc>
     <lastmod>2015-01-02T22:58:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ie9.org/categories/react/</loc>
-    <lastmod>2015-04-15T13:03:57+08:00</lastmod>
+    <loc>//ie9.org/categories/python/</loc>
+    <lastmod>2015-01-02T22:58:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>//ie9.org/tags/react/</loc>
+    <lastmod>2015-04-15T13:03:57+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ie9.org/categories/react/</loc>
     <lastmod>2015-04-15T13:03:57+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -539,13 +539,13 @@
   </url>
   
   <url>
-    <loc>//ie9.org/categories/ruby/</loc>
+    <loc>//ie9.org/tags/ruby/</loc>
     <lastmod>2016-11-07T22:51:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ie9.org/tags/ruby/</loc>
+    <loc>//ie9.org/categories/ruby/</loc>
     <lastmod>2016-11-07T22:51:02+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -569,13 +569,13 @@
   </url>
   
   <url>
-    <loc>//ie9.org/categories/sql-server/</loc>
+    <loc>//ie9.org/tags/sql-server/</loc>
     <lastmod>2013-10-04T23:15:32+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ie9.org/tags/sql-server/</loc>
+    <loc>//ie9.org/categories/sql-server/</loc>
     <lastmod>2013-10-04T23:15:32+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -605,13 +605,13 @@
   </url>
   
   <url>
-    <loc>//ie9.org/categories/tomcat/</loc>
+    <loc>//ie9.org/tags/tomcat/</loc>
     <lastmod>2015-12-20T12:26:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ie9.org/tags/tomcat/</loc>
+    <loc>//ie9.org/categories/tomcat/</loc>
     <lastmod>2015-12-20T12:26:20+08:00</lastmod>
     <priority>0</priority>
   </url>
