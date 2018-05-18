@@ -96,11 +96,11 @@ kind: Pod
     app: nginx
 </code></pre>
 
-<blockquote>
-<p><code>metadata</code> 是配置文件的顶层节点，存储了当前节点的元数据，包括命名空间、名称、标签等；
-<code>name</code> 名称，会方便以后查看和操作；
-<code>labels</code> 标签，用以标识一个资源的键值对，用以供Kubernetes快速查找和筛选相应的服务，和微信里面的标签类似；</p>
-</blockquote>
+<ul>
+<li><code>metadata</code> 是配置文件的顶层节点，存储了当前节点的元数据，包括命名空间、名称、标签等；</li>
+<li><code>name</code> 名称，会方便以后查看和操作；</li>
+<li><code>labels</code> 标签，用以标识一个资源的键值对，用以供Kubernetes快速查找和筛选相应的服务，和微信里面的标签类似；</li>
+</ul>
 
 <pre><code class="language-yaml">...
 spec:
