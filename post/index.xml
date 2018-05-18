@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Tom - ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 26 Jun 2017 18:04:15 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 18 May 2018 15:30:14 +0800</lastBuildDate>
     
 	<atom:link href="//ie9.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kubernetes YAML 配置文件简介</title>
+      <link>//ie9.org/2018/05/kubernetes-yaml-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Fri, 18 May 2018 15:30:14 +0800</pubDate>
+      
+      <guid>//ie9.org/2018/05/kubernetes-yaml-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%AE%80%E4%BB%8B/</guid>
+      <description>&lt;p&gt;首先，Kubernetes的配置文件不止接收YAML/YML文件，还支持json格式，因为这两种格式在我看来没有太大的区别，重点想记录一下内容。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>通过bash获取指定时间的unix格式</title>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kubernetes YAML 配置文件简介 - Tom - ie9.org</title>
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="ie9.org, another technical blog">
+    <meta name="keywords" content="ie9.org,">
+    <meta name="author" content="">
+        <meta property="og:title" content="Kubernetes YAML 配置文件简介" />
+    <meta property="og:description" content="ie9.org, another technical blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="//ie9.org/2018/05/kubernetes-yaml-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%AE%80%E4%BB%8B/" />
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="Tom - ie9.org" />
+    <link rel="shortcut icon" href="/favicon.png">
+    <link href="//ie9.org/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="//ie9.org/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//ie9.org/css/style.css">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta name="generator" content="Hugo 0.24" />
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="//ie9.org/">Tom - ie9.org</a>
+            <nav id="main-nav">
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-5068432732367533", enable_page_level_ads: true});</script>
+</header>
+
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Kubernetes YAML 配置文件简介</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/2018/05/kubernetes-yaml-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%AE%80%E4%BB%8B/" class="article-date">
+                <time datetime='2018-05-18T15:30:14.000&#43;08:00' itemprop="datePublished">2018-05-18</time>
+            </a>
+            
+            
+            <div class="post-categories">
+                <div class="article-category">
+                    
+                    
+                    <a class="article-category-link" href="//ie9.org/categories/cloud">Cloud</a>
+                    
+                </div>
+            </div>
+            
+
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            <p>首先，Kubernetes的配置文件不止接收YAML/YML文件，还支持json格式，因为这两种格式在我看来没有太大的区别，重点想记录一下内容。</p>
+
+<p></p>
+
+<p>通常，YAML文件是结合<code>kubectl</code>命令使用的，<code>kuberctl</code>命令官方文档在(这里)[<a href="https://kubernetes.io/docs/concepts/configuration/overview/]，(YAML)[http://yaml.org/]并不是Kubernetes独创的格式，它其实也是一个开源项目，YAML文件配置比JSON更简洁，号称配置文件界的Python语言，因为它最大的特色和Python类似——没有括号，靠缩进表示归属关系。">https://kubernetes.io/docs/concepts/configuration/overview/]，(YAML)[http://yaml.org/]并不是Kubernetes独创的格式，它其实也是一个开源项目，YAML文件配置比JSON更简洁，号称配置文件界的Python语言，因为它最大的特色和Python类似——没有括号，靠缩进表示归属关系。</a></p>
+
+<p>下面看一个示例：</p>
+
+<pre><code class="language-yaml">---
+apiVersion: v1
+kind: Pod
+</code></pre>
+
+<blockquote>
+<p><code>---</code> 相当于分隔符，当需要在一个文件中定义多个结构的时候使用；
+<code>apiVersion</code> 是配置文件的顶层节点，表示API的版本号，当前默认支持v1;
+<code>kind</code> 表示将要创建的资源类型，可选的值有：<code>pod</code>，<code>service</code>，<code>deployment</code>等等；</p>
+</blockquote>
+
+<pre><code class="language-yaml">metadata:
+  name: nginx
+  labels:
+    app: nginx
+</code></pre>
+
+<blockquote>
+<p><code>metadata</code> 是配置文件的顶层节点，存储了当前节点的元数据，包括命名空间、名称、标签等；
+<code>name</code> 名称，会方便以后查看和操作；
+<code>labels</code> 标签，用以标识一个资源的键值对，用以供Kubernetes快速查找和筛选相应的服务，和微信里面的标签类似；</p>
+</blockquote>
+
+<pre><code class="language-yaml">...
+spec:
+  containers:
+    - name: front-end
+      image: nginx
+      ports:
+        - containerPort: 80
+</code></pre>
+
+<blockquote>
+<p><code>spec</code> 是配置文件的顶层节点，定义了包括container、storage、volume以及其他Kubernetes需要的参数；
+<code>containers</code> 其下包含了一系列容器的定义，相当于JSON的数组类型；
+<code>name</code>，<code>image</code>，<code>ports</code>，<code>containerPort</code> 基本上就一些基本定义了；</p>
+</blockquote>
+
+<p>同时应该也发现一个规律：如果一个节点的子节点是数组类型，那么该节点的名称会是复数；同时，子节点如果是多个单词组成的，默认是驼峰语法，而值采用了中划线全小写的语法。</p>
+
+<p>核心的内容就是这些，非常简单，剩下就是使用这个配置文件了。</p>
+
+<p>基于文件创建资源的命令：</p>
+
+<pre><code class="language-bash">kubectl create -f some_file.yaml
+# xxx &quot;some_name&quot; created
+</code></pre>
+
+<p>出现以上提示就表示创建成功了，接下来可以查看：</p>
+
+<pre><code class="language-bash"># for pod，其他同理
+kubectl get pods
+</code></pre>
+
+<p>暂时就是这样。</p>
+        </div>
+
+        
+        
+        
+
+        
+
+
+        
+        <footer class="article-footer">
+            <ul class="article-tag-list">
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org/tags/kubernetes">Kubernetes
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org/tags/yaml">YAML
+                    </a>
+                </li>
+                
+            </ul>
+        </footer>
+        
+    </div>
+    <nav id="article-nav">
+    
+    
+    <a href="/2017/06/%E9%80%9A%E8%BF%87bash%E8%8E%B7%E5%8F%96%E6%8C%87%E5%AE%9A%E6%97%B6%E9%97%B4%E7%9A%84unix%E6%A0%BC%E5%BC%8F/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">通过bash获取指定时间的unix格式&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Tom - ie9.org&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>
