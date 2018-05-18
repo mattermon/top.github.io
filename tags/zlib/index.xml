@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zlib on Tom</title>
-    <link>//top.github.io/tags/zlib/</link>
-    <description>Recent content in Zlib on Tom</description>
+    <title>Zlib on Tom - ie9.org</title>
+    <link>//ie9.org/tags/zlib/</link>
+    <description>Recent content in Zlib on Tom - ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 07 Mar 2014 19:38:01 +0800</lastBuildDate>
     
-	<atom:link href="//top.github.io/tags/zlib/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//ie9.org/tags/zlib/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux下zlib压缩文件类</title>
-      <link>//top.github.io/post/zlib-wrapper-for-linux/</link>
+      <link>//ie9.org/2014/03/linux%E4%B8%8Bzlib%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E7%B1%BB/</link>
       <pubDate>Fri, 07 Mar 2014 19:38:01 +0800</pubDate>
       
-      <guid>//top.github.io/post/zlib-wrapper-for-linux/</guid>
+      <guid>//ie9.org/2014/03/linux%E4%B8%8Bzlib%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E7%B1%BB/</guid>
       <description>&lt;p&gt;更新和下载需要用的：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

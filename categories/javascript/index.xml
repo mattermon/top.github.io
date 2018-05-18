@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javascript on Tom</title>
-    <link>//top.github.io/categories/javascript/</link>
-    <description>Recent content in Javascript on Tom</description>
+    <title>Javascript on Tom - ie9.org</title>
+    <link>//ie9.org/categories/javascript/</link>
+    <description>Recent content in Javascript on Tom - ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 15 Apr 2015 13:03:57 +0800</lastBuildDate>
     
-	<atom:link href="//top.github.io/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//ie9.org/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>React的Webpack项目搭建</title>
-      <link>//top.github.io/post/webpack-react-startup/</link>
+      <link>//ie9.org/2015/04/react%E7%9A%84webpack%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Wed, 15 Apr 2015 13:03:57 +0800</pubDate>
       
-      <guid>//top.github.io/post/webpack-react-startup/</guid>
+      <guid>//ie9.org/2015/04/react%E7%9A%84webpack%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/</guid>
       <description>&lt;p&gt;前端感觉是个非常用前途的行业，发展太快了，赶紧学点新知识。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

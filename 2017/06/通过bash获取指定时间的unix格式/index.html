@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>通过bash获取指定时间的unix格式 - Tom - ie9.org</title>
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="ie9.org, another technical blog">
+    <meta name="keywords" content="ie9.org,">
+    <meta name="author" content="">
+        <meta property="og:title" content="通过bash获取指定时间的unix格式" />
+    <meta property="og:description" content="ie9.org, another technical blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="//ie9.org/2017/06/%E9%80%9A%E8%BF%87bash%E8%8E%B7%E5%8F%96%E6%8C%87%E5%AE%9A%E6%97%B6%E9%97%B4%E7%9A%84unix%E6%A0%BC%E5%BC%8F/" />
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="Tom - ie9.org" />
+    <link rel="shortcut icon" href="/favicon.png">
+    <link href="//ie9.org/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="//ie9.org/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//ie9.org/css/style.css">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta name="generator" content="Hugo 0.24" />
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="//ie9.org/">Tom - ie9.org</a>
+            <nav id="main-nav">
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-5068432732367533", enable_page_level_ads: true});</script>
+</header>
+
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">通过bash获取指定时间的unix格式</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/2017/06/%E9%80%9A%E8%BF%87bash%E8%8E%B7%E5%8F%96%E6%8C%87%E5%AE%9A%E6%97%B6%E9%97%B4%E7%9A%84unix%E6%A0%BC%E5%BC%8F/" class="article-date">
+                <time datetime='2017-06-26T18:04:15.000&#43;08:00' itemprop="datePublished">2017-06-26</time>
+            </a>
+            
+            
+            <div class="post-categories">
+                <div class="article-category">
+                    
+                    
+                    <a class="article-category-link" href="//ie9.org/categories/general">General</a>
+                    
+                </div>
+            </div>
+            
+
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            <p><code>bash</code>远比我们想像得强大，但正因为如此，我们并不必要掌握它的所有用法——记在这里就行了。</p>
+
+<p></p>
+
+<pre><code class="language-bash">date -j -f '%Y-%m-%d' '2016-09-14' '+%s'
+</code></pre>
+        </div>
+
+        
+        
+        
+
+        
+
+
+        
+        <footer class="article-footer">
+            <ul class="article-tag-list">
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org/tags/unix-time">Unix Time
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org/tags/date-time">Date Time
+                    </a>
+                </li>
+                
+            </ul>
+        </footer>
+        
+    </div>
+    <nav id="article-nav">
+    
+    <a href="/2018/05/centos-7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEkubernetesk8s/" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            CentOS 7安装配置Kubernetes(k8s)
+        </div>
+    </a>
+    
+    
+    <a href="/2016/11/macos%E4%B8%8B%E4%BD%BF%E7%94%A8brew%E5%AE%89%E8%A3%85mpv/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">MacOS下使用Brew安装mpv&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Tom - ie9.org&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>

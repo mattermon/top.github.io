@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Tom</title>
-    <link>//top.github.io/tags/python/</link>
-    <description>Recent content in Python on Tom</description>
+    <title>Python on Tom - ie9.org</title>
+    <link>//ie9.org/tags/python/</link>
+    <description>Recent content in Python on Tom - ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 02 Jan 2015 22:58:54 +0800</lastBuildDate>
     
-	<atom:link href="//top.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//ie9.org/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python获取当前运行的类名和函数名</title>
-      <link>//top.github.io/post/get-current-class-and-function-name-with-python/</link>
+      <link>//ie9.org/2015/01/python%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E8%BF%90%E8%A1%8C%E7%9A%84%E7%B1%BB%E5%90%8D%E5%92%8C%E5%87%BD%E6%95%B0%E5%90%8D/</link>
       <pubDate>Fri, 02 Jan 2015 22:58:54 +0800</pubDate>
       
-      <guid>//top.github.io/post/get-current-class-and-function-name-with-python/</guid>
+      <guid>//ie9.org/2015/01/python%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E8%BF%90%E8%A1%8C%E7%9A%84%E7%B1%BB%E5%90%8D%E5%92%8C%E5%87%BD%E6%95%B0%E5%90%8D/</guid>
       <description>&lt;p&gt;为了写个比较好用的日志类，需要这些详细信息，所以查到以下方法，不过最终没用起来，总觉得不够优雅。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Python安装cx_Oracle支持</title>
-      <link>//top.github.io/post/install-cx_oracle-support-for-python/</link>
+      <link>//ie9.org/2014/12/python%E5%AE%89%E8%A3%85cx_oracle%E6%94%AF%E6%8C%81/</link>
       <pubDate>Mon, 01 Dec 2014 09:33:49 +0800</pubDate>
       
-      <guid>//top.github.io/post/install-cx_oracle-support-for-python/</guid>
+      <guid>//ie9.org/2014/12/python%E5%AE%89%E8%A3%85cx_oracle%E6%94%AF%E6%8C%81/</guid>
       <description>&lt;p&gt;Oracle目前对Python支持得并不非常完美，配置过程略复杂。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -35,10 +35,10 @@
     
     <item>
       <title>Cygwin下Python安装MySQL支持</title>
-      <link>//top.github.io/post/install-mysql-support-under-cygwin/</link>
+      <link>//ie9.org/2013/08/cygwin%E4%B8%8Bpython%E5%AE%89%E8%A3%85mysql%E6%94%AF%E6%8C%81/</link>
       <pubDate>Sun, 04 Aug 2013 11:28:42 +0800</pubDate>
       
-      <guid>//top.github.io/post/install-mysql-support-under-cygwin/</guid>
+      <guid>//ie9.org/2013/08/cygwin%E4%B8%8Bpython%E5%AE%89%E8%A3%85mysql%E6%94%AF%E6%8C%81/</guid>
       <description>&lt;p&gt;Windows下安装配置环境总是无比蛋疼，还好，有人也遇到了这样的问题，并成功解决了：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

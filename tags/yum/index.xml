@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Yum on Tom</title>
-    <link>//top.github.io/tags/yum/</link>
-    <description>Recent content in Yum on Tom</description>
+    <title>Yum on Tom - ie9.org</title>
+    <link>//ie9.org/tags/yum/</link>
+    <description>Recent content in Yum on Tom - ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 07 Dec 2014 09:43:42 +0800</lastBuildDate>
     
-	<atom:link href="//top.github.io/tags/yum/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//ie9.org/tags/yum/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Fedora下使用axel加速yum</title>
-      <link>//top.github.io/post/boost-yum-on-fedora/</link>
+      <link>//ie9.org/2014/12/fedora%E4%B8%8B%E4%BD%BF%E7%94%A8axel%E5%8A%A0%E9%80%9Fyum/</link>
       <pubDate>Sun, 07 Dec 2014 09:43:42 +0800</pubDate>
       
-      <guid>//top.github.io/post/boost-yum-on-fedora/</guid>
+      <guid>//ie9.org/2014/12/fedora%E4%B8%8B%E4%BD%BF%E7%94%A8axel%E5%8A%A0%E9%80%9Fyum/</guid>
       <description>&lt;p&gt;如果网络比较慢，通过yum更新的时候通常要花费更久的时间，一般会选择更换到国内的源解决，但有时即便如此也没有更快，这时我们可以从工具本身入手————更换一款更快的下载工具来缩短等待时间。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

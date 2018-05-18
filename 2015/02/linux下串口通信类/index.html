@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linux下串口通信类 - Tom - ie9.org</title>
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="ie9.org, another technical blog">
+    <meta name="keywords" content="ie9.org,">
+    <meta name="author" content="">
+        <meta property="og:title" content="Linux下串口通信类" />
+    <meta property="og:description" content="ie9.org, another technical blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="//ie9.org/2015/02/linux%E4%B8%8B%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1%E7%B1%BB/" />
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="Tom - ie9.org" />
+    <link rel="shortcut icon" href="/favicon.png">
+    <link href="//ie9.org/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="//ie9.org/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//ie9.org/css/style.css">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta name="generator" content="Hugo 0.24" />
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="//ie9.org/">Tom - ie9.org</a>
+            <nav id="main-nav">
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-5068432732367533", enable_page_level_ads: true});</script>
+</header>
+
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Linux下串口通信类</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/2015/02/linux%E4%B8%8B%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1%E7%B1%BB/" class="article-date">
+                <time datetime='2015-02-25T09:33:47.000&#43;08:00' itemprop="datePublished">2015-02-25</time>
+            </a>
+            
+            
+            <div class="post-categories">
+                <div class="article-category">
+                    
+                    
+                    <a class="article-category-link" href="//ie9.org/categories/c&#43;&#43;">C&#43;&#43;</a>
+                    
+                    
+                    <span>|</span>
+                    
+                    <a class="article-category-link" href="//ie9.org/categories/code">Code</a>
+                    
+                    
+                    <span>|</span>
+                    
+                    <a class="article-category-link" href="//ie9.org/categories/%E9%80%9A%E4%BF%A1">通信</a>
+                    
+                </div>
+            </div>
+            
+
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            <p>最近操作工程设备比较多，通讯方式上通常采用串口或网络进行通讯。</p>
+
+<p></p>
+
+<p>Commport.h</p>
+
+<pre><code>#ifndef __COMMPORT_H__
+#define __COMMPORT_H__
+
+
+#include &quot;Mutex.h&quot;
+
+#define INVALID_HANDLE_VALUE -1
+
+class CCommport {
+public:
+	CCommport();
+	~CCommport();
+public:
+	int ReadData(unsigned char* lpBuffer, unsigned int nNumberOfBytesToRead);
+	int WriteData(unsigned char* lpBuffer, unsigned int nNumberOfBytesToWrite);
+
+	int OpenSerial(int type, int port);
+	int OpenSerial(int type, int port, unsigned int BaudRate, char Parity,
+			unsigned int DateBits, unsigned int StopBits);
+	int OpenSerial(const char *file);
+	int OpenSerial(const char *file, unsigned int BaudRate, char Parity,
+			unsigned int DateBits, unsigned int StopBits);
+
+	void CloseSerial();
+	int SetBaudRate(unsigned int BaudRate);
+	int SetParity(char parity, unsigned int databits, unsigned int stopbits);
+
+	void PrintDatetime(const char *header);
+private:
+	int hDev;
+	CMutex *mutex;
+};
+
+#endif
+</code></pre>
+
+<p>Commport.cpp</p>
+
+<pre><code>#include &lt;string.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;fcntl.h&gt;
+#include &lt;termios.h&gt;
+#include &lt;sys/types.h&gt;
+#include &lt;sys/time.h&gt;
+#include &quot;Commport.h&quot;
+
+int speed_arr[] = { B115200, B57600, B38400, B19200, B9600, B4800, B2400,B1200, B300 };
+unsigned int name_arr[] = { 115200, 57600, 38400, 19200, 9600, 4800, 2400,1200, 300 };
+
+CCommport::CCommport() {
+	hDev = INVALID_HANDLE_VALUE;
+	mutex=new CMutex();
+}
+
+CCommport::~CCommport() {
+	CloseSerial();
+}
+
+int CCommport::OpenSerial(const char *file) {
+	hDev = open(file, O_RDWR | O_NOCTTY | O_NDELAY);
+#ifdef DEBUG
+	printf(&quot;port:%s id:%d\n&quot;, file, hDev);
+#endif
+	if (hDev &gt;= 0)
+		return 0;
+	return INVALID_HANDLE_VALUE;
+}
+
+int CCommport::OpenSerial(const char *file, unsigned int BaudRate, char Parity,
+		unsigned int DateBits, unsigned int StopBits) {
+	int result = OpenSerial(file);
+	if (result == 0) {
+		if (SetBaudRate(BaudRate) != 0 || SetParity(Parity, DateBits, StopBits)!= 0) //´®¿Ú²ÎÊýÉèÖÃ
+		{
+			CloseSerial();
+			return INVALID_HANDLE_VALUE;
+		}
+	}
+	return result;
+
+}
+
+// È«¾Ö
+// ¹Ø±Õ´®¿Ú
+void CCommport::CloseSerial() {
+	if (hDev &gt; 0)
+		close(hDev);
+	hDev = INVALID_HANDLE_VALUE;
+}
+
+//ÉèÖÃ²¨ÌØÂÊ
+int CCommport::SetBaudRate(unsigned int BaudRate) {
+	int i;
+	int result=-1;
+	struct termios Opt;
+	tcgetattr(hDev, &amp;Opt);
+	for (i = 0; i &lt; 8; i++) {
+		if (BaudRate == name_arr[i]) {
+			tcflush(hDev, TCIOFLUSH); //Çå¿Õ´®¿ÚµÄ»º³åÇø
+			cfsetispeed(&amp;Opt, speed_arr[i]);
+			cfsetospeed(&amp;Opt, speed_arr[i]);
+			result=tcsetattr(hDev, TCSANOW, &amp;Opt);
+			break;
+		}
+	}
+	tcflush(hDev, TCIOFLUSH);//Çå¿Õ´®¿ÚµÄ»º³åÇø
+	return result;
+}
+
+int CCommport::SetParity(char parity, unsigned int databits,
+		unsigned int stopbits) {
+	struct termios term;
+	if (tcgetattr(hDev, &amp;term) &lt; 0)
+	{
+#ifdef DEBUG
+		printf(&quot;Get Parity Failed\n&quot;);
+#endif
+		return -1;
+	}
+	term.c_cflag &amp;= ~(CSIZE);
+	switch (databits) {
+	case 8:
+		term.c_cflag |= CS8;
+		break;
+	default:
+		term.c_cflag |= CS7;
+		break;
+	}
+
+	switch (stopbits) {
+	case 2:
+		term.c_cflag |= CSTOPB;
+		break;
+	default:
+		term.c_cflag &amp;= ~CSTOPB;
+		break;
+	}
+	switch (parity) {
+	case 'o':
+	case 'O':
+		term.c_cflag |= (PARODD | PARENB);
+		term.c_iflag |= INPCK;
+		break;
+	case 'e':
+	case 'E':
+		term.c_cflag |= PARENB;
+		term.c_cflag &amp;= ~PARODD;
+		term.c_iflag |= INPCK;
+		break;
+	case 's':
+	case 'S':
+		term.c_cflag &amp;= ~PARENB;
+		term.c_cflag &amp;= ~CSTOPB;
+		term.c_iflag |= INPCK;
+		break;
+	case 'n':
+	case 'N':
+		term.c_cflag &amp;= ~PARENB;
+		term.c_iflag &amp;= ~INPCK;
+		break;
+	default:
+		term.c_cflag &amp;= ~PARENB;
+		term.c_iflag &amp;= ~INPCK;
+		break;
+
+	}
+
+	term.c_iflag &amp;= ~(INLCR | ICRNL | BRKINT | IXON | IXOFF | IXANY);
+	//term.c_lflag &amp;= ~(ECHiONL|ECHO|IEXTEN|ISIG|ICANON);
+
+	term.c_lflag &amp;= ~(ICANON | ECHO | ECHOE | ISIG);//ECHiONL|ECHO|IEXTEN|ISIG|ICANON);
+
+	term.c_oflag &amp;= ~OPOST;
+	term.c_cflag |= (CLOCAL | CREAD);
+	//	term.c_cflag |= CREAD;
+	//	term.c_iflag |=IGNPAR | IGNBRK;
+	//
+	tcflush(hDev, TCIFLUSH);
+	//	term.c_oflag=0;
+	//	term.c_lflag=0;
+	term.c_cc[VMIN] = 0;
+	term.c_cc[VTIME] = 30;//3Ãë
+	if (tcsetattr(hDev, TCSANOW, &amp;term) &lt; 0)
+	{
+#ifdef DEBUG
+		printf(&quot;Set Parity Failed\n&quot;);
+#endif
+		return -1;
+	}
+	return 0;
+}
+
+void CCommport::PrintDatetime(const char *header)
+{
+	char content[100];
+	char datetime[50];
+	struct timeval time;
+	gettimeofday(&amp;time,NULL);
+	time_t t=time.tv_sec;
+	struct tm *now=localtime(&amp;t);
+	memset(datetime,0,sizeof(datetime));
+	strftime(datetime,20,&quot;%Y-%m-%d %H:%M:%S&quot;,now);
+	sprintf(content,&quot;%s:%s.%03d\n&quot;,header,datetime,(int)time.tv_usec/1000);
+	printf(&quot;%s\n&quot;,content);
+}
+
+
+int CCommport::ReadData(unsigned char* lpBuffer,
+		unsigned int nNumberOfBytesToRead) {
+	mutex-&gt;Lock();
+	int BytesRead = read(hDev, lpBuffer, nNumberOfBytesToRead);
+	mutex-&gt;UnLock();
+#ifdef DEBUG
+	if (BytesRead &gt; 0) {
+		printf(&quot;com recv len:%d data:&quot;,BytesRead);
+		for (int i = 0; i &lt; BytesRead; i++) {
+			printf(&quot;%02X &quot;, lpBuffer[i]);
+		}
+		printf(&quot;\n&quot;);
+	}
+
+#endif
+	if (BytesRead &lt; 0)
+		BytesRead = 0;
+	return BytesRead;
+}
+
+int CCommport::WriteData(unsigned char* lpBuffer,
+		unsigned int nNumberOfBytesToWrite) {
+#ifdef DEBUG
+	printf(&quot;com %d write:&quot;,hDev);
+	for (int i = 0; i &lt; (int) nNumberOfBytesToWrite; i++) {
+		printf(&quot;%02X &quot;, lpBuffer[i]);
+	}
+	printf(&quot;\n&quot;);
+#endif
+	mutex-&gt;Lock();
+	tcflush(hDev, TCOFLUSH);//Çå¿Õ´®¿ÚµÄ»º³åÇø
+	int result=write(hDev, lpBuffer,nNumberOfBytesToWrite);
+	mutex-&gt;UnLock();
+	if(((unsigned int)result)==nNumberOfBytesToWrite)return 0;
+	return -1;
+}
+</code></pre>
+        </div>
+
+        
+        
+        
+
+        
+
+
+        
+        <footer class="article-footer">
+            <ul class="article-tag-list">
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org/tags/c&#43;&#43;">C&#43;&#43;
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org/tags/%E4%B8%B2%E5%8F%A3">串口
+                    </a>
+                </li>
+                
+            </ul>
+        </footer>
+        
+    </div>
+    <nav id="article-nav">
+    
+    <a href="/2015/03/%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            特殊符号
+        </div>
+    </a>
+    
+    
+    <a href="/2015/01/python%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E8%BF%90%E8%A1%8C%E7%9A%84%E7%B1%BB%E5%90%8D%E5%92%8C%E5%87%BD%E6%95%B0%E5%90%8D/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Python获取当前运行的类名和函数名&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Tom - ie9.org&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>

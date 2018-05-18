@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linux Terminal Resolution Vga Value - Tom - ie9.org</title>
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="ie9.org, another technical blog">
+    <meta name="keywords" content="ie9.org,">
+    <meta name="author" content="">
+        <meta property="og:title" content="Linux Terminal Resolution Vga Value" />
+    <meta property="og:description" content="ie9.org, another technical blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="//ie9.org/2010/08/linux-terminal-resolution-vga-value/" />
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="Tom - ie9.org" />
+    <link rel="shortcut icon" href="/favicon.png">
+    <link href="//ie9.org/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="//ie9.org/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//ie9.org/css/style.css">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta name="generator" content="Hugo 0.24" />
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="//ie9.org/">Tom - ie9.org</a>
+            <nav id="main-nav">
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-5068432732367533", enable_page_level_ads: true});</script>
+</header>
+
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Linux Terminal Resolution Vga Value</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/2010/08/linux-terminal-resolution-vga-value/" class="article-date">
+                <time datetime='2010-08-02T03:41:33.000&#43;08:00' itemprop="datePublished">2010-08-02</time>
+            </a>
+            
+            
+            <div class="post-categories">
+                <div class="article-category">
+                    
+                    
+                    <a class="article-category-link" href="//ie9.org/categories/linux">Linux</a>
+                    
+                </div>
+            </div>
+            
+
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            <p>虚拟机会按默认的分辨率启动，有时窗口过大或者过小都会影响使用，特别在没有安装GUI桌面的情况下。所以为了解决这个问题，请自动对号入座选择一个十六进制的代码加入到启动文件中，以后系统都将以指定的分辨率启动。同时，此方案同样适用于非虚拟机。</p>
+
+<p></p>
+
+<table>
+<thead>
+<tr>
+<th>&mdash;</th>
+<th>320×200</th>
+<th>640×400</th>
+<th>640×480</th>
+<th>800×500</th>
+<th>800×600</th>
+<th>896×672</th>
+<th>1024×640</th>
+<th>1024×768</th>
+<th>1280×1024</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>4 bits</td>
+<td>&mdash;</td>
+<td>&mdash;</td>
+<td>&mdash;</td>
+<td>&mdash;</td>
+<td>770 (302)</td>
+<td>&mdash;</td>
+<td>&mdash;</td>
+<td>&mdash;</td>
+<td>774 (306)</td>
+</tr>
+
+<tr>
+<td>8 bits</td>
+<td>&mdash;</td>
+<td>768 (300)</td>
+<td>769 (301)</td>
+<td>879 (36F)</td>
+<td>701 (303)</td>
+<td>815 (32F)</td>
+<td>874 (36A)</td>
+<td>773 (305)</td>
+<td>775 (307)</td>
+</tr>
+
+<tr>
+<td>15 bits</td>
+<td>781 (30D)</td>
+<td>801 (321)</td>
+<td>784 (310)</td>
+<td>880 (370)</td>
+<td>787 (313)</td>
+<td>816 (330)</td>
+<td>875 (36B)</td>
+<td>790 (316)</td>
+<td>793 (319)</td>
+</tr>
+
+<tr>
+<td>16 bits</td>
+<td>782 (30E)</td>
+<td>802 (322)</td>
+<td>785 (311)</td>
+<td>881 (371)</td>
+<td>788 (314)</td>
+<td>817 (331)</td>
+<td>876 (36C)</td>
+<td>791 (317)</td>
+<td>794 (31A)</td>
+</tr>
+
+<tr>
+<td>24 bits</td>
+<td>783 (30F)</td>
+<td>803 (323)</td>
+<td>786 (312)</td>
+<td>882 (372)</td>
+<td>789 (315)</td>
+<td>818 (332)</td>
+<td>877 (36D)</td>
+<td>792 (318)</td>
+<td>795 (31B)</td>
+</tr>
+
+<tr>
+<td>32 bits</td>
+<td>&mdash;</td>
+<td>804 (324)</td>
+<td>809 (329)</td>
+<td>883 (373)</td>
+<td>814 (<code>32E</code>)</td>
+<td>819 (333)</td>
+<td>878 (36E)</td>
+<td>824 (338)</td>
+<td>829 (33D)</td>
+</tr>
+</tbody>
+</table>
+        </div>
+
+        
+        
+        
+
+        
+
+
+        
+        <footer class="article-footer">
+            <ul class="article-tag-list">
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org/tags/linux">Linux
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org/tags/resolution">Resolution
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org/tags/vga">VGA
+                    </a>
+                </li>
+                
+            </ul>
+        </footer>
+        
+    </div>
+    <nav id="article-nav">
+    
+    <a href="/2013/05/%E5%8D%95%E6%96%87%E4%BB%B6%E6%97%A5%E5%BF%97%E7%B1%BB/" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            单文件日志类
+        </div>
+    </a>
+    
+    
+    <a href="/2010/04/%E7%A6%81%E7%94%A8macos%E4%B8%8Achrome%E5%8F%8C%E6%8C%87%E5%90%91%E5%89%8D%E5%90%91%E5%90%8E%E6%89%8B%E5%8A%BF/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">禁用MacOS上Chrome双指向前向后手势&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Tom - ie9.org&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>

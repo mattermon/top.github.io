@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MacOS下安装Sublime Text的LaTex中文支持 - Tom - ie9.org</title>
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="ie9.org, another technical blog">
+    <meta name="keywords" content="ie9.org,">
+    <meta name="author" content="">
+        <meta property="og:title" content="MacOS下安装Sublime Text的LaTex中文支持" />
+    <meta property="og:description" content="ie9.org, another technical blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="//ie9.org/2016/06/macos%E4%B8%8B%E5%AE%89%E8%A3%85sublime-text%E7%9A%84latex%E4%B8%AD%E6%96%87%E6%94%AF%E6%8C%81/" />
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="Tom - ie9.org" />
+    <link rel="shortcut icon" href="/favicon.png">
+    <link href="//ie9.org/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="//ie9.org/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//ie9.org/css/style.css">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta name="generator" content="Hugo 0.24" />
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="//ie9.org/">Tom - ie9.org</a>
+            <nav id="main-nav">
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-5068432732367533", enable_page_level_ads: true});</script>
+</header>
+
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">MacOS下安装Sublime Text的LaTex中文支持</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/2016/06/macos%E4%B8%8B%E5%AE%89%E8%A3%85sublime-text%E7%9A%84latex%E4%B8%AD%E6%96%87%E6%94%AF%E6%8C%81/" class="article-date">
+                <time datetime='2016-06-26T00:00:13.000&#43;08:00' itemprop="datePublished">2016-06-26</time>
+            </a>
+            
+            
+            <div class="post-categories">
+                <div class="article-category">
+                    
+                    
+                    <a class="article-category-link" href="//ie9.org/categories/macos">MacOS</a>
+                    
+                    
+                    <span>|</span>
+                    
+                    <a class="article-category-link" href="//ie9.org/categories/latex">LaTex</a>
+                    
+                </div>
+            </div>
+            
+
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            <p>转载的，但时间长了不记得出自哪里，同时也有针对自己实际操作有修改的地方。这个玩法不太常见，通常都有专业的工具去解决。</p>
+
+<p></p>
+
+<h3 id="1-打开sublime-text-按快捷键-command-shift-p-调出命令窗口-输入-install-安装-latextools">1. 打开Sublime Text，按快捷键<code>Command+Shift+P</code>调出命令窗口，输入<code>Install</code>，安装<code>LaTexTools</code>；</h3>
+
+<h3 id="2-下载安装-skim-https-sourceforge-net-projects-skim-app-files-latest-download-然后按-command-打开首选项-在-同步-标签中设置关联的程序-我们选择-sublime-text-或输入完整的路径-applications-sublime-text-2-app-contents-sharedsupport-bin-subl">2. 下载安装<a href="https://sourceforge.net/projects/skim-app/files/latest/download">Skim</a>。然后按<code>Command+,</code>打开首选项，在<code>同步</code>标签中设置关联的程序，我们选择<code>Sublime Text</code>，或输入完整的路径<code>/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl</code>；</h3>
+
+<h3 id="3-打开终端运行以下命令">3. 打开终端运行以下命令：</h3>
+
+<pre><code>sudo tlmgr update --self
+sudo tlmgr install latexmk
+</code></pre>
+
+<h3 id="4-为增加对中文的支持-在sublime-text的latextool用户设置中修改">4. 为增加对中文的支持，在Sublime Text的LaTexTool用户设置中修改：</h3>
+
+<p>4.1 在<code>builder_settings</code>中增加以下两个选项：</p>
+
+<pre><code>&quot;program&quot; : &quot;xelatex&quot;,
+&quot;command&quot; : [&quot;latexmk&quot;, &quot;-cd&quot;, &quot;-e&quot;, &quot;$pdflatex = 'xelatex -interaction=nonstopmode -synctex=1 %S %O'&quot;, &quot;-f&quot;, &quot;-pdf&quot;],
+</code></pre>
+
+<p>4.2 修改<code>viewer</code>的值为<code>preview</code>；</p>
+
+<h3 id="5-测试代码">5. 测试代码：</h3>
+
+<pre><code class="language-latex">\documentclass{article}
+\usepackage{fontspec, xunicode, xltxtra}  
+\setmainfont{Hiragino Sans GB}  
+
+\title{Title}
+\author{}
+
+\begin{document}
+
+\maketitle{}
+
+\section{Introduction}
+
+This is where you will write your content. 在这里写上内容。
+
+\end{document}
+</code></pre>
+
+<p>保存后按<code>Command+B</code>，是不是看到编译的PDF了？</p>
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#1-打开sublime-text-按快捷键-command-shift-p-调出命令窗口-输入-install-安装-latextools">1. 打开Sublime Text，按快捷键<code>Command+Shift+P</code>调出命令窗口，输入<code>Install</code>，安装<code>LaTexTools</code>；</a></li>
+<li><a href="#2-下载安装-skim-https-sourceforge-net-projects-skim-app-files-latest-download-然后按-command-打开首选项-在-同步-标签中设置关联的程序-我们选择-sublime-text-或输入完整的路径-applications-sublime-text-2-app-contents-sharedsupport-bin-subl">2. 下载安装<a href="https://sourceforge.net/projects/skim-app/files/latest/download">Skim</a>。然后按<code>Command+,</code>打开首选项，在<code>同步</code>标签中设置关联的程序，我们选择<code>Sublime Text</code>，或输入完整的路径<code>/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl</code>；</a></li>
+<li><a href="#3-打开终端运行以下命令">3. 打开终端运行以下命令：</a></li>
+<li><a href="#4-为增加对中文的支持-在sublime-text的latextool用户设置中修改">4. 为增加对中文的支持，在Sublime Text的LaTexTool用户设置中修改：</a></li>
+<li><a href="#5-测试代码">5. 测试代码：</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+        <footer class="article-footer">
+            <ul class="article-tag-list">
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org/tags/macos">MacOS
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org/tags/sublime-text">Sublime Text
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org/tags/latex">LaTex
+                    </a>
+                </li>
+                
+            </ul>
+        </footer>
+        
+    </div>
+    <nav id="article-nav">
+    
+    <a href="/2016/09/centos-6.5%E4%B8%8A%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEhadoop/" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            CentOS 6.5上安装配置Hadoop
+        </div>
+    </a>
+    
+    
+    <a href="/2016/06/%E5%9C%A8nginx%E4%B8%8B%E9%85%8D%E7%BD%AE%E5%85%8D%E8%B4%B9%E7%9A%84https%E8%AF%81%E4%B9%A6lets-encrypt/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">在Nginx下配置免费的HTTPS证书Let&#39;s Encrypt&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Tom - ie9.org&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>

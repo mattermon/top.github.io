@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sublime Text on Tom</title>
-    <link>//top.github.io/tags/sublime-text/</link>
-    <description>Recent content in Sublime Text on Tom</description>
+    <title>Sublime Text on Tom - ie9.org</title>
+    <link>//ie9.org/tags/sublime-text/</link>
+    <description>Recent content in Sublime Text on Tom - ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 26 Jun 2016 00:00:13 +0800</lastBuildDate>
     
-	<atom:link href="//top.github.io/tags/sublime-text/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//ie9.org/tags/sublime-text/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MacOS下安装Sublime Text的LaTex中文支持</title>
-      <link>//top.github.io/post/install-sublime-text-latex-on-macos/</link>
+      <link>//ie9.org/2016/06/macos%E4%B8%8B%E5%AE%89%E8%A3%85sublime-text%E7%9A%84latex%E4%B8%AD%E6%96%87%E6%94%AF%E6%8C%81/</link>
       <pubDate>Sun, 26 Jun 2016 00:00:13 +0800</pubDate>
       
-      <guid>//top.github.io/post/install-sublime-text-latex-on-macos/</guid>
+      <guid>//ie9.org/2016/06/macos%E4%B8%8B%E5%AE%89%E8%A3%85sublime-text%E7%9A%84latex%E4%B8%AD%E6%96%87%E6%94%AF%E6%8C%81/</guid>
       <description>&lt;p&gt;转载的，但时间长了不记得出自哪里，同时也有针对自己实际操作有修改的地方。这个玩法不太常见，通常都有专业的工具去解决。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
