@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//ie9.org/2018/05/%E5%9F%BA%E4%BA%8Esimplemysql%E7%9A%84%E4%B8%80%E4%B8%AA%E6%94%B9%E8%BF%9B%E7%89%88%E6%9C%AC/</loc>
+    <lastmod>2018-05-21T16:54:10+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//ie9.org/2018/05/kubernetes-yaml-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%AE%80%E4%BB%8B/</loc>
     <lastmod>2018-05-18T15:30:14+08:00</lastmod>
   </url>
@@ -251,6 +256,12 @@
   </url>
   
   <url>
+    <loc>//ie9.org/categories/develop/</loc>
+    <lastmod>2018-05-21T16:54:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>//ie9.org/tags/export/</loc>
     <lastmod>2015-03-31T14:20:22+08:00</lastmod>
     <priority>0</priority>
@@ -438,7 +449,7 @@
   
   <url>
     <loc>//ie9.org/tags/mysql/</loc>
-    <lastmod>2015-03-31T14:20:22+08:00</lastmod>
+    <lastmod>2018-05-21T16:54:10+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -463,6 +474,12 @@
   <url>
     <loc>//ie9.org/categories/oracle/</loc>
     <lastmod>2015-06-04T15:39:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ie9.org/tags/orm/</loc>
+    <lastmod>2018-05-21T16:54:10+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -498,13 +515,13 @@
   
   <url>
     <loc>//ie9.org/post/</loc>
-    <lastmod>2018-05-18T15:30:14+08:00</lastmod>
+    <lastmod>2018-05-21T16:54:10+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>//ie9.org/tags/python/</loc>
-    <lastmod>2015-01-02T22:58:54+08:00</lastmod>
+    <lastmod>2018-05-21T16:54:10+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -660,7 +677,7 @@
   
   <url>
     <loc>//ie9.org/</loc>
-    <lastmod>2018-05-18T15:30:14+08:00</lastmod>
+    <lastmod>2018-05-21T16:54:10+08:00</lastmod>
     <priority>0</priority>
   </url>
   
