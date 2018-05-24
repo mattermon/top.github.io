@@ -391,14 +391,5 @@
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>//ie9.org/shjuding.cn/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//ie9.org/shjuding.cn/</guid>
-      <description>  数钜宝收益演算器  function refund(source,rate,sumup){return day==0?0:(source-sumup)*rate}function getSource(){return $(&#39;input[name=&#34;source&#34;]&#39;).val()}function getSourceRate(){var sourcerate=$(&#39;input[name=&#34;sourcerate&#34;]&#39;).val();return(sourcerate.indexOf(&#39;%&#39;)!=-1)?sourcerate.replace(/%/g,&#39;&#39;)/100:sourcerate}function getRefundRate(){var sourcerate=$(&#39;input[name=&#34;daily&#34;]&#39;).val();return(sourcerate.indexOf(&#39;%&#39;)!=-1)?sourcerate.replace(/%/g,&#39;&#39;)/100:sourcerate}function getPaid(take=1){var ex=$(&#39;input[name=&#34;extra&#34;]&#39;).val();return(take==1)?(getSource()*getSourceRate()):(parseInt(ex?ex:0)+getSource()*getSourceRate())}$(document).ready(function(){$(&#39;input[name=&#34;source&#34;], input[name=&#34;sourcerate&#34;]&#39;).change(function(){$(&#39;input[name=&#34;paid&#34;]&#39;).val(getSource()*getSourceRate());$(&#39;input[name=&#34;total&#34;]&#39;).val(getSource() * (1 + getSourceRate()));});$(&#39;input.calculate&#39;).click(function(){var refundString=&#39;天数返现小计&#39;;var day=0,rfd=0,sumup=0,source=getSource(),refundrate=getRefundRate();if(!source||!refundrate){$(&#39;div.refund_table,label.days&#39;).html(&#39;&#39;);return false;}while(sumup=0&amp;&amp;day&#39;+day+&#39;&#39;+rfd+&#39;&#39;+sumup+&#39;&#39;}$(&#39;label.days&#39;).html(&#39;预计&#39;+day+&#39;天回本，返现明细如下：&#39;);refundString+=&#39;&#39;;$(&#39;div.refund_table&#39;).html(refundString)})});  *{font-size:14px;}table{border-collapse:collapse;border:1px solid #9A9A9A;}table tr td{padding:5px 10px 5px 20px;font-family:monospace;}.days span{color:red;font-weight:bold;}.field{height:30px;line-height:30px;}input{margin:0 20px 0 0;}input[readonly]{border:none;}.left{float:left;}.calculate{width:100px;height:30px;vertical-align:middle;background-color:rgb(54, 156, 238);color:white;}     税票金额  采集费比率  采集费  总积分  中心代和个人采集者成本  返现日利率         </description>
-    </item>
-    
   </channel>
 </rss>
