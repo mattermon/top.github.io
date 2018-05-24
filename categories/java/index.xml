@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on ie9.org</title>
-    <link>//ie9.org/categories/java/</link>
+    <link>//ie9.org/categories/java.html</link>
     <description>Recent content in Java on ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
@@ -13,10 +13,10 @@
     
     <item>
       <title>Maven创建Webapp</title>
-      <link>//ie9.org/2015/04/28/create-webapp-with-maven/</link>
+      <link>//ie9.org/2015/04/28/create-webapp-with-maven.html</link>
       <pubDate>Tue, 28 Apr 2015 15:04:39 +0800</pubDate>
       
-      <guid>//ie9.org/2015/04/28/create-webapp-with-maven/</guid>
+      <guid>//ie9.org/2015/04/28/create-webapp-with-maven.html</guid>
       <description>&lt;p&gt;绝大多数情况下，像这样的过程都由IDE代替了，其实它不过执行了这样的命令：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

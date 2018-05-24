@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mpv on ie9.org</title>
-    <link>//ie9.org/tags/mpv/</link>
+    <link>//ie9.org/tags/mpv.html</link>
     <description>Recent content in Mpv on ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
@@ -13,10 +13,10 @@
     
     <item>
       <title>MacOS下使用Brew安装mpv</title>
-      <link>//ie9.org/2016/11/09/install-mpv-with-brew-on-macos/</link>
+      <link>//ie9.org/2016/11/09/install-mpv-with-brew-on-macos.html</link>
       <pubDate>Wed, 09 Nov 2016 20:57:22 +0800</pubDate>
       
-      <guid>//ie9.org/2016/11/09/install-mpv-with-brew-on-macos/</guid>
+      <guid>//ie9.org/2016/11/09/install-mpv-with-brew-on-macos.html</guid>
       <description>&lt;p&gt;意外得知Mac上的mpv非常好用，几乎是最好的播放器之一，如此安装即可：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Password on ie9.org</title>
-    <link>//ie9.org/tags/password/</link>
+    <link>//ie9.org/tags/password.html</link>
     <description>Recent content in Password on ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
@@ -13,10 +13,10 @@
     
     <item>
       <title>重置MySQL密码</title>
-      <link>//ie9.org/2014/07/25/reset-mysql-password/</link>
+      <link>//ie9.org/2014/07/25/reset-mysql-password.html</link>
       <pubDate>Fri, 25 Jul 2014 10:22:15 +0800</pubDate>
       
-      <guid>//ie9.org/2014/07/25/reset-mysql-password/</guid>
+      <guid>//ie9.org/2014/07/25/reset-mysql-password.html</guid>
       <description>&lt;p&gt;会者不难，难者不会。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

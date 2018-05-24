@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Latex on ie9.org</title>
-    <link>//ie9.org/categories/latex/</link>
+    <link>//ie9.org/categories/latex.html</link>
     <description>Recent content in Latex on ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
@@ -13,10 +13,10 @@
     
     <item>
       <title>MacOS下安装Sublime Text的LaTex中文支持</title>
-      <link>//ie9.org/2016/06/26/install-sublime-text-latex-on-macos/</link>
+      <link>//ie9.org/2016/06/26/install-sublime-text-latex-on-macos.html</link>
       <pubDate>Sun, 26 Jun 2016 00:00:13 +0800</pubDate>
       
-      <guid>//ie9.org/2016/06/26/install-sublime-text-latex-on-macos/</guid>
+      <guid>//ie9.org/2016/06/26/install-sublime-text-latex-on-macos.html</guid>
       <description>&lt;p&gt;转载的，但时间长了不记得出自哪里，同时也有针对自己实际操作有修改的地方。这个玩法不太常见，通常都有专业的工具去解决。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

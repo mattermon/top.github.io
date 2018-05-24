@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on ie9.org</title>
-    <link>//ie9.org/tags/linux/</link>
+    <link>//ie9.org/tags/linux.html</link>
     <description>Recent content in Linux on ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
@@ -13,10 +13,10 @@
     
     <item>
       <title>CentOS 7安装配置Kubernetes(k8s)</title>
-      <link>//ie9.org/2017/06/17/install-config-kubernetes-on-centos7/</link>
+      <link>//ie9.org/2017/06/17/install-config-kubernetes-on-centos7.html</link>
       <pubDate>Sat, 17 Jun 2017 18:32:49 +0800</pubDate>
       
-      <guid>//ie9.org/2017/06/17/install-config-kubernetes-on-centos7/</guid>
+      <guid>//ie9.org/2017/06/17/install-config-kubernetes-on-centos7.html</guid>
       <description>&lt;p&gt;结合网上的资源，自己在虚拟机上配了一次，整体还是非常简单顺利的，有兴趣的朋友可以自己也试试。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Sphinx 配置文件详解</title>
-      <link>//ie9.org/2016/03/11/sphinx-config-file-details/</link>
+      <link>//ie9.org/2016/03/11/sphinx-config-file-details.html</link>
       <pubDate>Fri, 11 Mar 2016 23:45:09 +0800</pubDate>
       
-      <guid>//ie9.org/2016/03/11/sphinx-config-file-details/</guid>
+      <guid>//ie9.org/2016/03/11/sphinx-config-file-details.html</guid>
       <description>&lt;p&gt;本来准备修改sphinx以支持JSON格式的数据自动解析和查询，但时间有限，只总结了以下内容：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -35,10 +35,10 @@
     
     <item>
       <title>Remove DB2 on Linux</title>
-      <link>//ie9.org/2014/12/02/remove-db2-on-linux/</link>
+      <link>//ie9.org/2014/12/02/remove-db2-on-linux.html</link>
       <pubDate>Tue, 02 Dec 2014 23:12:21 +0800</pubDate>
       
-      <guid>//ie9.org/2014/12/02/remove-db2-on-linux/</guid>
+      <guid>//ie9.org/2014/12/02/remove-db2-on-linux.html</guid>
       <description>&lt;p&gt;在给客户部署程序时遇到了这个问题，为了测试专门在本机的虚拟机上安装并移除之，过程是这样的：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -46,10 +46,10 @@
     
     <item>
       <title>Linux下zlib压缩文件类</title>
-      <link>//ie9.org/2014/03/07/zlib-wrapper-for-linux/</link>
+      <link>//ie9.org/2014/03/07/zlib-wrapper-for-linux.html</link>
       <pubDate>Fri, 07 Mar 2014 19:38:01 +0800</pubDate>
       
-      <guid>//ie9.org/2014/03/07/zlib-wrapper-for-linux/</guid>
+      <guid>//ie9.org/2014/03/07/zlib-wrapper-for-linux.html</guid>
       <description>&lt;p&gt;更新和下载需要用的：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -57,10 +57,10 @@
     
     <item>
       <title>Linux Terminal Resolution Vga Value</title>
-      <link>//ie9.org/2010/08/02/linux-terminal-resolution-vga-value/</link>
+      <link>//ie9.org/2010/08/02/linux-terminal-resolution-vga-value.html</link>
       <pubDate>Mon, 02 Aug 2010 03:41:33 +0800</pubDate>
       
-      <guid>//ie9.org/2010/08/02/linux-terminal-resolution-vga-value/</guid>
+      <guid>//ie9.org/2010/08/02/linux-terminal-resolution-vga-value.html</guid>
       <description>&lt;p&gt;虚拟机会按默认的分辨率启动，有时窗口过大或者过小都会影响使用，特别在没有安装GUI桌面的情况下。所以为了解决这个问题，请自动对号入座选择一个十六进制的代码加入到启动文件中，以后系统都将以指定的分辨率启动。同时，此方案同样适用于非虚拟机。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

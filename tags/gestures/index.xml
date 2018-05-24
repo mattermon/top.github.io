@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gestures on ie9.org</title>
-    <link>//ie9.org/tags/gestures/</link>
+    <link>//ie9.org/tags/gestures.html</link>
     <description>Recent content in Gestures on ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
@@ -13,10 +13,10 @@
     
     <item>
       <title>禁用MacOS上Chrome双指向前向后手势</title>
-      <link>//ie9.org/2010/04/04/disable-chrome-forward-backward-gestures-on-macos/</link>
+      <link>//ie9.org/2010/04/04/disable-chrome-forward-backward-gestures-on-macos.html</link>
       <pubDate>Sun, 04 Apr 2010 11:03:57 +0800</pubDate>
       
-      <guid>//ie9.org/2010/04/04/disable-chrome-forward-backward-gestures-on-macos/</guid>
+      <guid>//ie9.org/2010/04/04/disable-chrome-forward-backward-gestures-on-macos.html</guid>
       <description>&lt;p&gt;最近在使用Chrome时因为手势造成了太多的误操作，耽误了不少时间，觉得麻烦，就直接全禁用了吧：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

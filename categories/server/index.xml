@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Server on ie9.org</title>
-    <link>//ie9.org/categories/server/</link>
+    <link>//ie9.org/categories/server.html</link>
     <description>Recent content in Server on ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
@@ -13,10 +13,10 @@
     
     <item>
       <title>在Nginx下配置免费的HTTPS证书Let&#39;s Encrypt</title>
-      <link>//ie9.org/2016/06/25/nginx-https-lets-encrypt/</link>
+      <link>//ie9.org/2016/06/25/nginx-https-lets-encrypt.html</link>
       <pubDate>Sat, 25 Jun 2016 11:51:00 +0800</pubDate>
       
-      <guid>//ie9.org/2016/06/25/nginx-https-lets-encrypt/</guid>
+      <guid>//ie9.org/2016/06/25/nginx-https-lets-encrypt.html</guid>
       <description>&lt;p&gt;搭建自己的网站的时候，当然希望采用HTTPS，不止是更安全。Let&amp;rsquo;s Encrypt还是免费的证书服务，极客专属。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>解决Tomcat下URL包含中文时的乱码问题</title>
-      <link>//ie9.org/2015/12/20/chinese-characters-in-url-under-tomcat/</link>
+      <link>//ie9.org/2015/12/20/chinese-characters-in-url-under-tomcat.html</link>
       <pubDate>Sun, 20 Dec 2015 12:26:20 +0800</pubDate>
       
-      <guid>//ie9.org/2015/12/20/chinese-characters-in-url-under-tomcat/</guid>
+      <guid>//ie9.org/2015/12/20/chinese-characters-in-url-under-tomcat.html</guid>
       <description>&lt;p&gt;解决tomcat下的URL中文乱码问题的方法：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

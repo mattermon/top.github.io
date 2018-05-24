@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mutex on ie9.org</title>
-    <link>//ie9.org/tags/mutex/</link>
+    <link>//ie9.org/tags/mutex.html</link>
     <description>Recent content in Mutex on ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
@@ -13,10 +13,10 @@
     
     <item>
       <title>POSIX标准的Mutex互斥类</title>
-      <link>//ie9.org/2013/06/25/mutex-class-code/</link>
+      <link>//ie9.org/2013/06/25/mutex-class-code.html</link>
       <pubDate>Tue, 25 Jun 2013 11:31:20 +0800</pubDate>
       
-      <guid>//ie9.org/2013/06/25/mutex-class-code/</guid>
+      <guid>//ie9.org/2013/06/25/mutex-class-code.html</guid>
       <description>&lt;p&gt;多个线程操作共享资源的时候总会存在冲突问题，唯一的解决办法就是引入互斥机制，好在Linux对此已提供了非常完美的支持。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

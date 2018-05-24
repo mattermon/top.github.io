@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ie9.org</title>
-    <link>//ie9.org/categories/</link>
+    <link>//ie9.org/categories.html</link>
     <description>Recent content in Categories on ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
@@ -13,271 +13,271 @@
     
     <item>
       <title>C&#43;&#43;</title>
-      <link>//ie9.org/categories/c&#43;&#43;/</link>
+      <link>//ie9.org/categories/c&#43;&#43;.html</link>
       <pubDate>Wed, 25 Feb 2015 09:33:47 +0800</pubDate>
       
-      <guid>//ie9.org/categories/c&#43;&#43;/</guid>
+      <guid>//ie9.org/categories/c&#43;&#43;.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cloud</title>
-      <link>//ie9.org/categories/cloud/</link>
+      <link>//ie9.org/categories/cloud.html</link>
       <pubDate>Fri, 18 May 2018 15:30:14 +0800</pubDate>
       
-      <guid>//ie9.org/categories/cloud/</guid>
+      <guid>//ie9.org/categories/cloud.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Code</title>
-      <link>//ie9.org/categories/code/</link>
+      <link>//ie9.org/categories/code.html</link>
       <pubDate>Thu, 04 Jun 2015 15:39:29 +0800</pubDate>
       
-      <guid>//ie9.org/categories/code/</guid>
+      <guid>//ie9.org/categories/code.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Database</title>
-      <link>//ie9.org/categories/database/</link>
+      <link>//ie9.org/categories/database.html</link>
       <pubDate>Thu, 04 Jun 2015 15:39:29 +0800</pubDate>
       
-      <guid>//ie9.org/categories/database/</guid>
+      <guid>//ie9.org/categories/database.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Db2</title>
-      <link>//ie9.org/categories/db2/</link>
+      <link>//ie9.org/categories/db2.html</link>
       <pubDate>Tue, 02 Dec 2014 23:12:21 +0800</pubDate>
       
-      <guid>//ie9.org/categories/db2/</guid>
+      <guid>//ie9.org/categories/db2.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Develop</title>
-      <link>//ie9.org/categories/develop/</link>
+      <link>//ie9.org/categories/develop.html</link>
       <pubDate>Mon, 21 May 2018 16:54:10 +0800</pubDate>
       
-      <guid>//ie9.org/categories/develop/</guid>
+      <guid>//ie9.org/categories/develop.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Genera</title>
-      <link>//ie9.org/categories/genera/</link>
+      <link>//ie9.org/categories/genera.html</link>
       <pubDate>Sun, 04 Apr 2010 11:03:57 +0800</pubDate>
       
-      <guid>//ie9.org/categories/genera/</guid>
+      <guid>//ie9.org/categories/genera.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>General</title>
-      <link>//ie9.org/categories/general/</link>
+      <link>//ie9.org/categories/general.html</link>
       <pubDate>Mon, 26 Jun 2017 18:04:15 +0800</pubDate>
       
-      <guid>//ie9.org/categories/general/</guid>
+      <guid>//ie9.org/categories/general.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>//ie9.org/categories/go/</link>
+      <link>//ie9.org/categories/go.html</link>
       <pubDate>Wed, 23 May 2018 14:12:32 +0800</pubDate>
       
-      <guid>//ie9.org/categories/go/</guid>
+      <guid>//ie9.org/categories/go.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hadoop</title>
-      <link>//ie9.org/categories/hadoop/</link>
+      <link>//ie9.org/categories/hadoop.html</link>
       <pubDate>Mon, 26 Sep 2016 07:02:30 +0800</pubDate>
       
-      <guid>//ie9.org/categories/hadoop/</guid>
+      <guid>//ie9.org/categories/hadoop.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hsql</title>
-      <link>//ie9.org/categories/hsql/</link>
+      <link>//ie9.org/categories/hsql.html</link>
       <pubDate>Tue, 24 Mar 2015 23:18:00 +0800</pubDate>
       
-      <guid>//ie9.org/categories/hsql/</guid>
+      <guid>//ie9.org/categories/hsql.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Https</title>
-      <link>//ie9.org/categories/https/</link>
+      <link>//ie9.org/categories/https.html</link>
       <pubDate>Sat, 25 Jun 2016 11:51:00 +0800</pubDate>
       
-      <guid>//ie9.org/categories/https/</guid>
+      <guid>//ie9.org/categories/https.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>//ie9.org/categories/java/</link>
+      <link>//ie9.org/categories/java.html</link>
       <pubDate>Tue, 28 Apr 2015 15:04:39 +0800</pubDate>
       
-      <guid>//ie9.org/categories/java/</guid>
+      <guid>//ie9.org/categories/java.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>//ie9.org/categories/javascript/</link>
+      <link>//ie9.org/categories/javascript.html</link>
       <pubDate>Wed, 15 Apr 2015 13:03:57 +0800</pubDate>
       
-      <guid>//ie9.org/categories/javascript/</guid>
+      <guid>//ie9.org/categories/javascript.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Latex</title>
-      <link>//ie9.org/categories/latex/</link>
+      <link>//ie9.org/categories/latex.html</link>
       <pubDate>Sun, 26 Jun 2016 00:00:13 +0800</pubDate>
       
-      <guid>//ie9.org/categories/latex/</guid>
+      <guid>//ie9.org/categories/latex.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>//ie9.org/categories/linux/</link>
+      <link>//ie9.org/categories/linux.html</link>
       <pubDate>Sat, 17 Jun 2017 18:32:49 +0800</pubDate>
       
-      <guid>//ie9.org/categories/linux/</guid>
+      <guid>//ie9.org/categories/linux.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Macos</title>
-      <link>//ie9.org/categories/macos/</link>
+      <link>//ie9.org/categories/macos.html</link>
       <pubDate>Sun, 26 Jun 2016 00:00:13 +0800</pubDate>
       
-      <guid>//ie9.org/categories/macos/</guid>
+      <guid>//ie9.org/categories/macos.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Maven</title>
-      <link>//ie9.org/categories/maven/</link>
+      <link>//ie9.org/categories/maven.html</link>
       <pubDate>Tue, 28 Apr 2015 15:04:39 +0800</pubDate>
       
-      <guid>//ie9.org/categories/maven/</guid>
+      <guid>//ie9.org/categories/maven.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mysql</title>
-      <link>//ie9.org/categories/mysql/</link>
+      <link>//ie9.org/categories/mysql.html</link>
       <pubDate>Tue, 31 Mar 2015 14:20:22 +0800</pubDate>
       
-      <guid>//ie9.org/categories/mysql/</guid>
+      <guid>//ie9.org/categories/mysql.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Oracle</title>
-      <link>//ie9.org/categories/oracle/</link>
+      <link>//ie9.org/categories/oracle.html</link>
       <pubDate>Thu, 04 Jun 2015 15:39:29 +0800</pubDate>
       
-      <guid>//ie9.org/categories/oracle/</guid>
+      <guid>//ie9.org/categories/oracle.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Php</title>
-      <link>//ie9.org/categories/php/</link>
+      <link>//ie9.org/categories/php.html</link>
       <pubDate>Sat, 05 Nov 2016 01:47:55 +0800</pubDate>
       
-      <guid>//ie9.org/categories/php/</guid>
+      <guid>//ie9.org/categories/php.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>//ie9.org/categories/python/</link>
+      <link>//ie9.org/categories/python.html</link>
       <pubDate>Fri, 02 Jan 2015 22:58:54 +0800</pubDate>
       
-      <guid>//ie9.org/categories/python/</guid>
+      <guid>//ie9.org/categories/python.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>React</title>
-      <link>//ie9.org/categories/react/</link>
+      <link>//ie9.org/categories/react.html</link>
       <pubDate>Wed, 15 Apr 2015 13:03:57 +0800</pubDate>
       
-      <guid>//ie9.org/categories/react/</guid>
+      <guid>//ie9.org/categories/react.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ruby</title>
-      <link>//ie9.org/categories/ruby/</link>
+      <link>//ie9.org/categories/ruby.html</link>
       <pubDate>Mon, 07 Nov 2016 22:51:02 +0800</pubDate>
       
-      <guid>//ie9.org/categories/ruby/</guid>
+      <guid>//ie9.org/categories/ruby.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Server</title>
-      <link>//ie9.org/categories/server/</link>
+      <link>//ie9.org/categories/server.html</link>
       <pubDate>Sat, 25 Jun 2016 11:51:00 +0800</pubDate>
       
-      <guid>//ie9.org/categories/server/</guid>
+      <guid>//ie9.org/categories/server.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sql Server</title>
-      <link>//ie9.org/categories/sql-server/</link>
+      <link>//ie9.org/categories/sql-server.html</link>
       <pubDate>Fri, 04 Oct 2013 23:15:32 +0800</pubDate>
       
-      <guid>//ie9.org/categories/sql-server/</guid>
+      <guid>//ie9.org/categories/sql-server.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tomcat</title>
-      <link>//ie9.org/categories/tomcat/</link>
+      <link>//ie9.org/categories/tomcat.html</link>
       <pubDate>Sun, 20 Dec 2015 12:26:20 +0800</pubDate>
       
-      <guid>//ie9.org/categories/tomcat/</guid>
+      <guid>//ie9.org/categories/tomcat.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows</title>
-      <link>//ie9.org/categories/windows/</link>
+      <link>//ie9.org/categories/windows.html</link>
       <pubDate>Fri, 04 Oct 2013 23:15:32 +0800</pubDate>
       
-      <guid>//ie9.org/categories/windows/</guid>
+      <guid>//ie9.org/categories/windows.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>架构</title>
-      <link>//ie9.org/categories/%E6%9E%B6%E6%9E%84/</link>
+      <link>//ie9.org/categories/%E6%9E%B6%E6%9E%84.html</link>
       <pubDate>Fri, 15 Apr 2016 23:15:47 +0800</pubDate>
       
-      <guid>//ie9.org/categories/%E6%9E%B6%E6%9E%84/</guid>
+      <guid>//ie9.org/categories/%E6%9E%B6%E6%9E%84.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>通信</title>
-      <link>//ie9.org/categories/%E9%80%9A%E4%BF%A1/</link>
+      <link>//ie9.org/categories/%E9%80%9A%E4%BF%A1.html</link>
       <pubDate>Wed, 25 Feb 2015 09:33:47 +0800</pubDate>
       
-      <guid>//ie9.org/categories/%E9%80%9A%E4%BF%A1/</guid>
+      <guid>//ie9.org/categories/%E9%80%9A%E4%BF%A1.html</guid>
       <description></description>
     </item>
     

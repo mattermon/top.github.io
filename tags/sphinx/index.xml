@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sphinx on ie9.org</title>
-    <link>//ie9.org/tags/sphinx/</link>
+    <link>//ie9.org/tags/sphinx.html</link>
     <description>Recent content in Sphinx on ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
@@ -13,10 +13,10 @@
     
     <item>
       <title>Sphinx 配置文件详解</title>
-      <link>//ie9.org/2016/03/11/sphinx-config-file-details/</link>
+      <link>//ie9.org/2016/03/11/sphinx-config-file-details.html</link>
       <pubDate>Fri, 11 Mar 2016 23:45:09 +0800</pubDate>
       
-      <guid>//ie9.org/2016/03/11/sphinx-config-file-details/</guid>
+      <guid>//ie9.org/2016/03/11/sphinx-config-file-details.html</guid>
       <description>&lt;p&gt;本来准备修改sphinx以支持JSON格式的数据自动解析和查询，但时间有限，只总结了以下内容：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

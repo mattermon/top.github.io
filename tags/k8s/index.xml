@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>K8s on ie9.org</title>
-    <link>//ie9.org/tags/k8s/</link>
+    <link>//ie9.org/tags/k8s.html</link>
     <description>Recent content in K8s on ie9.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
@@ -13,10 +13,10 @@
     
     <item>
       <title>CentOS 7安装配置Kubernetes(k8s)</title>
-      <link>//ie9.org/2017/06/17/install-config-kubernetes-on-centos7/</link>
+      <link>//ie9.org/2017/06/17/install-config-kubernetes-on-centos7.html</link>
       <pubDate>Sat, 17 Jun 2017 18:32:49 +0800</pubDate>
       
-      <guid>//ie9.org/2017/06/17/install-config-kubernetes-on-centos7/</guid>
+      <guid>//ie9.org/2017/06/17/install-config-kubernetes-on-centos7.html</guid>
       <description>&lt;p&gt;结合网上的资源，自己在虚拟机上配了一次，整体还是非常简单顺利的，有兴趣的朋友可以自己也试试。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
