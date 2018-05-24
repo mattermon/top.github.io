@@ -13,10 +13,10 @@
     
     <item>
       <title>Cygwin下Python安装MySQL支持</title>
-      <link>//ie9.org/2013/08/cygwin%E4%B8%8Bpython%E5%AE%89%E8%A3%85mysql%E6%94%AF%E6%8C%81/</link>
+      <link>//ie9.org/2013/08/04/install-mysql-support-under-cygwin/</link>
       <pubDate>Sun, 04 Aug 2013 11:28:42 +0800</pubDate>
       
-      <guid>//ie9.org/2013/08/cygwin%E4%B8%8Bpython%E5%AE%89%E8%A3%85mysql%E6%94%AF%E6%8C%81/</guid>
+      <guid>//ie9.org/2013/08/04/install-mysql-support-under-cygwin/</guid>
       <description>&lt;p&gt;Windows下安装配置环境总是无比蛋疼，还好，有人也遇到了这样的问题，并成功解决了：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

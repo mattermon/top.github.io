@@ -13,10 +13,10 @@
     
     <item>
       <title>Maven创建Webapp</title>
-      <link>//ie9.org/2015/04/maven%E5%88%9B%E5%BB%BAwebapp/</link>
+      <link>//ie9.org/2015/04/28/create-webapp-with-maven/</link>
       <pubDate>Tue, 28 Apr 2015 15:04:39 +0800</pubDate>
       
-      <guid>//ie9.org/2015/04/maven%E5%88%9B%E5%BB%BAwebapp/</guid>
+      <guid>//ie9.org/2015/04/28/create-webapp-with-maven/</guid>
       <description>&lt;p&gt;绝大多数情况下，像这样的过程都由IDE代替了，其实它不过执行了这样的命令：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

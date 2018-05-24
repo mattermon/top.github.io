@@ -13,10 +13,10 @@
     
     <item>
       <title>POSIX标准的Mutex互斥类</title>
-      <link>//ie9.org/2013/06/posix%E6%A0%87%E5%87%86%E7%9A%84mutex%E4%BA%92%E6%96%A5%E7%B1%BB/</link>
+      <link>//ie9.org/2013/06/25/mutex-class-code/</link>
       <pubDate>Tue, 25 Jun 2013 11:31:20 +0800</pubDate>
       
-      <guid>//ie9.org/2013/06/posix%E6%A0%87%E5%87%86%E7%9A%84mutex%E4%BA%92%E6%96%A5%E7%B1%BB/</guid>
+      <guid>//ie9.org/2013/06/25/mutex-class-code/</guid>
       <description>&lt;p&gt;多个线程操作共享资源的时候总会存在冲突问题，唯一的解决办法就是引入互斥机制，好在Linux对此已提供了非常完美的支持。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

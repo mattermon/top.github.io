@@ -13,10 +13,10 @@
     
     <item>
       <title>Sphinx 配置文件详解</title>
-      <link>//ie9.org/2016/03/sphinx-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</link>
+      <link>//ie9.org/2016/03/11/sphinx-config-file-details/</link>
       <pubDate>Fri, 11 Mar 2016 23:45:09 +0800</pubDate>
       
-      <guid>//ie9.org/2016/03/sphinx-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</guid>
+      <guid>//ie9.org/2016/03/11/sphinx-config-file-details/</guid>
       <description>&lt;p&gt;本来准备修改sphinx以支持JSON格式的数据自动解析和查询，但时间有限，只总结了以下内容：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

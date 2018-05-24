@@ -13,10 +13,10 @@
     
     <item>
       <title>特殊符号</title>
-      <link>//ie9.org/2015/03/%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/</link>
+      <link>//ie9.org/2015/03/09/symbols/</link>
       <pubDate>Mon, 09 Mar 2015 17:49:25 +0800</pubDate>
       
-      <guid>//ie9.org/2015/03/%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/</guid>
+      <guid>//ie9.org/2015/03/09/symbols/</guid>
       <description>&lt;p&gt;又开始兼着搞前端了。话说引入字体的方式调用特殊符号效果可能更好，而以下的这些并不是所有浏览器或者OS都支持。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

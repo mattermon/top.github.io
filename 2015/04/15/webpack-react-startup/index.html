@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>React的Webpack项目搭建 // ie9.org</title>
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="ie9.org, another technical blog">
+    <meta name="keywords" content="ie9.org,">
+    <meta name="author" content="">
+        <meta property="og:title" content="React的Webpack项目搭建" />
+    <meta property="og:description" content="ie9.org, another technical blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="//ie9.org/2015/04/15/webpack-react-startup/" />
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="ie9.org" />
+    <link rel="shortcut icon" href="/favicon.png">
+    <link href="//ie9.org/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="//ie9.org/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//ie9.org/css/style.css">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <link rel="stylesheet" href="//ie9.org/css/gitment.css">
+    <script src="//ie9.org/js/gitment.js"></script>
+    <meta name="generator" content="Hugo 0.24" />
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="//ie9.org/">ie9.org</a>
+            <nav id="main-nav">
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">React的Webpack项目搭建</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/2015/04/15/webpack-react-startup/" class="article-date">
+                <time datetime='2015-04-15T13:03:57.000&#43;08:00' itemprop="datePublished">2015-04-15</time>
+            </a>
+            
+            
+            <div class="post-categories">
+                <div class="article-category">
+                    
+                    
+                    <a class="article-category-link" href="//ie9.org//categories/javascript">JavaScript</a>
+                    
+                    
+                    <span>&gt;</span>
+                    
+                    <a class="article-category-link" href="//ie9.org//categories/react">React</a>
+                    
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            <p>前端感觉是个非常用前途的行业，发展太快了，赶紧学点新知识。</p>
+
+<p></p>
+
+<h1 id="1-创建项目结构">1. 创建项目结构</h1>
+
+<h2 id="1-1-资源创建">1.1 资源创建</h2>
+
+<pre><code class="language-bash">mkdir webpack ; cd webpack
+npm init
+touch .gitignore # 使用git版本管理工具
+touch webpack.config.js # webpack配置文件
+</code></pre>
+
+<h2 id="1-2-git忽略文件">1.2 Git忽略文件</h2>
+
+<p>修改<code>.gitignore</code>文件，加入以下默认忽略文件</p>
+
+<pre><code>logs
+*.log
+.grunt
+node_modules
+bower_components
+build
+</code></pre>
+
+<h2 id="1-3-通过npm安装项目所需要的依赖包">1.3 通过npm安装项目所需要的依赖包</h2>
+
+<ul>
+<li>webpack相关</li>
+</ul>
+
+<pre><code>npm i webpack webpack-dev-server html-webpack-plugin --save-dev
+</code></pre>
+
+<ul>
+<li>css/scss/less样式文件，图片文件相关包</li>
+</ul>
+
+<pre><code>npm i css-loader style-loader sass-loader node-sass less less-loader --save-dev
+npm i file-loader url-loader --save-dev
+</code></pre>
+
+<ul>
+<li>babel/react/es6支持</li>
+</ul>
+
+<pre><code>npm i babel-core babel-loader babel-preset-es2015 babel-preset-react --save-dev
+npm i jshint jshint-loader --save-dev
+npm i react react-dom --save
+</code></pre>
+
+<ul>
+<li>bootstrap/jquery/moment支持包</li>
+</ul>
+
+<pre><code>npm i bootstrap --save-dev
+npm i jquery moment --save-dev
+</code></pre>
+
+<h2 id="1-4-创建工程目录如下">1.4 创建工程目录如下</h2>
+
+<pre><code>├── app
+│   ├── components
+│   │   ├── plist.jsx
+│   │   └── search.jsx
+│   ├── index.jsx
+│   └── utils
+├── package.json
+├── templates
+│   ├── index.html
+│   └── mobile.html
+└── webpack.config.js
+</code></pre>
+
+<h2 id="1-5-编辑webpack-config-js文件">1.5 编辑webpack.config.js文件</h2>
+
+<pre><code class="language-javascript">var path = require('path');
+var webpack = require('webpack');
+var HtmlwebpackPlugin = require('HtmlwebpackPlugin');
+
+var ROOT_PATH = path.resolve('__dirname');
+var APP_PATH = path.resolve(ROOT_PATH, 'app');
+var BUILD_PATH = path.resolve(ROOT_PATH, build'');
+var TEM_PATH = path.resolve(ROOT_PATH, 'templates');
+
+module.exports = {
+    entry: {
+        app: path.resolve(APP_PATH, 'index.jsx'),
+        mobile: path.resolve(APP_PATH, 'mobile.jsx'),
+        vendors: ['jquery', 'moment']
+    },
+    
+    output: {
+        path: BUILD_PATH,
+        filename: '[name].js'
+    },
+    
+    resolve: {
+        extensions: ['', '.js', '.jsx']
+    },
+    
+    devtool: 'eval-source-map',
+    
+    devServer: {
+        historyApiFallback: true,
+        hot: true,
+        inline: true,
+        progress: true,
+        proxy: {
+            '/api/*': {
+                target: 'http://localhost:8080',
+                secure: false
+            }
+        }
+    },
+    
+    module: {
+        preLoaders: [
+            {
+                test: /\.jsx?$/,
+                include: APP_PATH,
+                loader: &quot;jshint-loader&quot;
+            }
+        ],
+        
+        loaders: [
+            {
+                test: /\.jsx?$/,
+                loader: 'babel',
+                include: APP_PATH,
+                query: {
+                    presets: ['es2015', 'react']
+                }
+            },
+            {
+                test: /\.scss$/,
+                loaders: ['style', 'css', 'scss']
+            },
+            {
+                test: /\.(jpg|png)$/,
+                loader: 'url?limit=40000'
+            }
+        ]
+    },
+    
+    jshint: {
+        &quot;esnext&quot;: true
+    },
+    
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            minimize: true
+        }),
+        
+        new HtmlwebpackPlugin({
+            title: 'My first react app',
+            template: path.resolve(TEM_PATH, 'index.html'),
+            filename: 'index.html',
+            chunks: ['app', 'vendors'],
+            inject: 'body'
+        }),
+        
+        new HtmlwebpackPlugin({
+            title: 'Hello mobile app',
+            template: path.resolve(TEM_PATH, 'mobile.html'),
+            filename: 'mobile.html'
+        }),
+        
+        new wenpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
+    ]
+}
+</code></pre>
+
+<h2 id="1-6-在package-json中添加">1.6 在package.json中添加</h2>
+
+<pre><code>&quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;webpack-dev-server --progress --profile --colors --hot --inline&quot;,
+    &quot;build&quot;: &quot;webpack --progress --profile --colors&quot;,
+    &quot;test&quot;: &quot;test&quot;,
+},
+</code></pre>
+
+<h1 id="2-修改页面内容">2. 修改页面内容</h1>
+
+<h2 id="2-1-修改index-jsx">2.1 修改index.jsx</h2>
+
+<pre><code>import '../node_modules/bootstrap/scss/bootstrap.scss';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import $ from 'jquery';
+
+class App extends React.Component {
+    constructor() {
+        super();
+    }
+    
+    render() {
+        return (
+            &lt;div className=&quot;container&quot;&gt;
+                &lt;section className=&quot;jumbotron&quot;&gt;
+                    &lt;h3 className=&quot;jumbotron-heading&quot;&gt;Search Github Users&lt;/h3&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+        );
+    }
+};
+
+const app = document.createElement('div');
+$(body'').append(app);
+ReactDOM.reder(&lt;App /&gt;, app);
+</code></pre>
+
+<h2 id="2-2-运行查看效果">2.2 运行查看效果</h2>
+
+<pre><code>npm run dev
+</code></pre>
+        </div>
+
+        
+        
+        <div class="article-toc" style="display:none;">
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#1-创建项目结构">1. 创建项目结构</a>
+<ul>
+<li><a href="#1-1-资源创建">1.1 资源创建</a></li>
+<li><a href="#1-2-git忽略文件">1.2 Git忽略文件</a></li>
+<li><a href="#1-3-通过npm安装项目所需要的依赖包">1.3 通过npm安装项目所需要的依赖包</a></li>
+<li><a href="#1-4-创建工程目录如下">1.4 创建工程目录如下</a></li>
+<li><a href="#1-5-编辑webpack-config-js文件">1.5 编辑webpack.config.js文件</a></li>
+<li><a href="#1-6-在package-json中添加">1.6 在package.json中添加</a></li>
+</ul></li>
+<li><a href="#2-修改页面内容">2. 修改页面内容</a>
+<ul>
+<li><a href="#2-1-修改index-jsx">2.1 修改index.jsx</a></li>
+<li><a href="#2-2-运行查看效果">2.2 运行查看效果</a></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        <script>
+            (function() {
+                var $toc = $('#TableOfContents');
+                if ($toc.length > 0) {
+                    var $window = $(window);
+
+                    function onScroll(){
+                        var currentScroll = $window.scrollTop();
+                        var h = $('.article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6');
+                        var id = "";
+                        h.each(function (i, e) {
+                            e = $(e);
+                            if (e.offset().top - 10 <= currentScroll) {
+                                id = e.attr('id');
+                            }
+                        });
+                        var active = $toc.find('a.active');
+                        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+                        active.each(function (i, e) {
+                            $(e).removeClass('active').siblings('ul').hide();
+                        });
+                        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+                            $(e).children('a').addClass('active').siblings('ul').show();
+                        });
+                    }
+
+                    $window.on('scroll', onScroll);
+                    $(document).ready(function() {
+                        $toc.find('a').parent('li').find('ul').hide();
+                        onScroll();
+                        document.getElementsByClassName('article-toc')[0].style.display = '';
+                    });
+                }
+            })();
+        </script>
+        
+
+        
+        <div id="gitment-comment"></div>
+        <script>
+        var gitment = new Gitment({
+            id: "/2015/04/15/webpack-react-startup/",
+            owner: "top",
+            repo: "ie9",
+            oauth: {
+                client_id: "4e33cbe9ed2c2d914b2f",
+                client_secret: "9ba1ff6e220ca5c7484a7f508a115c2862903821",
+            },
+        })
+        gitment.render('gitment-comment')
+        </script>
+        
+
+        
+        <footer class="article-footer">
+            <ul class="article-tag-list">
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org//tags/react">React
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org//tags/webpack">webpack
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org//tags/javascript">JavaScript
+                    </a>
+                </li>
+                
+            </ul>
+        </footer>
+        
+
+    </div>
+    <nav id="article-nav">
+    
+    <a href="/2015/04/28/create-webapp-with-maven/" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            Maven创建Webapp
+        </div>
+    </a>
+    
+    
+    <a href="/2015/03/31/import-export-mysql/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">MySQL 数据库导入导出sql文件&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 ie9.org&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js" integrity="sha256-fTZir3QtRzPrhH5KyHm/0hsQqTDswmqYFhXOPN05ulw=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/xml.min.js" integrity="sha256-tTizFdjdqBNNTjhOdrSB4jSoCiSZjbtQBdsUSl+P+PQ=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/nginx.min.js" integrity="sha256-s5uXmtjYMSajCf9RgzwgHMDjvLkP7nCIu2lIqeRD7Tg=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js" integrity="sha256-LVuWfOU0rWFMCJNl1xb3K2HSWfxtK4IPbqEerP1P83M=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js" integrity="sha256-tvm0lHsuUZcOfj/0C9xJTU4OQx5KpUgxUcAXLX5kvwA=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+
+</div>
+</body>
+</html>

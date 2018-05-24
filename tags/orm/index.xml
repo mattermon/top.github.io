@@ -13,10 +13,10 @@
     
     <item>
       <title>基于SimpleMysql的一个改进版本</title>
-      <link>//ie9.org/2018/05/%E5%9F%BA%E4%BA%8Esimplemysql%E7%9A%84%E4%B8%80%E4%B8%AA%E6%94%B9%E8%BF%9B%E7%89%88%E6%9C%AC/</link>
+      <link>//ie9.org/2018/05/21/simplemysql2-init/</link>
       <pubDate>Mon, 21 May 2018 16:54:10 +0800</pubDate>
       
-      <guid>//ie9.org/2018/05/%E5%9F%BA%E4%BA%8Esimplemysql%E7%9A%84%E4%B8%80%E4%B8%AA%E6%94%B9%E8%BF%9B%E7%89%88%E6%9C%AC/</guid>
+      <guid>//ie9.org/2018/05/21/simplemysql2-init/</guid>
       <description>&lt;p&gt;之前在做一些小的基于Python 2.7开发的时候用得比较多的一个MySQL库是&lt;a href=&#34;https://github.com/knadh/simplemysql&#34;&gt;SimpleMysql&lt;/a&gt;，星星不算最多，但是正如它描述中写的那样，非常简洁。&lt;/p&gt;
 
 &lt;p&gt;现在基于Python的开发已经全面转移到Python 3了，而SimpleMysql早已不再更新，对Python 3兼容性并不好，就抽时间作了一些兼容性的修改。&lt;/p&gt;

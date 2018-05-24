@@ -13,10 +13,10 @@
     
     <item>
       <title>Go语言编写的批量邮件发送程序</title>
-      <link>//ie9.org/2018/05/go%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99%E7%9A%84%E6%89%B9%E9%87%8F%E9%82%AE%E4%BB%B6%E5%8F%91%E9%80%81%E7%A8%8B%E5%BA%8F/</link>
+      <link>//ie9.org/2018/05/23/_batch-send-mail-through-exchange/</link>
       <pubDate>Wed, 23 May 2018 14:12:32 +0800</pubDate>
       
-      <guid>//ie9.org/2018/05/go%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99%E7%9A%84%E6%89%B9%E9%87%8F%E9%82%AE%E4%BB%B6%E5%8F%91%E9%80%81%E7%A8%8B%E5%BA%8F/</guid>
+      <guid>//ie9.org/2018/05/23/_batch-send-mail-through-exchange/</guid>
       <description>&lt;p&gt;小伙伴有个批量发邮件的需求，服务器是Microsoft Exchange，于是抽空用Go写了个小程序（因为开发效率实在太高，同时不需要安装运行环境），实现的功能非常简单，就是把数据重新编排一下，组装成服务器能接收的格式再请求出去。以下是测试代码。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

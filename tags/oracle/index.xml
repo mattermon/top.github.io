@@ -13,10 +13,10 @@
     
     <item>
       <title>通过PL/SQL创建Oracle新用户</title>
-      <link>//ie9.org/2015/06/%E9%80%9A%E8%BF%87pl/sql%E5%88%9B%E5%BB%BAoracle%E6%96%B0%E7%94%A8%E6%88%B7/</link>
+      <link>//ie9.org/2015/06/04/create-user-with-plsql-for-oracle/</link>
       <pubDate>Thu, 04 Jun 2015 15:39:29 +0800</pubDate>
       
-      <guid>//ie9.org/2015/06/%E9%80%9A%E8%BF%87pl/sql%E5%88%9B%E5%BB%BAoracle%E6%96%B0%E7%94%A8%E6%88%B7/</guid>
+      <guid>//ie9.org/2015/06/04/create-user-with-plsql-for-oracle/</guid>
       <description>&lt;p&gt;这段时间维护Oracle太频繁，像这样常用的命令真应该保存一下，每次只用复制就好：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Python安装cx_Oracle支持</title>
-      <link>//ie9.org/2014/12/python%E5%AE%89%E8%A3%85cx_oracle%E6%94%AF%E6%8C%81/</link>
+      <link>//ie9.org/2014/12/01/install-cx_oracle-support-for-python/</link>
       <pubDate>Mon, 01 Dec 2014 09:33:49 +0800</pubDate>
       
-      <guid>//ie9.org/2014/12/python%E5%AE%89%E8%A3%85cx_oracle%E6%94%AF%E6%8C%81/</guid>
+      <guid>//ie9.org/2014/12/01/install-cx_oracle-support-for-python/</guid>
       <description>&lt;p&gt;Oracle目前对Python支持得并不非常完美，配置过程略复杂。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
