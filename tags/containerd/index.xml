@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Containerd on ie9.org</title>
+    <link>//ie9.org/tags/containerd.html</link>
+    <description>Recent content in Containerd on ie9.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 25 May 2018 16:01:37 +0800</lastBuildDate>
+    
+	<atom:link href="//ie9.org/tags/containerd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker、Containerd、runC、Docker-shim</title>
+      <link>//ie9.org/2018/05/25/docker-containerd-runc-docker-shim.html</link>
+      <pubDate>Fri, 25 May 2018 16:01:37 +0800</pubDate>
+      
+      <guid>//ie9.org/2018/05/25/docker-containerd-runc-docker-shim.html</guid>
+      <description>&lt;p&gt;docker是一整套虚拟化技术的整合者，包括从前端到底层的所有封装，官网上的结构图比较偏业务化，可以参考一下：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

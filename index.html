@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ie9.org</title>
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="ie9.org, another technical blog">
+    <meta name="keywords" content="ie9.org,">
+    <meta name="author" content="">
+        <meta property="og:title" content="ie9.org" />
+    <meta property="og:description" content="ie9.org, another technical blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="//ie9.org/" />
+    
+    <link href="//ie9.org/index.xml" rel="alternate" type="application/rss+xml" title="ie9.org" />
+    <link rel="shortcut icon" href="/favicon.png">
+    <link href="//ie9.org/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="//ie9.org/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//ie9.org/css/style.css">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <link rel="stylesheet" href="//ie9.org/css/gitment.css">
+    <script src="//ie9.org/js/gitment.js"></script>
+    <meta name="generator" content="Hugo 0.24" />
+</head>
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="//ie9.org/">ie9.org</a>
+            <nav id="main-nav">
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+            <div class="article-inner">
+                
+                
+                <header class="article-header">
+                    <h1 itemprop="name"><a class="article-title" href="/2018/05/25/docker-containerd-runc-docker-shim.html">Docker、Containerd、runC、Docker-shim</a></h1>
+                </header>
+                
+                <div class="article-meta">
+                    <a href="/2018/05/25/docker-containerd-runc-docker-shim.html" class="article-date">
+                        <time datetime='2018-05-25T16:01:37.000&#43;08:00' itemprop="datePublished">2018-05-25</time>
+                    </a>
+                    
+                    
+                    <div class="post-categories">
+                        <div class="article-category">
+                            
+                            
+                            <a class="article-category-link" href="//ie9.org//categories/cloud">Cloud</a>
+                            
+                            
+                            <span>&gt;</span>
+                            
+                            <a class="article-category-link" href="//ie9.org//categories/virtualization">Virtualization</a>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        <img src="/images/docker-containerd-runC-docker_shim.jpg"><br>
+                    <p>docker是一整套虚拟化技术的整合者，包括从前端到底层的所有封装，官网上的结构图比较偏业务化，可以参考一下：</p>
+
+<p></p>
+                    </p>
+                    <p class="article-more-link">
+                        <a href="/2018/05/25/docker-containerd-runc-docker-shim.html">Read More</a>
+                    </p>
+                </div>
+
+                
+                <footer class="article-footer">
+                    <ul class="article-tag-list">
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/docker">docker
+                            </a>
+                        </li>
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/containerd">containerd
+                            </a>
+                        </li>
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/runc">runc
+                            </a>
+                        </li>
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/docker-containers-shim">docker-containers-shim
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </footer>
+                
+            </div>
+        </article>
+        
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+            <div class="article-inner">
+                
+                
+                <header class="article-header">
+                    <h1 itemprop="name"><a class="article-title" href="/2018/05/23/batch-send-mail-through-exchange.html">Go语言编写的批量邮件发送程序</a></h1>
+                </header>
+                
+                <div class="article-meta">
+                    <a href="/2018/05/23/batch-send-mail-through-exchange.html" class="article-date">
+                        <time datetime='2018-05-23T14:12:32.000&#43;08:00' itemprop="datePublished">2018-05-23</time>
+                    </a>
+                    
+                    
+                    <div class="post-categories">
+                        <div class="article-category">
+                            
+                            
+                            <a class="article-category-link" href="//ie9.org//categories/go">Go</a>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        
+                    <p>小伙伴有个批量发邮件的需求，服务器是Microsoft Exchange，于是抽空用Go写了个小程序（因为开发效率实在太高，同时不需要安装运行环境），实现的功能非常简单，就是把数据重新编排一下，组装成服务器能接收的格式再请求出去。以下是测试代码。</p>
+
+<p></p>
+                    </p>
+                    <p class="article-more-link">
+                        <a href="/2018/05/23/batch-send-mail-through-exchange.html">Read More</a>
+                    </p>
+                </div>
+
+                
+                <footer class="article-footer">
+                    <ul class="article-tag-list">
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/go">Go
+                            </a>
+                        </li>
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/exchange">Exchange
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </footer>
+                
+            </div>
+        </article>
+        
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+            <div class="article-inner">
+                
+                
+                <header class="article-header">
+                    <h1 itemprop="name"><a class="article-title" href="/2018/05/21/simplemysql2-init.html">基于SimpleMysql的一个改进版本</a></h1>
+                </header>
+                
+                <div class="article-meta">
+                    <a href="/2018/05/21/simplemysql2-init.html" class="article-date">
+                        <time datetime='2018-05-21T16:54:10.000&#43;08:00' itemprop="datePublished">2018-05-21</time>
+                    </a>
+                    
+                    
+                    <div class="post-categories">
+                        <div class="article-category">
+                            
+                            
+                            <a class="article-category-link" href="//ie9.org//categories/develop">Develop</a>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        
+                    <p>之前在做一些小的基于Python 2.7开发的时候用得比较多的一个MySQL库是<a href="https://github.com/knadh/simplemysql">SimpleMysql</a>，星星不算最多，但是正如它描述中写的那样，非常简洁。</p>
+
+<p>现在基于Python的开发已经全面转移到Python 3了，而SimpleMysql早已不再更新，对Python 3兼容性并不好，就抽时间作了一些兼容性的修改。</p>
+
+<p></p>
+                    </p>
+                    <p class="article-more-link">
+                        <a href="/2018/05/21/simplemysql2-init.html">Read More</a>
+                    </p>
+                </div>
+
+                
+                <footer class="article-footer">
+                    <ul class="article-tag-list">
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/python">Python
+                            </a>
+                        </li>
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/orm">ORM
+                            </a>
+                        </li>
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/mysql">MySQL
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </footer>
+                
+            </div>
+        </article>
+        
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+            <div class="article-inner">
+                
+                
+                <header class="article-header">
+                    <h1 itemprop="name"><a class="article-title" href="/2018/05/18/kubernetes-yaml-configurations.html">Kubernetes YAML 配置文件简介</a></h1>
+                </header>
+                
+                <div class="article-meta">
+                    <a href="/2018/05/18/kubernetes-yaml-configurations.html" class="article-date">
+                        <time datetime='2018-05-18T15:30:14.000&#43;08:00' itemprop="datePublished">2018-05-18</time>
+                    </a>
+                    
+                    
+                    <div class="post-categories">
+                        <div class="article-category">
+                            
+                            
+                            <a class="article-category-link" href="//ie9.org//categories/cloud">Cloud</a>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        
+                    <p>首先，Kubernetes的配置文件不止接收YAML/YML文件，还支持json格式，因为这两种格式在我看来没有太大的区别，重点想记录一下内容。</p>
+
+<p></p>
+                    </p>
+                    <p class="article-more-link">
+                        <a href="/2018/05/18/kubernetes-yaml-configurations.html">Read More</a>
+                    </p>
+                </div>
+
+                
+                <footer class="article-footer">
+                    <ul class="article-tag-list">
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/kubernetes">Kubernetes
+                            </a>
+                        </li>
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/yaml">YAML
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </footer>
+                
+            </div>
+        </article>
+        
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+            <div class="article-inner">
+                
+                
+                <header class="article-header">
+                    <h1 itemprop="name"><a class="article-title" href="/2017/06/26/get-unixtime-from-bash.html">通过bash获取指定时间的unix格式</a></h1>
+                </header>
+                
+                <div class="article-meta">
+                    <a href="/2017/06/26/get-unixtime-from-bash.html" class="article-date">
+                        <time datetime='2017-06-26T18:04:15.000&#43;08:00' itemprop="datePublished">2017-06-26</time>
+                    </a>
+                    
+                    
+                    <div class="post-categories">
+                        <div class="article-category">
+                            
+                            
+                            <a class="article-category-link" href="//ie9.org//categories/general">General</a>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        
+                    <p><code>bash</code>远比我们想像得强大，但正因为如此，我们并不必要掌握它的所有用法——记在这里就行了。</p>
+
+<p></p>
+                    </p>
+                    <p class="article-more-link">
+                        <a href="/2017/06/26/get-unixtime-from-bash.html">Read More</a>
+                    </p>
+                </div>
+
+                
+                <footer class="article-footer">
+                    <ul class="article-tag-list">
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/unix-time">Unix Time
+                            </a>
+                        </li>
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/date-time">Date Time
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </footer>
+                
+            </div>
+        </article>
+        
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+            <div class="article-inner">
+                
+                
+                <header class="article-header">
+                    <h1 itemprop="name"><a class="article-title" href="/2017/06/17/install-config-kubernetes-on-centos7.html">CentOS 7安装配置Kubernetes(k8s)</a></h1>
+                </header>
+                
+                <div class="article-meta">
+                    <a href="/2017/06/17/install-config-kubernetes-on-centos7.html" class="article-date">
+                        <time datetime='2017-06-17T18:32:49.000&#43;08:00' itemprop="datePublished">2017-06-17</time>
+                    </a>
+                    
+                    
+                    <div class="post-categories">
+                        <div class="article-category">
+                            
+                            
+                            <a class="article-category-link" href="//ie9.org//categories/linux">Linux</a>
+                            
+                            
+                            <span>&gt;</span>
+                            
+                            <a class="article-category-link" href="//ie9.org//categories/cloud">Cloud</a>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        
+                    <p>结合网上的资源，自己在虚拟机上配了一次，整体还是非常简单顺利的，有兴趣的朋友可以自己也试试。</p>
+
+<p></p>
+                    </p>
+                    <p class="article-more-link">
+                        <a href="/2017/06/17/install-config-kubernetes-on-centos7.html">Read More</a>
+                    </p>
+                </div>
+
+                
+                <footer class="article-footer">
+                    <ul class="article-tag-list">
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/linux">Linux
+                            </a>
+                        </li>
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/kubernetes">Kubernetes
+                            </a>
+                        </li>
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/k8s">k8s
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </footer>
+                
+            </div>
+        </article>
+        
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+            <div class="article-inner">
+                
+                
+                <header class="article-header">
+                    <h1 itemprop="name"><a class="article-title" href="/2016/11/09/install-mpv-with-brew-on-macos.html">MacOS下使用Brew安装mpv</a></h1>
+                </header>
+                
+                <div class="article-meta">
+                    <a href="/2016/11/09/install-mpv-with-brew-on-macos.html" class="article-date">
+                        <time datetime='2016-11-09T20:57:22.000&#43;08:00' itemprop="datePublished">2016-11-09</time>
+                    </a>
+                    
+                    
+                    <div class="post-categories">
+                        <div class="article-category">
+                            
+                            
+                            <a class="article-category-link" href="//ie9.org//categories/general">General</a>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        
+                    <p>意外得知Mac上的mpv非常好用，几乎是最好的播放器之一，如此安装即可：</p>
+
+<p></p>
+                    </p>
+                    <p class="article-more-link">
+                        <a href="/2016/11/09/install-mpv-with-brew-on-macos.html">Read More</a>
+                    </p>
+                </div>
+
+                
+                <footer class="article-footer">
+                    <ul class="article-tag-list">
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/mpv">MPV
+                            </a>
+                        </li>
+                        
+                        <li class="article-tag-list-item">
+                            <a class="article-tag-list-link" href="//ie9.org//tags/macos">MacOS
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </footer>
+                
+            </div>
+        </article>
+        
+
+        
+
+<nav id="page-nav">
+    
+    
+    
+    <span class="page-number current">1</span>
+    
+    
+    
+    <a href="/page/2.html">2</a>
+    
+    
+    
+    <a href="/page/3.html">3</a>
+    
+    
+    
+    <a href="/page/4.html">4</a>
+    
+    
+    
+    <a href="/page/5.html">5</a>
+    
+    
+
+    
+    <a href="/page/2.html" rel="next" class="extend next">Next &raquo;</a>
+    
+</nav>
+
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 ie9.org&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+    
+    
+    
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+
+</div>
+</body>
+</html>

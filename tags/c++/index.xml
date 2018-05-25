@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on ie9.org</title>
+    <link>//ie9.org/tags/c&#43;&#43;.html</link>
+    <description>Recent content in C&#43;&#43; on ie9.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 25 Feb 2015 09:33:47 +0800</lastBuildDate>
+    
+	<atom:link href="//ie9.org/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux下串口通信类</title>
+      <link>//ie9.org/2015/02/25/serial-class-code-linux.html</link>
+      <pubDate>Wed, 25 Feb 2015 09:33:47 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/02/25/serial-class-code-linux.html</guid>
+      <description>&lt;p&gt;最近操作工程设备比较多，通讯方式上通常采用串口或网络进行通讯。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

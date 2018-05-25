@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code on ie9.org</title>
+    <link>//ie9.org/categories/code.html</link>
+    <description>Recent content in Code on ie9.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 04 Jun 2015 15:39:29 +0800</lastBuildDate>
+    
+	<atom:link href="//ie9.org/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>通过PL/SQL创建Oracle新用户</title>
+      <link>//ie9.org/2015/06/04/create-user-with-plsql-for-oracle.html</link>
+      <pubDate>Thu, 04 Jun 2015 15:39:29 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/06/04/create-user-with-plsql-for-oracle.html</guid>
+      <description>&lt;p&gt;这段时间维护Oracle太频繁，像这样常用的命令真应该保存一下，每次只用复制就好：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux下串口通信类</title>
+      <link>//ie9.org/2015/02/25/serial-class-code-linux.html</link>
+      <pubDate>Wed, 25 Feb 2015 09:33:47 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/02/25/serial-class-code-linux.html</guid>
+      <description>&lt;p&gt;最近操作工程设备比较多，通讯方式上通常采用串口或网络进行通讯。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python获取当前运行的类名和函数名</title>
+      <link>//ie9.org/2015/01/02/get-current-class-and-function-name-with-python.html</link>
+      <pubDate>Fri, 02 Jan 2015 22:58:54 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/01/02/get-current-class-and-function-name-with-python.html</guid>
+      <description>&lt;p&gt;为了写个比较好用的日志类，需要这些详细信息，所以查到以下方法，不过最终没用起来，总觉得不够优雅。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux下zlib压缩文件类</title>
+      <link>//ie9.org/2014/03/07/zlib-wrapper-for-linux.html</link>
+      <pubDate>Fri, 07 Mar 2014 19:38:01 +0800</pubDate>
+      
+      <guid>//ie9.org/2014/03/07/zlib-wrapper-for-linux.html</guid>
+      <description>&lt;p&gt;更新和下载需要用的：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>POSIX标准的Mutex互斥类</title>
+      <link>//ie9.org/2013/06/25/mutex-class-code.html</link>
+      <pubDate>Tue, 25 Jun 2013 11:31:20 +0800</pubDate>
+      
+      <guid>//ie9.org/2013/06/25/mutex-class-code.html</guid>
+      <description>&lt;p&gt;多个线程操作共享资源的时候总会存在冲突问题，唯一的解决办法就是引入互斥机制，好在Linux对此已提供了非常完美的支持。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>单文件日志类</title>
+      <link>//ie9.org/2013/05/08/log-class-in-a-single-file.html</link>
+      <pubDate>Wed, 08 May 2013 23:35:32 +0800</pubDate>
+      
+      <guid>//ie9.org/2013/05/08/log-class-in-a-single-file.html</guid>
+      <description>&lt;p&gt;懒人总有很多现成的代码，砖是不需要重复搬的：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

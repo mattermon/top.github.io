@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CentOS 7安装配置Kubernetes(k8s) // ie9.org</title>
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="ie9.org, another technical blog">
+    <meta name="keywords" content="ie9.org,">
+    <meta name="author" content="">
+        <meta property="og:title" content="CentOS 7安装配置Kubernetes(k8s)" />
+    <meta property="og:description" content="ie9.org, another technical blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="//ie9.org/2017/06/17/install-config-kubernetes-on-centos7.html" />
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="ie9.org" />
+    <link rel="shortcut icon" href="/favicon.png">
+    <link href="//ie9.org/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="//ie9.org/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//ie9.org/css/style.css">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <link rel="stylesheet" href="//ie9.org/css/gitment.css">
+    <script src="//ie9.org/js/gitment.js"></script>
+    <meta name="generator" content="Hugo 0.24" />
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="//ie9.org/">ie9.org</a>
+            <nav id="main-nav">
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">CentOS 7安装配置Kubernetes(k8s)</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/2017/06/17/install-config-kubernetes-on-centos7.html" class="article-date">
+                <time datetime='2017-06-17T18:32:49.000&#43;08:00' itemprop="datePublished">2017-06-17</time>
+            </a>
+            
+            
+            <div class="post-categories">
+                <div class="article-category">
+                    
+                    
+                    <a class="article-category-link" href="//ie9.org//categories/linux">Linux</a>
+                    
+                    
+                    <span>&gt;</span>
+                    
+                    <a class="article-category-link" href="//ie9.org//categories/cloud">Cloud</a>
+                    
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            <p>结合网上的资源，自己在虚拟机上配了一次，整体还是非常简单顺利的，有兴趣的朋友可以自己也试试。</p>
+
+<p></p>
+
+<p>Kubernetes集群组件</p>
+
+<ul>
+<li>etcd 一个高可用的K/V键值对存储和服务发现系统</li>
+<li>flannel 实现夸主机的容器网络的通信</li>
+<li>kube-apiserver 提供kubernetes集群的API调用</li>
+<li>kube-controller-manager 确保集群服务</li>
+<li>kube-scheduler 调度容器，分配到Node</li>
+<li>kubelet 在Node节点上按照配置文件中定义的容器规格启动容器</li>
+<li>kube-proxy 提供网络代理服务</li>
+</ul>
+
+<h2 id="关闭系统防火墙">关闭系统防火墙</h2>
+
+<h3 id="停止服务">停止服务</h3>
+
+<pre><code class="language-bash">systemctl stop firewall
+systemctl disable firewall
+</code></pre>
+
+<h3 id="禁止启动">禁止启动</h3>
+
+<pre><code class="language-ini"># /etc/selinux/config
+SELINUX=disabled
+</code></pre>
+
+<h3 id="重启">重启</h3>
+
+<h2 id="配置master-etcd">配置master / etcd</h2>
+
+<h3 id="配置">配置</h3>
+
+<pre><code class="language-ini"># /etc/etcd/etcd.conf
+ETCD_LISTEN_CLIENT_URLS=&quot;http://localhost:2379,http://10.211.55.3:2379&quot;
+ETCD_ADVERTISE_CLIENT_URLS=&quot;http://localhost:2379,http://10.211.55.3:2379&quot;
+</code></pre>
+
+<h3 id="启动">启动</h3>
+
+<pre><code class="language-bash">systemctl restart etcd
+systemctl enable etcd
+</code></pre>
+
+<h3 id="检查-etcd-cluster-状态">检查 etcd cluster 状态</h3>
+
+<pre><code class="language-bash">etcdctl cluster-health
+</code></pre>
+
+<h3 id="检查-etcd-成员列表">检查 etcd 成员列表</h3>
+
+<pre><code class="language-bash">etcdctl member list
+</code></pre>
+
+<h2 id="配置master">配置master</h2>
+
+<h3 id="配置kube-apiserver">配置kube-apiserver</h3>
+
+<pre><code class="language-ini"># /etc/kubernetes/config
+KUBE_MASTER=&quot;--master=http://10.211.55.3:8080&quot;
+</code></pre>
+
+<pre><code class="language-ini"># /etc/kubernetes/apiserver
+KUBE_API_ADDRESS=&quot;--insecure-bind-address=0.0.0.0&quot;
+KUBE_ETCD_SERVERS=&quot;--etcd-servers=http://10.211.55.3:2379&quot;
+KUBE_SERVICE_ADDRESSES=&quot;--service-cluster-ip-range=10.254.0.0/16&quot;
+KUBE_ADMISSION_CONTROL=&quot;--admission-control=AlwaysAdmit&quot;
+</code></pre>
+
+<h3 id="配置-kube-controller-manager">配置 kube-controller-manager</h3>
+
+<pre><code class="language-ini"># /etc/kubernetes/controller-manager
+KUBE_CONTROLLER_MANAGER_ARGS=&quot;&quot;
+</code></pre>
+
+<h3 id="配置-kube-scheduler">配置 kube-scheduler</h3>
+
+<pre><code class="language-ini"># /etc/kubernetes/scheduler
+KUBE_SCHEDULER_ARGS=&quot;--address=0.0.0.0&quot;
+</code></pre>
+
+<h3 id="启动服务">启动服务</h3>
+
+<pre><code class="language-bash">for i in kube-apiserver kube-controller-manager kube-scheduler ; do\
+  systemctl restart $i ; \
+  systemctl enable $i ; \
+done
+</code></pre>
+
+<h2 id="配置-node1">配置 node1</h2>
+
+<h3 id="配置-etcd-在-master-上">配置 etcd（在 master 上）</h3>
+
+<pre><code class="language-bash">etcdctl set /atomic.io/network/config '{&quot;Network&quot;:&quot;172.16.0.0/16&quot;}'
+</code></pre>
+
+<h3 id="配置网络">配置网络</h3>
+
+<pre><code class="language-ini"># /etc/sysconfig/flanneld
+FLANNELD_ETCD_ENDPOINTS=&quot;http://10.211.55.3:2379&quot;
+FLANNELD_ETCD_PREFIX=&quot;/atomic.io/network&quot;
+</code></pre>
+
+<h3 id="查看验证网络信息-在-master-上">查看验证网络信息（在 master 上）</h3>
+
+<pre><code class="language-bash">etcdctl get /atomic.io/network/config
+etcdctl ls /atomic.io/network/subnets
+etcdctl get /atomic.io/network/subnets/172.16.6.0-24 # 根据上面显示的信息查看
+</code></pre>
+
+<h3 id="配置-kube-proxy">配置 kube-proxy</h3>
+
+<pre><code class="language-ini"># /etc/kubernetes/proxy
+KUBE_PROXY_ARGS=&quot;--bind-address=0.0.0.0&quot;
+</code></pre>
+
+<h3 id="配置-kubelet">配置 kubelet</h3>
+
+<pre><code class="language-ini"># /etc/kubernetes/kubelet
+KUBELET_HOSTNAME=&quot;--hostname-override=10.211.55.4&quot;
+KUBELET_API_SERVER=&quot;--api-server=http://10.211.55.3:8080&quot;
+</code></pre>
+
+<h3 id="启动服务-1">启动服务</h3>
+
+<pre><code class="language-bash">for i in flanneld kube-proxy kubelet docker ; do\
+  systemctl restart $i ; \
+  systemctl enable $i ; \
+done
+</code></pre>
+
+<h3 id="查看节点-在-master-上">查看节点（在 master 上）</h3>
+
+<pre><code class="language-bash">kubectl get nodes
+</code></pre>
+
+<h3 id="建立-pod">建立 pod</h3>
+
+<pre><code class="language-bash">export KUBERNETES_MASTER=http://10.211.55.3:8080
+kubectl run nginx --image=nginx --port=80 --replicas=2
+</code></pre>
+
+<h3 id="查看-pod-在-master-上">查看 pod（在 master 上）</h3>
+
+<pre><code class="language-bash">kubectl get pods
+kubectl get deployment
+</code></pre>
+
+<h3 id="开放端口">开放端口</h3>
+
+<pre><code class="language-bash"># 会创建一个 service，将本地某个节点上的一个随机端口关联到容器中的80端口上。
+kubectl expose deployment nginx --port=80 --type=LoadBalancer
+
+# 查看 service
+kubectl get service
+</code></pre>
+
+<h3 id="外网访问">外网访问</h3>
+
+<p><a href="http://10.211.55.4:30255">http://10.211.55.4:30255</a></p>
+
+<h3 id="删除-deployment-和-service">删除 deployment 和 service</h3>
+
+<pre><code class="language-bash">kubectl delete deployment nginx
+kubectl delete service nginx
+</code></pre>
+
+<h3 id="通过-yaml-文件方式创建-pod">通过 yaml 文件方式创建 pod</h3>
+
+<pre><code class="language-yaml"># nginx-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: IfNotPresent
+    ports:
+    - containerPort: 80
+  restartPolicy: Always
+</code></pre>
+
+<h3 id="创建-pod">创建 pod</h3>
+
+<pre><code class="language-bash">kubectl create -f nginx-pod.yaml
+</code></pre>
+
+<h3 id="查看-pod">查看 pod</h3>
+
+<pre><code class="language-bash">kubectl get pods
+</code></pre>
+
+<h3 id="通过文件方式定义与之关联的-service">通过文件方式定义与之关联的 service</h3>
+
+<pre><code class="language-yaml"># nginx-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  type: NodePort
+  sessionAffinity: ClientIP
+  selector:
+    app: nginx
+  ports:
+  - port: 80
+    nodePort: 30080
+</code></pre>
+
+<h3 id="创建-service">创建 service</h3>
+
+<pre><code class="language-bash">kubectl create -f nginx-service.yaml
+</code></pre>
+
+<h3 id="查看-service">查看 service</h3>
+
+<pre><code class="language-bash">kubectl get service
+</code></pre>
+        </div>
+
+        
+        
+        <div class="article-toc" style="display:none;">
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#关闭系统防火墙">关闭系统防火墙</a>
+<ul>
+<li><a href="#停止服务">停止服务</a></li>
+<li><a href="#禁止启动">禁止启动</a></li>
+<li><a href="#重启">重启</a></li>
+</ul></li>
+<li><a href="#配置master-etcd">配置master / etcd</a>
+<ul>
+<li><a href="#配置">配置</a></li>
+<li><a href="#启动">启动</a></li>
+<li><a href="#检查-etcd-cluster-状态">检查 etcd cluster 状态</a></li>
+<li><a href="#检查-etcd-成员列表">检查 etcd 成员列表</a></li>
+</ul></li>
+<li><a href="#配置master">配置master</a>
+<ul>
+<li><a href="#配置kube-apiserver">配置kube-apiserver</a></li>
+<li><a href="#配置-kube-controller-manager">配置 kube-controller-manager</a></li>
+<li><a href="#配置-kube-scheduler">配置 kube-scheduler</a></li>
+<li><a href="#启动服务">启动服务</a></li>
+</ul></li>
+<li><a href="#配置-node1">配置 node1</a>
+<ul>
+<li><a href="#配置-etcd-在-master-上">配置 etcd（在 master 上）</a></li>
+<li><a href="#配置网络">配置网络</a></li>
+<li><a href="#查看验证网络信息-在-master-上">查看验证网络信息（在 master 上）</a></li>
+<li><a href="#配置-kube-proxy">配置 kube-proxy</a></li>
+<li><a href="#配置-kubelet">配置 kubelet</a></li>
+<li><a href="#启动服务-1">启动服务</a></li>
+<li><a href="#查看节点-在-master-上">查看节点（在 master 上）</a></li>
+<li><a href="#建立-pod">建立 pod</a></li>
+<li><a href="#查看-pod-在-master-上">查看 pod（在 master 上）</a></li>
+<li><a href="#开放端口">开放端口</a></li>
+<li><a href="#外网访问">外网访问</a></li>
+<li><a href="#删除-deployment-和-service">删除 deployment 和 service</a></li>
+<li><a href="#通过-yaml-文件方式创建-pod">通过 yaml 文件方式创建 pod</a></li>
+<li><a href="#创建-pod">创建 pod</a></li>
+<li><a href="#查看-pod">查看 pod</a></li>
+<li><a href="#通过文件方式定义与之关联的-service">通过文件方式定义与之关联的 service</a></li>
+<li><a href="#创建-service">创建 service</a></li>
+<li><a href="#查看-service">查看 service</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        <script>
+            (function() {
+                var $toc = $('#TableOfContents');
+                if ($toc.length > 0) {
+                    var $window = $(window);
+
+                    function onScroll(){
+                        var currentScroll = $window.scrollTop();
+                        var h = $('.article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6');
+                        var id = "";
+                        h.each(function (i, e) {
+                            e = $(e);
+                            if (e.offset().top - 10 <= currentScroll) {
+                                id = e.attr('id');
+                            }
+                        });
+                        var active = $toc.find('a.active');
+                        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+                        active.each(function (i, e) {
+                            $(e).removeClass('active').siblings('ul').hide();
+                        });
+                        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+                            $(e).children('a').addClass('active').siblings('ul').show();
+                        });
+                    }
+
+                    $window.on('scroll', onScroll);
+                    $(document).ready(function() {
+                        $toc.find('a').parent('li').find('ul').hide();
+                        onScroll();
+                        document.getElementsByClassName('article-toc')[0].style.display = '';
+                    });
+                }
+            })();
+        </script>
+        
+
+        
+        <div id="gitment-comment"></div>
+        <script>
+        var gitment = new Gitment({
+            id: "/2017/06/17/install-config-kubernetes-on-centos7.html",
+            owner: "top",
+            repo: "ie9",
+            oauth: {
+                client_id: "4e33cbe9ed2c2d914b2f",
+                client_secret: "9ba1ff6e220ca5c7484a7f508a115c2862903821",
+            },
+        })
+        gitment.render('gitment-comment')
+        </script>
+        
+
+        
+        <footer class="article-footer">
+            <ul class="article-tag-list">
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org//tags/linux">Linux
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org//tags/kubernetes">Kubernetes
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org//tags/k8s">k8s
+                    </a>
+                </li>
+                
+            </ul>
+        </footer>
+        
+
+    </div>
+    <nav id="article-nav">
+    
+    <a href="/2017/06/26/get-unixtime-from-bash.html" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            通过bash获取指定时间的unix格式
+        </div>
+    </a>
+    
+    
+    <a href="/2016/11/09/install-mpv-with-brew-on-macos.html" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">MacOS下使用Brew安装mpv&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 ie9.org&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js" integrity="sha256-fTZir3QtRzPrhH5KyHm/0hsQqTDswmqYFhXOPN05ulw=" crossorigin="anonymous"></script>
+    
+    
+    
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on ie9.org</title>
+    <link>//ie9.org/tags/python.html</link>
+    <description>Recent content in Python on ie9.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 21 May 2018 16:54:10 +0800</lastBuildDate>
+    
+	<atom:link href="//ie9.org/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>基于SimpleMysql的一个改进版本</title>
+      <link>//ie9.org/2018/05/21/simplemysql2-init.html</link>
+      <pubDate>Mon, 21 May 2018 16:54:10 +0800</pubDate>
+      
+      <guid>//ie9.org/2018/05/21/simplemysql2-init.html</guid>
+      <description>&lt;p&gt;之前在做一些小的基于Python 2.7开发的时候用得比较多的一个MySQL库是&lt;a href=&#34;https://github.com/knadh/simplemysql&#34;&gt;SimpleMysql&lt;/a&gt;，星星不算最多，但是正如它描述中写的那样，非常简洁。&lt;/p&gt;
+
+&lt;p&gt;现在基于Python的开发已经全面转移到Python 3了，而SimpleMysql早已不再更新，对Python 3兼容性并不好，就抽时间作了一些兼容性的修改。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python获取当前运行的类名和函数名</title>
+      <link>//ie9.org/2015/01/02/get-current-class-and-function-name-with-python.html</link>
+      <pubDate>Fri, 02 Jan 2015 22:58:54 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/01/02/get-current-class-and-function-name-with-python.html</guid>
+      <description>&lt;p&gt;为了写个比较好用的日志类，需要这些详细信息，所以查到以下方法，不过最终没用起来，总觉得不够优雅。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python安装cx_Oracle支持</title>
+      <link>//ie9.org/2014/12/01/install-cx_oracle-support-for-python.html</link>
+      <pubDate>Mon, 01 Dec 2014 09:33:49 +0800</pubDate>
+      
+      <guid>//ie9.org/2014/12/01/install-cx_oracle-support-for-python.html</guid>
+      <description>&lt;p&gt;Oracle目前对Python支持得并不非常完美，配置过程略复杂。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cygwin下Python安装MySQL支持</title>
+      <link>//ie9.org/2013/08/04/install-mysql-support-under-cygwin.html</link>
+      <pubDate>Sun, 04 Aug 2013 11:28:42 +0800</pubDate>
+      
+      <guid>//ie9.org/2013/08/04/install-mysql-support-under-cygwin.html</guid>
+      <description>&lt;p&gt;Windows下安装配置环境总是无比蛋疼，还好，有人也遇到了这样的问题，并成功解决了：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ie9.org</title>
+    <link>//ie9.org/</link>
+    <description>Recent content on ie9.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 25 May 2018 16:01:37 +0800</lastBuildDate>
+    
+	<atom:link href="//ie9.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker、Containerd、runC、Docker-shim</title>
+      <link>//ie9.org/2018/05/25/docker-containerd-runc-docker-shim.html</link>
+      <pubDate>Fri, 25 May 2018 16:01:37 +0800</pubDate>
+      
+      <guid>//ie9.org/2018/05/25/docker-containerd-runc-docker-shim.html</guid>
+      <description>&lt;p&gt;docker是一整套虚拟化技术的整合者，包括从前端到底层的所有封装，官网上的结构图比较偏业务化，可以参考一下：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Go语言编写的批量邮件发送程序</title>
+      <link>//ie9.org/2018/05/23/batch-send-mail-through-exchange.html</link>
+      <pubDate>Wed, 23 May 2018 14:12:32 +0800</pubDate>
+      
+      <guid>//ie9.org/2018/05/23/batch-send-mail-through-exchange.html</guid>
+      <description>&lt;p&gt;小伙伴有个批量发邮件的需求，服务器是Microsoft Exchange，于是抽空用Go写了个小程序（因为开发效率实在太高，同时不需要安装运行环境），实现的功能非常简单，就是把数据重新编排一下，组装成服务器能接收的格式再请求出去。以下是测试代码。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>基于SimpleMysql的一个改进版本</title>
+      <link>//ie9.org/2018/05/21/simplemysql2-init.html</link>
+      <pubDate>Mon, 21 May 2018 16:54:10 +0800</pubDate>
+      
+      <guid>//ie9.org/2018/05/21/simplemysql2-init.html</guid>
+      <description>&lt;p&gt;之前在做一些小的基于Python 2.7开发的时候用得比较多的一个MySQL库是&lt;a href=&#34;https://github.com/knadh/simplemysql&#34;&gt;SimpleMysql&lt;/a&gt;，星星不算最多，但是正如它描述中写的那样，非常简洁。&lt;/p&gt;
+
+&lt;p&gt;现在基于Python的开发已经全面转移到Python 3了，而SimpleMysql早已不再更新，对Python 3兼容性并不好，就抽时间作了一些兼容性的修改。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes YAML 配置文件简介</title>
+      <link>//ie9.org/2018/05/18/kubernetes-yaml-configurations.html</link>
+      <pubDate>Fri, 18 May 2018 15:30:14 +0800</pubDate>
+      
+      <guid>//ie9.org/2018/05/18/kubernetes-yaml-configurations.html</guid>
+      <description>&lt;p&gt;首先，Kubernetes的配置文件不止接收YAML/YML文件，还支持json格式，因为这两种格式在我看来没有太大的区别，重点想记录一下内容。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>通过bash获取指定时间的unix格式</title>
+      <link>//ie9.org/2017/06/26/get-unixtime-from-bash.html</link>
+      <pubDate>Mon, 26 Jun 2017 18:04:15 +0800</pubDate>
+      
+      <guid>//ie9.org/2017/06/26/get-unixtime-from-bash.html</guid>
+      <description>&lt;p&gt;&lt;code&gt;bash&lt;/code&gt;远比我们想像得强大，但正因为如此，我们并不必要掌握它的所有用法——记在这里就行了。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CentOS 7安装配置Kubernetes(k8s)</title>
+      <link>//ie9.org/2017/06/17/install-config-kubernetes-on-centos7.html</link>
+      <pubDate>Sat, 17 Jun 2017 18:32:49 +0800</pubDate>
+      
+      <guid>//ie9.org/2017/06/17/install-config-kubernetes-on-centos7.html</guid>
+      <description>&lt;p&gt;结合网上的资源，自己在虚拟机上配了一次，整体还是非常简单顺利的，有兴趣的朋友可以自己也试试。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MacOS下使用Brew安装mpv</title>
+      <link>//ie9.org/2016/11/09/install-mpv-with-brew-on-macos.html</link>
+      <pubDate>Wed, 09 Nov 2016 20:57:22 +0800</pubDate>
+      
+      <guid>//ie9.org/2016/11/09/install-mpv-with-brew-on-macos.html</guid>
+      <description>&lt;p&gt;意外得知Mac上的mpv非常好用，几乎是最好的播放器之一，如此安装即可：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gem源修改</title>
+      <link>//ie9.org/2016/11/07/gem-repository-modification.html</link>
+      <pubDate>Mon, 07 Nov 2016 22:51:02 +0800</pubDate>
+      
+      <guid>//ie9.org/2016/11/07/gem-repository-modification.html</guid>
+      <description>&lt;p&gt;唉，ruby自带的源已被墙，程序员表示忍辱负重：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mac下安装运行PHP内置服务器</title>
+      <link>//ie9.org/2016/11/05/install-launch-php-internal-server-on-macos.html</link>
+      <pubDate>Sat, 05 Nov 2016 01:47:55 +0800</pubDate>
+      
+      <guid>//ie9.org/2016/11/05/install-launch-php-internal-server-on-macos.html</guid>
+      <description>&lt;p&gt;一般来说，最新版本的Mac OS X已经内置了5.4版本的PHP，所以以下教程假设用户已经安装好了PHP。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CentOS 6.5上安装配置Hadoop</title>
+      <link>//ie9.org/2016/09/26/install-config-hadoop-on-centos6.5.html</link>
+      <pubDate>Mon, 26 Sep 2016 07:02:30 +0800</pubDate>
+      
+      <guid>//ie9.org/2016/09/26/install-config-hadoop-on-centos6.5.html</guid>
+      <description>&lt;p&gt;一般地，学习资源通常会使用老旧的版本，一方面，老旧版本比较稳定，另一方面，老旧版本功能略少，结构清晰，便于理解。但以下教程是根据回忆默写出来的，不保证正确性，只为装装逼玩玩而已，要求不要太高了。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MacOS下安装Sublime Text的LaTex中文支持</title>
+      <link>//ie9.org/2016/06/26/install-sublime-text-latex-on-macos.html</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:13 +0800</pubDate>
+      
+      <guid>//ie9.org/2016/06/26/install-sublime-text-latex-on-macos.html</guid>
+      <description>&lt;p&gt;转载的，但时间长了不记得出自哪里，同时也有针对自己实际操作有修改的地方。这个玩法不太常见，通常都有专业的工具去解决。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在Nginx下配置免费的HTTPS证书Let&#39;s Encrypt</title>
+      <link>//ie9.org/2016/06/25/nginx-https-lets-encrypt.html</link>
+      <pubDate>Sat, 25 Jun 2016 11:51:00 +0800</pubDate>
+      
+      <guid>//ie9.org/2016/06/25/nginx-https-lets-encrypt.html</guid>
+      <description>&lt;p&gt;搭建自己的网站的时候，当然希望采用HTTPS，不止是更安全。Let&amp;rsquo;s Encrypt还是免费的证书服务，极客专属。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RVM报错: Warning: PATH set to RVM ruby but GEM_HOME and/or GEM_PATH not set</title>
+      <link>//ie9.org/2016/06/19/rvm-zsh-errors.html</link>
+      <pubDate>Sun, 19 Jun 2016 11:52:03 +0800</pubDate>
+      
+      <guid>//ie9.org/2016/06/19/rvm-zsh-errors.html</guid>
+      <description>&lt;p&gt;像这样的Warning虽然不影响正常使用，但见到了总不是太爽，一定要解决之。另外，感觉对Ruby不是太感冒。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>面向对象设计原则与设计模式大全</title>
+      <link>//ie9.org/2016/04/15/design-patterns.html</link>
+      <pubDate>Fri, 15 Apr 2016 23:15:47 +0800</pubDate>
+      
+      <guid>//ie9.org/2016/04/15/design-patterns.html</guid>
+      <description>&lt;p&gt;软件做得越久，越发觉得底层机制和原理的知识重要。&lt;/p&gt;
+
+&lt;p&gt;原文地址（侵删）：&lt;a href=&#34;http://blog.csdn.net/lovelion/article/details/17517213&#34;&gt;http://blog.csdn.net/lovelion/article/details/17517213&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;如果再早几年看到这些文章，可能会觉得太教条了直接跳出，但最近读到这些总结已经十分全面的、系统化的知识时，如获至宝，重新整理了一下，以备自己不时复习。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sphinx 配置文件详解</title>
+      <link>//ie9.org/2016/03/11/sphinx-config-file-details.html</link>
+      <pubDate>Fri, 11 Mar 2016 23:45:09 +0800</pubDate>
+      
+      <guid>//ie9.org/2016/03/11/sphinx-config-file-details.html</guid>
+      <description>&lt;p&gt;本来准备修改sphinx以支持JSON格式的数据自动解析和查询，但时间有限，只总结了以下内容：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>解决Tomcat下URL包含中文时的乱码问题</title>
+      <link>//ie9.org/2015/12/20/chinese-characters-in-url-under-tomcat.html</link>
+      <pubDate>Sun, 20 Dec 2015 12:26:20 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/12/20/chinese-characters-in-url-under-tomcat.html</guid>
+      <description>&lt;p&gt;解决tomcat下的URL中文乱码问题的方法：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>通过PL/SQL创建Oracle新用户</title>
+      <link>//ie9.org/2015/06/04/create-user-with-plsql-for-oracle.html</link>
+      <pubDate>Thu, 04 Jun 2015 15:39:29 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/06/04/create-user-with-plsql-for-oracle.html</guid>
+      <description>&lt;p&gt;这段时间维护Oracle太频繁，像这样常用的命令真应该保存一下，每次只用复制就好：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Maven创建Webapp</title>
+      <link>//ie9.org/2015/04/28/create-webapp-with-maven.html</link>
+      <pubDate>Tue, 28 Apr 2015 15:04:39 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/04/28/create-webapp-with-maven.html</guid>
+      <description>&lt;p&gt;绝大多数情况下，像这样的过程都由IDE代替了，其实它不过执行了这样的命令：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>React的Webpack项目搭建</title>
+      <link>//ie9.org/2015/04/15/webpack-react-startup.html</link>
+      <pubDate>Wed, 15 Apr 2015 13:03:57 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/04/15/webpack-react-startup.html</guid>
+      <description>&lt;p&gt;前端感觉是个非常用前途的行业，发展太快了，赶紧学点新知识。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MySQL 数据库导入导出sql文件</title>
+      <link>//ie9.org/2015/03/31/import-export-mysql.html</link>
+      <pubDate>Tue, 31 Mar 2015 14:20:22 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/03/31/import-export-mysql.html</guid>
+      <description>&lt;p&gt;好记性不如烂笔头：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>将HSQL导入MySQL中</title>
+      <link>//ie9.org/2015/03/24/import-hsql-to-mysql.html</link>
+      <pubDate>Tue, 24 Mar 2015 23:18:00 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/03/24/import-hsql-to-mysql.html</guid>
+      <description>&lt;p&gt;小项目，采用了比较小型的HSQL数据库，但在迁移时遇到不少问题，看来为了省事还是用常用的技术比较靠谱。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>特殊符号</title>
+      <link>//ie9.org/2015/03/09/symbols.html</link>
+      <pubDate>Mon, 09 Mar 2015 17:49:25 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/03/09/symbols.html</guid>
+      <description>&lt;p&gt;又开始兼着搞前端了。话说引入字体的方式调用特殊符号效果可能更好，而以下的这些并不是所有浏览器或者OS都支持。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux下串口通信类</title>
+      <link>//ie9.org/2015/02/25/serial-class-code-linux.html</link>
+      <pubDate>Wed, 25 Feb 2015 09:33:47 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/02/25/serial-class-code-linux.html</guid>
+      <description>&lt;p&gt;最近操作工程设备比较多，通讯方式上通常采用串口或网络进行通讯。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python获取当前运行的类名和函数名</title>
+      <link>//ie9.org/2015/01/02/get-current-class-and-function-name-with-python.html</link>
+      <pubDate>Fri, 02 Jan 2015 22:58:54 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/01/02/get-current-class-and-function-name-with-python.html</guid>
+      <description>&lt;p&gt;为了写个比较好用的日志类，需要这些详细信息，所以查到以下方法，不过最终没用起来，总觉得不够优雅。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fedora下使用axel加速yum</title>
+      <link>//ie9.org/2014/12/07/boost-yum-on-fedora.html</link>
+      <pubDate>Sun, 07 Dec 2014 09:43:42 +0800</pubDate>
+      
+      <guid>//ie9.org/2014/12/07/boost-yum-on-fedora.html</guid>
+      <description>&lt;p&gt;如果网络比较慢，通过yum更新的时候通常要花费更久的时间，一般会选择更换到国内的源解决，但有时即便如此也没有更快，这时我们可以从工具本身入手————更换一款更快的下载工具来缩短等待时间。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remove DB2 on Linux</title>
+      <link>//ie9.org/2014/12/02/remove-db2-on-linux.html</link>
+      <pubDate>Tue, 02 Dec 2014 23:12:21 +0800</pubDate>
+      
+      <guid>//ie9.org/2014/12/02/remove-db2-on-linux.html</guid>
+      <description>&lt;p&gt;在给客户部署程序时遇到了这个问题，为了测试专门在本机的虚拟机上安装并移除之，过程是这样的：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python安装cx_Oracle支持</title>
+      <link>//ie9.org/2014/12/01/install-cx_oracle-support-for-python.html</link>
+      <pubDate>Mon, 01 Dec 2014 09:33:49 +0800</pubDate>
+      
+      <guid>//ie9.org/2014/12/01/install-cx_oracle-support-for-python.html</guid>
+      <description>&lt;p&gt;Oracle目前对Python支持得并不非常完美，配置过程略复杂。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>重置MySQL密码</title>
+      <link>//ie9.org/2014/07/25/reset-mysql-password.html</link>
+      <pubDate>Fri, 25 Jul 2014 10:22:15 +0800</pubDate>
+      
+      <guid>//ie9.org/2014/07/25/reset-mysql-password.html</guid>
+      <description>&lt;p&gt;会者不难，难者不会。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux下zlib压缩文件类</title>
+      <link>//ie9.org/2014/03/07/zlib-wrapper-for-linux.html</link>
+      <pubDate>Fri, 07 Mar 2014 19:38:01 +0800</pubDate>
+      
+      <guid>//ie9.org/2014/03/07/zlib-wrapper-for-linux.html</guid>
+      <description>&lt;p&gt;更新和下载需要用的：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remove SQL Server 2008 Completely</title>
+      <link>//ie9.org/2013/10/04/remove-sqlserver2008.html</link>
+      <pubDate>Fri, 04 Oct 2013 23:15:32 +0800</pubDate>
+      
+      <guid>//ie9.org/2013/10/04/remove-sqlserver2008.html</guid>
+      <description>&lt;p&gt;对Windows越来越没有耐心了，整个系统无比复杂和混乱，没办法，高人总结了以下经验，给入了坑的同学们吧：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cygwin下Python安装MySQL支持</title>
+      <link>//ie9.org/2013/08/04/install-mysql-support-under-cygwin.html</link>
+      <pubDate>Sun, 04 Aug 2013 11:28:42 +0800</pubDate>
+      
+      <guid>//ie9.org/2013/08/04/install-mysql-support-under-cygwin.html</guid>
+      <description>&lt;p&gt;Windows下安装配置环境总是无比蛋疼，还好，有人也遇到了这样的问题，并成功解决了：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>POSIX标准的Mutex互斥类</title>
+      <link>//ie9.org/2013/06/25/mutex-class-code.html</link>
+      <pubDate>Tue, 25 Jun 2013 11:31:20 +0800</pubDate>
+      
+      <guid>//ie9.org/2013/06/25/mutex-class-code.html</guid>
+      <description>&lt;p&gt;多个线程操作共享资源的时候总会存在冲突问题，唯一的解决办法就是引入互斥机制，好在Linux对此已提供了非常完美的支持。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>单文件日志类</title>
+      <link>//ie9.org/2013/05/08/log-class-in-a-single-file.html</link>
+      <pubDate>Wed, 08 May 2013 23:35:32 +0800</pubDate>
+      
+      <guid>//ie9.org/2013/05/08/log-class-in-a-single-file.html</guid>
+      <description>&lt;p&gt;懒人总有很多现成的代码，砖是不需要重复搬的：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux Terminal Resolution Vga Value</title>
+      <link>//ie9.org/2010/08/02/linux-terminal-resolution-vga-value.html</link>
+      <pubDate>Mon, 02 Aug 2010 03:41:33 +0800</pubDate>
+      
+      <guid>//ie9.org/2010/08/02/linux-terminal-resolution-vga-value.html</guid>
+      <description>&lt;p&gt;虚拟机会按默认的分辨率启动，有时窗口过大或者过小都会影响使用，特别在没有安装GUI桌面的情况下。所以为了解决这个问题，请自动对号入座选择一个十六进制的代码加入到启动文件中，以后系统都将以指定的分辨率启动。同时，此方案同样适用于非虚拟机。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>禁用MacOS上Chrome双指向前向后手势</title>
+      <link>//ie9.org/2010/04/04/disable-chrome-forward-backward-gestures-on-macos.html</link>
+      <pubDate>Sun, 04 Apr 2010 11:03:57 +0800</pubDate>
+      
+      <guid>//ie9.org/2010/04/04/disable-chrome-forward-backward-gestures-on-macos.html</guid>
+      <description>&lt;p&gt;最近在使用Chrome时因为手势造成了太多的误操作，耽误了不少时间，觉得麻烦，就直接全禁用了吧：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

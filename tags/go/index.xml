@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on ie9.org</title>
+    <link>//ie9.org/tags/go.html</link>
+    <description>Recent content in Go on ie9.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 23 May 2018 14:12:32 +0800</lastBuildDate>
+    
+	<atom:link href="//ie9.org/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go语言编写的批量邮件发送程序</title>
+      <link>//ie9.org/2018/05/23/batch-send-mail-through-exchange.html</link>
+      <pubDate>Wed, 23 May 2018 14:12:32 +0800</pubDate>
+      
+      <guid>//ie9.org/2018/05/23/batch-send-mail-through-exchange.html</guid>
+      <description>&lt;p&gt;小伙伴有个批量发邮件的需求，服务器是Microsoft Exchange，于是抽空用Go写了个小程序（因为开发效率实在太高，同时不需要安装运行环境），实现的功能非常简单，就是把数据重新编排一下，组装成服务器能接收的格式再请求出去。以下是测试代码。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

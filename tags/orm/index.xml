@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Orm on ie9.org</title>
+    <link>//ie9.org/tags/orm.html</link>
+    <description>Recent content in Orm on ie9.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 21 May 2018 16:54:10 +0800</lastBuildDate>
+    
+	<atom:link href="//ie9.org/tags/orm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>基于SimpleMysql的一个改进版本</title>
+      <link>//ie9.org/2018/05/21/simplemysql2-init.html</link>
+      <pubDate>Mon, 21 May 2018 16:54:10 +0800</pubDate>
+      
+      <guid>//ie9.org/2018/05/21/simplemysql2-init.html</guid>
+      <description>&lt;p&gt;之前在做一些小的基于Python 2.7开发的时候用得比较多的一个MySQL库是&lt;a href=&#34;https://github.com/knadh/simplemysql&#34;&gt;SimpleMysql&lt;/a&gt;，星星不算最多，但是正如它描述中写的那样，非常简洁。&lt;/p&gt;
+
+&lt;p&gt;现在基于Python的开发已经全面转移到Python 3了，而SimpleMysql早已不再更新，对Python 3兼容性并不好，就抽时间作了一些兼容性的修改。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

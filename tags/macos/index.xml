@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Macos on ie9.org</title>
+    <link>//ie9.org/tags/macos.html</link>
+    <description>Recent content in Macos on ie9.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 09 Nov 2016 20:57:22 +0800</lastBuildDate>
+    
+	<atom:link href="//ie9.org/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MacOS下使用Brew安装mpv</title>
+      <link>//ie9.org/2016/11/09/install-mpv-with-brew-on-macos.html</link>
+      <pubDate>Wed, 09 Nov 2016 20:57:22 +0800</pubDate>
+      
+      <guid>//ie9.org/2016/11/09/install-mpv-with-brew-on-macos.html</guid>
+      <description>&lt;p&gt;意外得知Mac上的mpv非常好用，几乎是最好的播放器之一，如此安装即可：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mac下安装运行PHP内置服务器</title>
+      <link>//ie9.org/2016/11/05/install-launch-php-internal-server-on-macos.html</link>
+      <pubDate>Sat, 05 Nov 2016 01:47:55 +0800</pubDate>
+      
+      <guid>//ie9.org/2016/11/05/install-launch-php-internal-server-on-macos.html</guid>
+      <description>&lt;p&gt;一般来说，最新版本的Mac OS X已经内置了5.4版本的PHP，所以以下教程假设用户已经安装好了PHP。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MacOS下安装Sublime Text的LaTex中文支持</title>
+      <link>//ie9.org/2016/06/26/install-sublime-text-latex-on-macos.html</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:13 +0800</pubDate>
+      
+      <guid>//ie9.org/2016/06/26/install-sublime-text-latex-on-macos.html</guid>
+      <description>&lt;p&gt;转载的，但时间长了不记得出自哪里，同时也有针对自己实际操作有修改的地方。这个玩法不太常见，通常都有专业的工具去解决。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>禁用MacOS上Chrome双指向前向后手势</title>
+      <link>//ie9.org/2010/04/04/disable-chrome-forward-backward-gestures-on-macos.html</link>
+      <pubDate>Sun, 04 Apr 2010 11:03:57 +0800</pubDate>
+      
+      <guid>//ie9.org/2010/04/04/disable-chrome-forward-backward-gestures-on-macos.html</guid>
+      <description>&lt;p&gt;最近在使用Chrome时因为手势造成了太多的误操作，耽误了不少时间，觉得麻烦，就直接全禁用了吧：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

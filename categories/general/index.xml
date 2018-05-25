@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on ie9.org</title>
+    <link>//ie9.org/categories/general.html</link>
+    <description>Recent content in General on ie9.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 26 Jun 2017 18:04:15 +0800</lastBuildDate>
+    
+	<atom:link href="//ie9.org/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>通过bash获取指定时间的unix格式</title>
+      <link>//ie9.org/2017/06/26/get-unixtime-from-bash.html</link>
+      <pubDate>Mon, 26 Jun 2017 18:04:15 +0800</pubDate>
+      
+      <guid>//ie9.org/2017/06/26/get-unixtime-from-bash.html</guid>
+      <description>&lt;p&gt;&lt;code&gt;bash&lt;/code&gt;远比我们想像得强大，但正因为如此，我们并不必要掌握它的所有用法——记在这里就行了。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MacOS下使用Brew安装mpv</title>
+      <link>//ie9.org/2016/11/09/install-mpv-with-brew-on-macos.html</link>
+      <pubDate>Wed, 09 Nov 2016 20:57:22 +0800</pubDate>
+      
+      <guid>//ie9.org/2016/11/09/install-mpv-with-brew-on-macos.html</guid>
+      <description>&lt;p&gt;意外得知Mac上的mpv非常好用，几乎是最好的播放器之一，如此安装即可：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>特殊符号</title>
+      <link>//ie9.org/2015/03/09/symbols.html</link>
+      <pubDate>Mon, 09 Mar 2015 17:49:25 +0800</pubDate>
+      
+      <guid>//ie9.org/2015/03/09/symbols.html</guid>
+      <description>&lt;p&gt;又开始兼着搞前端了。话说引入字体的方式调用特殊符号效果可能更好，而以下的这些并不是所有浏览器或者OS都支持。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

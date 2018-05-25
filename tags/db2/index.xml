@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Db2 on ie9.org</title>
+    <link>//ie9.org/tags/db2.html</link>
+    <description>Recent content in Db2 on ie9.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 02 Dec 2014 23:12:21 +0800</lastBuildDate>
+    
+	<atom:link href="//ie9.org/tags/db2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Remove DB2 on Linux</title>
+      <link>//ie9.org/2014/12/02/remove-db2-on-linux.html</link>
+      <pubDate>Tue, 02 Dec 2014 23:12:21 +0800</pubDate>
+      
+      <guid>//ie9.org/2014/12/02/remove-db2-on-linux.html</guid>
+      <description>&lt;p&gt;在给客户部署程序时遇到了这个问题，为了测试专门在本机的虚拟机上安装并移除之，过程是这样的：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unix Time on ie9.org</title>
+    <link>//ie9.org/tags/unix-time.html</link>
+    <description>Recent content in Unix Time on ie9.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 26 Jun 2017 18:04:15 +0800</lastBuildDate>
+    
+	<atom:link href="//ie9.org/tags/unix-time/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>通过bash获取指定时间的unix格式</title>
+      <link>//ie9.org/2017/06/26/get-unixtime-from-bash.html</link>
+      <pubDate>Mon, 26 Jun 2017 18:04:15 +0800</pubDate>
+      
+      <guid>//ie9.org/2017/06/26/get-unixtime-from-bash.html</guid>
+      <description>&lt;p&gt;&lt;code&gt;bash&lt;/code&gt;远比我们想像得强大，但正因为如此，我们并不必要掌握它的所有用法——记在这里就行了。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

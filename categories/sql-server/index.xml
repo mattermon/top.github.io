@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sql Server on ie9.org</title>
+    <link>//ie9.org/categories/sql-server.html</link>
+    <description>Recent content in Sql Server on ie9.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 04 Oct 2013 23:15:32 +0800</lastBuildDate>
+    
+	<atom:link href="//ie9.org/categories/sql-server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Remove SQL Server 2008 Completely</title>
+      <link>//ie9.org/2013/10/04/remove-sqlserver2008.html</link>
+      <pubDate>Fri, 04 Oct 2013 23:15:32 +0800</pubDate>
+      
+      <guid>//ie9.org/2013/10/04/remove-sqlserver2008.html</guid>
+      <description>&lt;p&gt;对Windows越来越没有耐心了，整个系统无比复杂和混乱，没办法，高人总结了以下经验，给入了坑的同学们吧：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
