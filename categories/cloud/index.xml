@@ -13,10 +13,10 @@
     
     <item>
       <title>Docker、Containerd、runC、Docker-shim</title>
-      <link>//ie9.org/2018/05/25/docker-containerd-runc-docker_shim.html</link>
+      <link>//ie9.org/2018/05/25/docker-containerd-runc-docker-shim.html</link>
       <pubDate>Fri, 25 May 2018 16:01:37 +0800</pubDate>
       
-      <guid>//ie9.org/2018/05/25/docker-containerd-runc-docker_shim.html</guid>
+      <guid>//ie9.org/2018/05/25/docker-containerd-runc-docker-shim.html</guid>
       <description>&lt;p&gt;docker是一整套虚拟化技术的整合者，包括从前端到底层的所有封装，官网上的结构图比较偏业务化，可以参考一下：&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
