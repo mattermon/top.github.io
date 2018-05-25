@@ -106,14 +106,14 @@ build
 <li>webpack相关</li>
 </ul>
 
-<pre><code>npm i webpack webpack-dev-server html-webpack-plugin --save-dev
+<pre><code class="language-bash">npm i webpack webpack-dev-server html-webpack-plugin --save-dev
 </code></pre>
 
 <ul>
 <li>css/scss/less样式文件，图片文件相关包</li>
 </ul>
 
-<pre><code>npm i css-loader style-loader sass-loader node-sass less less-loader --save-dev
+<pre><code class="language-bash">npm i css-loader style-loader sass-loader node-sass less less-loader --save-dev
 npm i file-loader url-loader --save-dev
 </code></pre>
 
@@ -121,7 +121,7 @@ npm i file-loader url-loader --save-dev
 <li>babel/react/es6支持</li>
 </ul>
 
-<pre><code>npm i babel-core babel-loader babel-preset-es2015 babel-preset-react --save-dev
+<pre><code class="language-bash">npm i babel-core babel-loader babel-preset-es2015 babel-preset-react --save-dev
 npm i jshint jshint-loader --save-dev
 npm i react react-dom --save
 </code></pre>
@@ -130,7 +130,7 @@ npm i react react-dom --save
 <li>bootstrap/jquery/moment支持包</li>
 </ul>
 
-<pre><code>npm i bootstrap --save-dev
+<pre><code class="language-bash">npm i bootstrap --save-dev
 npm i jquery moment --save-dev
 </code></pre>
 
@@ -250,7 +250,7 @@ module.exports = {
 
 <h2 id="1-6-在package-json中添加">1.6 在package.json中添加</h2>
 
-<pre><code>&quot;scripts&quot;: {
+<pre><code class="language-json">&quot;scripts&quot;: {
     &quot;dev&quot;: &quot;webpack-dev-server --progress --profile --colors --hot --inline&quot;,
     &quot;build&quot;: &quot;webpack --progress --profile --colors&quot;,
     &quot;test&quot;: &quot;test&quot;,
@@ -261,7 +261,7 @@ module.exports = {
 
 <h2 id="2-1-修改index-jsx">2.1 修改index.jsx</h2>
 
-<pre><code>import '../node_modules/bootstrap/scss/bootstrap.scss';
+<pre><code class="language-javascript">import '../node_modules/bootstrap/scss/bootstrap.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
@@ -289,7 +289,7 @@ ReactDOM.reder(&lt;App /&gt;, app);
 
 <h2 id="2-2-运行查看效果">2.2 运行查看效果</h2>
 
-<pre><code>npm run dev
+<pre><code class="language-bash">npm run dev
 </code></pre>
         </div>
 
@@ -428,13 +428,17 @@ ReactDOM.reder(&lt;App /&gt;, app);
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+    
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js" integrity="sha256-fTZir3QtRzPrhH5KyHm/0hsQqTDswmqYFhXOPN05ulw=" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/xml.min.js" integrity="sha256-tTizFdjdqBNNTjhOdrSB4jSoCiSZjbtQBdsUSl+P+PQ=" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/nginx.min.js" integrity="sha256-s5uXmtjYMSajCf9RgzwgHMDjvLkP7nCIu2lIqeRD7Tg=" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js" integrity="sha256-LVuWfOU0rWFMCJNl1xb3K2HSWfxtK4IPbqEerP1P83M=" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js" integrity="sha256-tvm0lHsuUZcOfj/0C9xJTU4OQx5KpUgxUcAXLX5kvwA=" crossorigin="anonymous"></script>
+    
+    
+    
+    
+    
     <script>hljs.initHighlightingOnLoad();</script>
 
+    
+    
     
     <script>
         document.getElementById('main-nav-toggle').addEventListener('click', function () {

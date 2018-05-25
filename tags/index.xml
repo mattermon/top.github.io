@@ -57,6 +57,15 @@
     </item>
     
     <item>
+      <title>Containerd</title>
+      <link>//ie9.org/tags/containerd.html</link>
+      <pubDate>Fri, 25 May 2018 16:01:37 +0800</pubDate>
+      
+      <guid>//ie9.org/tags/containerd.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cygwin</title>
       <link>//ie9.org/tags/cygwin.html</link>
       <pubDate>Sun, 04 Aug 2013 11:28:42 +0800</pubDate>
@@ -80,6 +89,24 @@
       <pubDate>Tue, 02 Dec 2014 23:12:21 +0800</pubDate>
       
       <guid>//ie9.org/tags/db2.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>//ie9.org/tags/docker.html</link>
+      <pubDate>Fri, 25 May 2018 16:01:37 +0800</pubDate>
+      
+      <guid>//ie9.org/tags/docker.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker Containers Shim</title>
+      <link>//ie9.org/tags/docker-containers-shim.html</link>
+      <pubDate>Fri, 25 May 2018 16:01:37 +0800</pubDate>
+      
+      <guid>//ie9.org/tags/docker-containers-shim.html</guid>
       <description></description>
     </item>
     
@@ -395,6 +422,15 @@
       <pubDate>Mon, 07 Nov 2016 22:51:02 +0800</pubDate>
       
       <guid>//ie9.org/tags/ruby.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Runc</title>
+      <link>//ie9.org/tags/runc.html</link>
+      <pubDate>Fri, 25 May 2018 16:01:37 +0800</pubDate>
+      
+      <guid>//ie9.org/tags/runc.html</guid>
       <description></description>
     </item>
     

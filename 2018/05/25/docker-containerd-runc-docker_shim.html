@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Docker、Containerd、runC、Docker-shim // ie9.org</title>
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="ie9.org, another technical blog">
+    <meta name="keywords" content="ie9.org,">
+    <meta name="author" content="">
+        <meta property="og:title" content="Docker、Containerd、runC、Docker-shim" />
+    <meta property="og:description" content="ie9.org, another technical blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="//ie9.org/2018/05/25/docker-containerd-runc-docker_shim.html" />
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="ie9.org" />
+    <link rel="shortcut icon" href="/favicon.png">
+    <link href="//ie9.org/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="//ie9.org/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//ie9.org/css/style.css">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <link rel="stylesheet" href="//ie9.org/css/gitment.css">
+    <script src="//ie9.org/js/gitment.js"></script>
+    <meta name="generator" content="Hugo 0.24" />
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="//ie9.org/">ie9.org</a>
+            <nav id="main-nav">
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Docker、Containerd、runC、Docker-shim</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/2018/05/25/docker-containerd-runc-docker_shim.html" class="article-date">
+                <time datetime='2018-05-25T16:01:37.000&#43;08:00' itemprop="datePublished">2018-05-25</time>
+            </a>
+            
+            
+            <div class="post-categories">
+                <div class="article-category">
+                    
+                    
+                    <a class="article-category-link" href="//ie9.org//categories/cloud">Cloud</a>
+                    
+                    
+                    <span>&gt;</span>
+                    
+                    <a class="article-category-link" href="//ie9.org//categories/virtualization">Virtualization</a>
+                    
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            <p>docker是一整套虚拟化技术的整合者，包括从前端到底层的所有封装，官网上的结构图比较偏业务化，可以参考一下：</p>
+
+<p></p>
+
+<p><img src="https://docs.docker.com/engine/images/architecture.svg" alt="Docker Architecture Diagram" /></p>
+
+<p>即，由dockerctl命令接入dockerd，再由dockerd来操作容器和镜像。镜像可以自己构建，也可以从registry获取。</p>
+
+<p>技术架构图应该是这样的：</p>
+
+<pre><code class="language-mermaid">graph TB
+dc[dockerctl] --&gt; dd[dockerd]
+dd -- gRPC --&gt; cd[containerd]
+cd --&gt; ds1[shim]
+cd --&gt; ds2[shim]
+cd --&gt; ds3[shim]
+ds1 --&gt; rc1[runC]
+ds2 --&gt; rc2[runC]
+ds3 --&gt; rc3[runC]
+rc1 --&gt; c1[container]
+rc2 --&gt; c2[container]
+rc3 --&gt; c3[container]
+</code></pre>
+
+<p>dockerctl相当于面向用户的命令行客户端，常见的命令如 <code>docker ps</code>、<code>docker images</code> 都是由控制台接收再调用dockerd处理的。而dockerd是对容器操作的api上层封装，之后再通过gPRC传递到底层的containerd处理。</p>
+
+<p>containerd是容器技术标准化之后产生的，兼容<a href="https://www.opencontainers.org/">OCI（Open Container Interface Standard）标准</a>，所以理论上并不信赖dockerd独立运行。它的主要职责就是镜像管理（镜像和元信息等）、容器执行，向上为dockerd提供了基于gRPC的接口，向下通过docker-containerd-shim结合runC，使引擎可以独立升级。containerd负责容器运行时和生命周期，以及镜像构建、卷管理、日志等功能，这些功能的实现都是由不同的<a href="https://github.com/containerd/containerd/blob/master/design/architecture.md">功能模块</a>负责处理的：</p>
+
+<ul>
+<li>Executor: The executor implements the actual container runtime.</li>
+<li>Supervisor: The supervisor monitors and reports container state.</li>
+<li>Metadata: Stores metadata in a graph database. Use to store any persistent references to images and bundles. Data entered into the database will have schemas coordinated between components to provide access to arbitrary data. Other functionality includes hooks for garbage collection of on-disk resources.</li>
+<li>Content: Provides access to content addressable storage. All immutable content will be stored here, keyed by content hash.</li>
+<li>Snapshot: Manages filesystem snapshots for container images. This is analogous to the graphdriver in Docker today. Layers are unpacked into snapshots.</li>
+<li>Events: Supports the collection and consumption of events for providing consistent, event driven behavior and auditing. Events may be replayed to various modules</li>
+<li>Metrics: Each components will export several metrics, accessible via the metrics API. (We may want to promote this to a subsystem.</li>
+</ul>
+
+<p>每一个容器上都存在一个docker-containerd-shim进程，它需要三个参数来调用runC的api创建容器：容器ID、目录、运行时二进制文件，其中容器目录中包含：</p>
+
+<ul>
+<li>config.json：容器配置</li>
+<li>init-stderr：标准错误</li>
+<li>init-stdin：标准输入</li>
+<li>init-stdout：标准输出</li>
+</ul>
+
+<p>runC是由docker按照OCF（Open Container Format开放容器格式）提供的一种实现。它具备容器启停、资源隔离等功能。docker中默认内置了docker-runc，所以在containerd封装时可以通过 <code>--add-runtime</code> 参数指定另外一种runC的实现。</p>
+        </div>
+
+        
+        
+        
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        <script>
+            (function() {
+                var $toc = $('#TableOfContents');
+                if ($toc.length > 0) {
+                    var $window = $(window);
+
+                    function onScroll(){
+                        var currentScroll = $window.scrollTop();
+                        var h = $('.article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6');
+                        var id = "";
+                        h.each(function (i, e) {
+                            e = $(e);
+                            if (e.offset().top - 10 <= currentScroll) {
+                                id = e.attr('id');
+                            }
+                        });
+                        var active = $toc.find('a.active');
+                        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+                        active.each(function (i, e) {
+                            $(e).removeClass('active').siblings('ul').hide();
+                        });
+                        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+                            $(e).children('a').addClass('active').siblings('ul').show();
+                        });
+                    }
+
+                    $window.on('scroll', onScroll);
+                    $(document).ready(function() {
+                        $toc.find('a').parent('li').find('ul').hide();
+                        onScroll();
+                        document.getElementsByClassName('article-toc')[0].style.display = '';
+                    });
+                }
+            })();
+        </script>
+        
+
+        
+        <div id="gitment-comment"></div>
+        <script>
+        var gitment = new Gitment({
+            id: "/2018/05/25/docker-containerd-runc-docker_shim.html",
+            owner: "top",
+            repo: "ie9",
+            oauth: {
+                client_id: "4e33cbe9ed2c2d914b2f",
+                client_secret: "9ba1ff6e220ca5c7484a7f508a115c2862903821",
+            },
+        })
+        gitment.render('gitment-comment')
+        </script>
+        
+
+        
+        <footer class="article-footer">
+            <ul class="article-tag-list">
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org//tags/docker">docker
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org//tags/containerd">containerd
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org//tags/runc">runc
+                    </a>
+                </li>
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//ie9.org//tags/docker-containers-shim">docker-containers-shim
+                    </a>
+                </li>
+                
+            </ul>
+        </footer>
+        
+
+    </div>
+    <nav id="article-nav">
+    
+    
+    <a href="/2018/05/23/batch-send-mail-through-exchange.html" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Go语言编写的批量邮件发送程序&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 ie9.org&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+    
+    
+    
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.1.2/mermaid.min.js" integrity="sha256-tJ52z0aAzZBamAZPedNylrtijTuTMLBabhv/A6eTA1w=" crossorigin="anonymous"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    
+    
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+
+</div>
+</body>
+</html>

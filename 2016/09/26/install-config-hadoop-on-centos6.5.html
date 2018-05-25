@@ -93,7 +93,7 @@
 
 <p>我们下载的是rpm包，所以这里直接安装：</p>
 
-<pre><code>rpm -ivh jdk1.8.0_92.rpm
+<pre><code class="language-bash">rpm -ivh jdk1.8.0_92.rpm
 </code></pre>
 
 <h3 id="2-1-2-环境变量配置">2.1.2 环境变量配置</h3>
@@ -110,12 +110,12 @@ export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
 
 <p>将下载的hadoop安装包放到<code>/opt</code>目录下，解压出来：</p>
 
-<pre><code>tar xvzf hadoop-2.7.2.tar.gz ; rm -f hadoop-2.7.2.tar.gz 
+<pre><code class="language-bash">tar xvzf hadoop-2.7.2.tar.gz ; rm -f hadoop-2.7.2.tar.gz 
 </code></pre>
 
 <p>配置环境变量，修改<code>/etc/profile</code></p>
 
-<pre><code>export HADOOP_HOME=/opt/hadoop-2.7.2
+<pre><code class="language-config">export HADOOP_HOME=/opt/hadoop-2.7.2
 # 修改以下行
 export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin:$HADOOP_HOME/bin
 </code></pre>
@@ -126,13 +126,13 @@ export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin:$HADOOP_HOME/bin
 
 <p>修改<code>etc/hadoop/hadoop-env.sh</code></p>
 
-<pre><code># 明确指定JDK路径
+<pre><code class="language-bash"># 明确指定JDK路径
 export JAVA_HOME=/usr/java/jdk1.8.0_92
 </code></pre>
 
 <p>修改<code>etc/hadoop/core-site.xml</code></p>
 
-<pre><code>&lt;configuration&gt;
+<pre><code class="language-xml">&lt;configuration&gt;
     &lt;property&gt;
         &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;
         &lt;value&gt;/hadoop&lt;/value&gt;
@@ -155,7 +155,7 @@ export JAVA_HOME=/usr/java/jdk1.8.0_92
 
 <p>修改<code>etc/hadoop/hdfs-site.xml</code></p>
 
-<pre><code>&lt;configuration&gt;
+<pre><code class="language-xml">&lt;configuration&gt;
     &lt;property&gt;
         &lt;name&gt;dfs.data.dir&lt;/name&gt;
         &lt;value&gt;/hadoop/data&lt;/value&gt;
@@ -165,7 +165,7 @@ export JAVA_HOME=/usr/java/jdk1.8.0_92
 
 <p>修改<code>etc/hadoop/mapred-site.xml</code></p>
 
-<pre><code>&lt;configuration&gt;
+<pre><code class="language-xml">&lt;configuration&gt;
     &lt;property&gt;
         &lt;name&gt;mapred.job.tracker&lt;/name&gt;
         &lt;value&gt;centos:9001&lt;/value&gt;
@@ -177,12 +177,12 @@ export JAVA_HOME=/usr/java/jdk1.8.0_92
 
 <p>执行命令对Hadoop进行格式化</p>
 
-<pre><code>hadoop namenode -format
+<pre><code class="language-bash">hadoop namenode -format
 </code></pre>
 
 <h2 id="3-3-启动hadoop">3.3 启动Hadoop</h2>
 
-<pre><code>sbin/start-all.sh
+<pre><code class="language-bash">sbin/start-all.sh
 </code></pre>
 
 <p>完毕！</p>
@@ -320,13 +320,19 @@ export JAVA_HOME=/usr/java/jdk1.8.0_92
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+    
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js" integrity="sha256-fTZir3QtRzPrhH5KyHm/0hsQqTDswmqYFhXOPN05ulw=" crossorigin="anonymous"></script>
+    
+    
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/xml.min.js" integrity="sha256-tTizFdjdqBNNTjhOdrSB4jSoCiSZjbtQBdsUSl+P+PQ=" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/nginx.min.js" integrity="sha256-s5uXmtjYMSajCf9RgzwgHMDjvLkP7nCIu2lIqeRD7Tg=" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js" integrity="sha256-LVuWfOU0rWFMCJNl1xb3K2HSWfxtK4IPbqEerP1P83M=" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js" integrity="sha256-tvm0lHsuUZcOfj/0C9xJTU4OQx5KpUgxUcAXLX5kvwA=" crossorigin="anonymous"></script>
+    
+    
+    
+    
     <script>hljs.initHighlightingOnLoad();</script>
 
+    
+    
     
     <script>
         document.getElementById('main-nav-toggle').addEventListener('click', function () {
