@@ -84,18 +84,19 @@
 
 <p>技术架构图应该是这样的：</p>
 
-<pre><code class="language-mermaid">graph TB
-dc[dockerctl] --&gt; dd[dockerd]
-dd -- gRPC --&gt; cd[containerd]
-cd --&gt; ds1[shim]
-cd --&gt; ds2[shim]
-cd --&gt; ds3[shim]
-ds1 --&gt; rc1[runC]
-ds2 --&gt; rc2[runC]
-ds3 --&gt; rc3[runC]
-rc1 --&gt; c1[container]
-rc2 --&gt; c2[container]
-rc3 --&gt; c3[container]
+<pre><code class="mermaid">
+graph TB
+dc[dockerctl] --> dd[dockerd]
+dd -- gRPC --> cd[containerd]
+cd --> ds1[shim]
+cd --> ds2[shim]
+cd --> ds3[shim]
+ds1 --> rc1[runC]
+ds2 --> rc2[runC]
+ds3 --> rc3[runC]
+rc1 --> c1[container]
+rc2 --> c2[container]
+rc3 --> c3[container]
 </code></pre>
 
 <p>dockerctl相当于面向用户的命令行客户端，常见的命令如 <code>docker ps</code>、<code>docker images</code> 都是由控制台接收再调用dockerd处理的。而dockerd是对容器操作的api上层封装，之后再通过gPRC传递到底层的containerd处理。</p>
