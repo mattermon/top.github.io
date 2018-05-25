@@ -84,7 +84,7 @@
 
 <p>技术架构图应该是这样的：</p>
 
-<pre><code class="mermaid">
+<div class="mermaid">
 graph TB
 dc[dockerctl] --> dd[dockerd]
 dd -- gRPC --> cd[containerd]
@@ -97,11 +97,11 @@ ds3 --> rc3[runC]
 rc1 --> c1[container]
 rc2 --> c2[container]
 rc3 --> c3[container]
-</code></pre>
+</div>
 
 <p>dockerctl相当于面向用户的命令行客户端，常见的命令如 <code>docker ps</code>、<code>docker images</code> 都是由控制台接收再调用dockerd处理的。而dockerd是对容器操作的api上层封装，之后再通过gPRC传递到底层的containerd处理。</p>
 
-<p>containerd是容器技术标准化之后产生的，兼容<a href="https://www.opencontainers.org/">OCI（Open Container Interface Standard）标准</a>，所以理论上并不信赖dockerd独立运行。它的主要职责就是镜像管理（镜像和元信息等）、容器执行，向上为dockerd提供了基于gRPC的接口，向下通过docker-containerd-shim结合runC，使引擎可以独立升级。containerd负责容器运行时和生命周期，以及镜像构建、卷管理、日志等功能，这些功能的实现都是由不同的<a href="https://github.com/containerd/containerd/blob/master/design/architecture.md">功能模块</a>负责处理的：</p>
+<p>containerd是容器技术标准化之后产生的，兼容<a href="https://www.opencontainers.org/">OCI（Open Container Interface Standard）标准</a>，所以理论上并不信赖dockerd<a href="https://kubernetes.io/blog/2018/05/24/kubernetes-containerd-integration-goes-ga/">独立运行</a>。它的主要职责就是镜像管理（镜像和元信息等）、容器执行，向上为dockerd提供了基于gRPC的接口，向下通过docker-containerd-shim结合runC，使引擎可以独立升级。containerd负责容器运行时和生命周期，以及镜像构建、卷管理、日志等功能，这些功能的实现都是由不同的<a href="https://github.com/containerd/containerd/blob/master/design/architecture.md">功能模块</a>负责处理的：</p>
 
 <ul>
 <li>Executor: The executor implements the actual container runtime.</li>
