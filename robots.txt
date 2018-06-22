@@ -1,1 +1,4 @@
 User-agent: *
+Allow: /
+Sitemap: https://ie9.org/sitemap.xml
+
