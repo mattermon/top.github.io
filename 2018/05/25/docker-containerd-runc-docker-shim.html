@@ -124,6 +124,8 @@ rc3 --> c3[container]
 </ul>
 
 <p>runC是由docker按照OCF（Open Container Format开放容器格式）提供的一种实现。它具备容器启停、资源隔离等功能。docker中默认内置了docker-runc，所以在containerd封装时可以通过 <code>--add-runtime</code> 参数指定另外一种runC的实现。</p>
+
+<p><img src="/images/docker-containerd-runC-docker_shim.jpg" alt="" /></p>
         </div>
 
         
